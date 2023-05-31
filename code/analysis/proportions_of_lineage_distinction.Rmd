@@ -1,0 +1,162 @@
+---
+title: "Lineage distinction analysis"
+author: "Maisy Hallam"
+date: "2023-04-14"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse) # for data preprocessing
+library(ggplot2) # for plotting
+library(lme4) # for model fitting
+```
+
+# Preprocessing the data
+
+## Import the data
+
+First, we import all the raw data.
+
+```{r import}
+lineage_prop_files <- list.files(path="../../data/raw/lineage/prop/",pattern="*.csv",full.names=TRUE)
+lineage_data <- do.call(rbind, lapply(lineage_prop_files, function(x) read.csv(x)))
+```
+
+
+## Process the data
+
+We add a column TYPE which tells us if the data comes from kinbank or if it is simulated, and we delete the first two columns because I am an idiot who ran my include_headings function too many times.
+
+```{r}
+lineage_data <- lineage_data %>%
+  mutate(
+    
+    TYPE = ifelse (grepl('frankenlanguage', LANGUAGE),
+    'simulation',
+    'kinbank'
+  ))
+
+
+lineage_data$GEN_0 <- as.numeric(lineage_data$GEN_0)
+lineage_data$GEN_1 <- as.numeric(lineage_data$GEN_1)
+
+
+lineage_data
+```
+
+And then we save lineage_data to a new CSV file.
+
+```{r}
+write.csv(lineage_data, '../../data/processed/all_lineage_proportions.csv')
+```
+
+Now, let's split `lineage_data` into two dataframes - `kinbank` and `simulations`.
+
+```{r}
+simulations <- filter(lineage_data,TYPE == 'simulation')
+kinbank <- filter(lineage_data,TYPE == 'kinbank')
+```
+
+And save those too.
+
+```{r}
+write.csv(kinbank, '../../data/processed/kinbank_lineage_proportions.csv')
+write.csv(simulations, '../../data/processed/simulated_lineage_proportions.csv')
+
+```
+
+# Analysis
+
+We need the means of each SET of data - so all 1000 simulations, plus the kinbank data.
+
+```{r}
+simulation_means <- group_by(simulations,SET) %>%
+  summarise(
+    MEAN0 = mean(GEN_0),
+    MEAN1 = mean(GEN_1)
+  )
+
+kinbank_mean <- group_by(kinbank,SET) %>%
+  summarise(
+    MEAN0 = mean(GEN_0),
+    MEAN1 = mean(GEN_1)
+  )
+
+simulation_means
+kinbank_mean
+```
+
+To plot the data, let's first take a sample of the data.
+
+```{r}
+sim_prop_sample <- sample_n(simulations,767, replace=FALSE)
+kinbank_prop_sample <- sample_n(kinbank,767,replace=FALSE)
+```
+
+And we'll plot some histograms, so we can sanity check that we've done the simulations right.
+
+```{r}
+rbind(sim_prop_sample,kinbank_prop_sample) %>%
+  ggplot() +
+  geom_histogram(aes(GEN_0,fill=TYPE),position='dodge')
+
+```
+
+```{r}
+simulation_means %>%
+  ggplot(aes(MEAN0)) +
+  geom_histogram(fill = 'lightblue', color = 'navy', alpha = 1) +
+  geom_vline(aes(xintercept = 0.5077), color="navy", linetype="dashed", size=0.5) +
+  labs(
+    title = 'Mean proportion of lineage distinctions in Ego generation',
+    color = legend) +
+  xlab('GEN_0 means')
+```
+
+
+```{r}
+rbind(sim_prop_sample,kinbank_prop_sample) %>%
+  ggplot() +
+  geom_histogram(aes(GEN_1,fill=TYPE),position='dodge')
+
+```
+
+```{r}
+simulation_means %>%
+  ggplot(aes(MEAN1)) +
+  geom_histogram(fill = 'lightblue', color = 'navy', alpha = 1) +
+  geom_vline(aes(xintercept = 0.6852), color="navy", linetype="dashed", size=0.5) +
+  labs(
+    title = 'Mean proportion of lineage distinctions in Ego parent generation',
+    color = legend) +
+  xlab('GEN_1 means')
+```
+
+Looks like the simulations converge to the real data! Phew!
+
+## Real serious plots
+
+First, let's plot the languages with GEN_0 proportion of lineage distinctions on the x axis, and GEN_1 proportion on the y axis.
+
+```{r}
+rbind(sim_prop_sample,kinbank_prop_sample) %>%
+  ggplot(aes(x=GEN_0, y=GEN_1,color=TYPE)) +
+  geom_jitter(alpha=0.2,width = 0.2) +
+  xlim(0,1) +
+  ylim(0,1) +
+  geom_smooth(method=lm)
+```
+
+## Super serious analysis
+
+```{r}
+cor.test(simulations$GEN_0,simulations$GEN_1, method = 'spearman')
+```
+
+```{r}
+cor.test(kinbank$GEN_0,kinbank$GEN_1, method = 'spearman')
+
+```
