@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,mZ,meB,myB,meZ,myZ,fB,fZ,feB,fyB,feZ,fyZ,mF,mM,fF,fM
+0,0.08980968516983712,0.6914160776171183,0.6016063924472812,ṣer,procer,procer,procer,ṣer,ṣer,procer,ṣer,ṣer,ṣer,procer,pācer,pācer,mācer,mācer
+1,0.08980968516983712,0.6914160776171183,0.6016063924472812,ṣer,ṣer,procer,procer,procer,procer,ṣer,procer,ṣer,ṣer,ṣer,mācer,mācer,pācer,pācer
+2,0.0015436285667964622,0.6914160776171183,0.6898724490503219,ṣer,procer,ṣer,procer,ṣer,ṣer,procer,ṣer,ṣer,procer,procer,pācer,mācer,pācer,mācer
+3,0.0015436285667964622,0.6914160776171183,0.6898724490503219,ṣer,procer,ṣer,ṣer,ṣer,ṣer,procer,procer,procer,procer,ṣer,pācer,mācer,pācer,mācer
+4,0.0024849871169562165,0.6914160776171183,0.6889310905001621,procer,procer,procer,ṣer,ṣer,ṣer,procer,procer,ṣer,ṣer,ṣer,pācer,mācer,pācer,mācer
+5,0.0024849871169562165,0.6914160776171183,0.6889310905001621,procer,procer,ṣer,ṣer,procer,ṣer,procer,ṣer,ṣer,procer,ṣer,mācer,pācer,pācer,mācer
+6,0.0024849871169562165,0.6914160776171183,0.6889310905001621,ṣer,procer,procer,procer,ṣer,ṣer,ṣer,ṣer,ṣer,procer,procer,pācer,mācer,mācer,pācer
+7,0.0024849871169562165,0.6914160776171183,0.6889310905001621,procer,ṣer,ṣer,ṣer,procer,ṣer,procer,procer,procer,ṣer,ṣer,pācer,mācer,mācer,pācer
+8,0.5067402621708073,0.6914160776171183,0.184675815446311,ṣer,procer,procer,procer,procer,procer,ṣer,ṣer,ṣer,ṣer,ṣer,pācer,pācer,mācer,mācer
+9,0.0024849871169562165,0.6914160776171183,0.6889310905001621,ṣer,procer,procer,ṣer,ṣer,ṣer,ṣer,ṣer,procer,procer,procer,pācer,mācer,mācer,pācer

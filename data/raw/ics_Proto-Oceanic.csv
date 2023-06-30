@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,fyB,meZ,myZ,feZ,fyZ,mF,mM,fF,fM,mFeB,mFyB,mMeB,mMyB,mMeZ,mMyZ,fFeB,fFyB,fMeB,fMyB,fMeZ,fMyZ
+0,0.09922444498263283,0.5195798391305154,0.4203553941478826,mʷaqane,(pa)pine,taci-,tuqaka-,taci-,(pa)pine,mʷaqane,matuqa,tina-,tina-,tina-,matuqa,tina-,tama-,tama-,tama-,tina-,matuqa,tama-,tina-,matuqa,tama-,tama-
+1,0.24243302655595822,1.0346012329101812,0.792168206354223,mʷaqane,(pa)pine,taci-,(pa)pine,mʷaqane,tuqaka-,taci-,matuqa,tina-,tina-,tama-,tama-,tina-,tina-,tama-,matuqa,tama-,tina-,matuqa,tama-,matuqa,tama-,tina-
+2,0.6829081047004717,1.0789922078775833,0.39608410317711157,mʷaqane,taci-,(pa)pine,mʷaqane,tuqaka-,(pa)pine,taci-,tama-,tama-,tina-,matuqa,tina-,tina-,tama-,matuqa,tama-,matuqa,tama-,tina-,tina-,tama-,matuqa,tina-
+3,0.2868240015233602,0.9799711820833054,0.6931471805599452,mʷaqane,taci-,taci-,tuqaka-,(pa)pine,mʷaqane,(pa)pine,matuqa,tama-,tina-,tina-,matuqa,tina-,tama-,tama-,tina-,tama-,tama-,tina-,tama-,matuqa,tina-,matuqa
+4,1.1102230246251565e-16,0.6931471805599453,0.6931471805599452,taci-,(pa)pine,(pa)pine,mʷaqane,mʷaqane,taci-,tuqaka-,tama-,tina-,tama-,tina-,tama-,tina-,matuqa,tama-,tama-,tina-,tina-,tama-,matuqa,matuqa,matuqa,tina-
+5,0.24243302655595822,1.0346012329101812,0.792168206354223,(pa)pine,tuqaka-,taci-,(pa)pine,mʷaqane,taci-,mʷaqane,tama-,tina-,matuqa,tina-,tama-,tina-,matuqa,tina-,matuqa,tama-,tina-,tama-,tama-,tina-,tama-,matuqa
+6,0.14053932702562122,0.5982695885852573,0.45773026155963603,mʷaqane,taci-,taci-,(pa)pine,mʷaqane,tuqaka-,(pa)pine,matuqa,matuqa,matuqa,tina-,tama-,matuqa,tama-,tina-,tina-,tama-,tina-,tina-,tama-,tina-,tama-,tama-
+7,0.24243302655595822,1.0346012329101812,0.792168206354223,mʷaqane,taci-,mʷaqane,(pa)pine,(pa)pine,taci-,tuqaka-,tama-,tina-,tina-,matuqa,tina-,tina-,matuqa,tama-,tama-,matuqa,tama-,tama-,matuqa,tina-,tama-,tina-
+8,0.09922444498263278,0.5195798391305154,0.42035539414788264,tuqaka-,(pa)pine,mʷaqane,taci-,mʷaqane,taci-,(pa)pine,tina-,tama-,tama-,tama-,tina-,tina-,tina-,tama-,matuqa,tama-,tina-,tama-,tina-,matuqa,matuqa,matuqa
+9,0.14341200076168015,1.034601232910181,0.8911892321485009,(pa)pine,(pa)pine,mʷaqane,tuqaka-,mʷaqane,taci-,taci-,tina-,tama-,tina-,matuqa,tina-,tina-,tama-,tama-,tina-,tama-,matuqa,matuqa,tama-,tina-,matuqa,tama-

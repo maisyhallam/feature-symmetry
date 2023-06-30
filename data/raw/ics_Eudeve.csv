@@ -1,0 +1,5 @@
+simulation_number,mutual_information,entropy,conditional_entropy,meB,myB,meZ,myZ,feB,fyB,feZ,fyZ,mF,mM,fF,fM
+0,0.6931471805599453,0.6931471805599453,-0.0,vónwa,vónwa,vácwa,vácwa,kócwa,vinwa,vinwa,kócwa,déwa,déwa,maswa,maswa
+1,0.34657359027997264,0.6931471805599453,0.34657359027997264,vónwa,kócwa,vácwa,vácwa,kócwa,vinwa,vinwa,vónwa,maswa,maswa,déwa,déwa
+4,0.34657359027997264,0.6931471805599453,0.34657359027997264,vónwa,vácwa,kócwa,kócwa,vónwa,vinwa,vinwa,vácwa,maswa,maswa,déwa,déwa
+6,0.34657359027997264,0.6931471805599453,0.34657359027997264,vácwa,vinwa,kócwa,kócwa,vinwa,vónwa,vácwa,vónwa,maswa,maswa,déwa,déwa

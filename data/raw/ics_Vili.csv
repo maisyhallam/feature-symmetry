@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,mMB,mMZ,mMeZ,mMyZ,mMeB,mMyB
+0,NA,NA,NA,nkasi,nkasi,ngul,ngul,ngul,nkasi
+1,NA,NA,NA,nkasi,ngul,nkasi,nkasi,ngul,ngul
+2,NA,NA,NA,nkasi,nkasi,ngul,nkasi,ngul,ngul
+3,NA,NA,NA,ngul,nkasi,ngul,nkasi,nkasi,ngul
+4,NA,NA,NA,nkasi,nkasi,ngul,ngul,nkasi,ngul
+5,NA,NA,NA,ngul,nkasi,ngul,nkasi,ngul,nkasi
+6,NA,NA,NA,ngul,nkasi,ngul,ngul,nkasi,nkasi
+7,NA,NA,NA,nkasi,nkasi,ngul,ngul,nkasi,ngul
+8,NA,NA,NA,ngul,nkasi,ngul,nkasi,nkasi,ngul
+9,NA,NA,NA,nkasi,nkasi,ngul,ngul,ngul,nkasi

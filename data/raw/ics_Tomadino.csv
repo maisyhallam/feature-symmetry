@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,fyB,meZ,myZ,feZ,fyZ,mF,mM,fF,fM,mFeB,mFyB,mFeZ,mFyZ,mMeB,mMyB,mMeZ,mMyZ,fFeB,fFyB,fFeZ,fFyZ,fMeB,fMyB,fMeZ,fMyZ
+0,0.03149081771477463,0.5195798391305154,0.4880890214157408,kaka,kaka,hai,hai,kaka,hai,hai,aɸo,lakiˀama,lakiˀama,lakiˀama,aɸo,lakiˀama,aɸo,aɸo,lakiˀama,aɸo,ine,lakiˀama,uma,aɸo,aɸo,lakiˀama,uma,ine,lakiˀama,aɸo
+1,0.014032215111297486,1.0789922078775833,1.0649599927662858,hai,kaka,kaka,kaka,hai,hai,hai,lakiˀama,lakiˀama,aɸo,ine,aɸo,lakiˀama,aɸo,lakiˀama,uma,aɸo,lakiˀama,uma,lakiˀama,aɸo,lakiˀama,lakiˀama,ine,aɸo,aɸo,aɸo
+2,0.004143433819589926,0.5982695885852573,0.5941261547656673,hai,kaka,hai,kaka,hai,hai,kaka,lakiˀama,lakiˀama,lakiˀama,aɸo,lakiˀama,lakiˀama,aɸo,ine,aɸo,aɸo,ine,uma,aɸo,lakiˀama,lakiˀama,uma,aɸo,aɸo,lakiˀama,aɸo
+3,0.014032215111297597,0.9799711820833055,0.9659389669720079,kaka,hai,kaka,hai,hai,hai,kaka,lakiˀama,ine,aɸo,aɸo,lakiˀama,ine,aɸo,lakiˀama,lakiˀama,aɸo,aɸo,aɸo,uma,aɸo,lakiˀama,lakiˀama,aɸo,uma,lakiˀama,lakiˀama
+4,1.1102230246251565e-16,0.6931471805599453,0.6931471805599452,hai,kaka,kaka,hai,hai,hai,kaka,aɸo,lakiˀama,aɸo,lakiˀama,lakiˀama,aɸo,ine,lakiˀama,lakiˀama,uma,uma,lakiˀama,lakiˀama,aɸo,ine,lakiˀama,aɸo,aɸo,aɸo,aɸo
+5,0.03149081771477463,0.5195798391305154,0.4880890214157408,hai,hai,kaka,kaka,kaka,hai,hai,uma,aɸo,aɸo,aɸo,lakiˀama,ine,ine,lakiˀama,lakiˀama,lakiˀama,lakiˀama,uma,aɸo,aɸo,lakiˀama,lakiˀama,aɸo,aɸo,aɸo,lakiˀama
+6,0.04439097496740252,1.0346012329101812,0.9902102579427787,kaka,hai,hai,kaka,hai,hai,kaka,lakiˀama,aɸo,ine,lakiˀama,lakiˀama,lakiˀama,lakiˀama,ine,aɸo,aɸo,aɸo,aɸo,lakiˀama,aɸo,lakiˀama,uma,aɸo,uma,aɸo,lakiˀama
+7,0.014032215111297708,1.376055285260417,1.3620230701491194,hai,hai,kaka,hai,kaka,kaka,hai,aɸo,lakiˀama,uma,ine,lakiˀama,lakiˀama,aɸo,lakiˀama,aɸo,lakiˀama,uma,aɸo,lakiˀama,aɸo,aɸo,aɸo,lakiˀama,ine,aɸo,lakiˀama
+8,0.007016107555648521,1.034601232910181,1.0275851253545325,hai,hai,kaka,hai,kaka,kaka,hai,lakiˀama,ine,aɸo,lakiˀama,uma,aɸo,uma,aɸo,aɸo,lakiˀama,lakiˀama,lakiˀama,aɸo,ine,lakiˀama,aɸo,aɸo,lakiˀama,aɸo,lakiˀama
+9,0.004143433819589815,0.5982695885852573,0.5941261547656674,hai,hai,hai,hai,kaka,kaka,kaka,aɸo,aɸo,aɸo,lakiˀama,lakiˀama,aɸo,lakiˀama,lakiˀama,aɸo,ine,lakiˀama,lakiˀama,aɸo,uma,lakiˀama,ine,lakiˀama,aɸo,aɸo,uma

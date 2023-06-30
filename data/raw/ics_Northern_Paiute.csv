@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,myZ,feB,fyB,fyZ,mF,mM,mFZ,mMB,mFeZ,mFyZ,mMeB,mMyB,fF,fM,fFZ,fMB,fFeZ,fFyZ,fMeB,fMyB
+0,0.18490219806942565,0.6890092384766586,0.504107040407233,pïni'i,wannka'a,pabi'i,pïni'i,wannka'a,aaccii,aaccii,aacci,aacci,pahwa,pahwa,naa'a,pia,pahwa,pahwa,aacci,pahwa,naa'a,aaccii,pia,pahwa
+1,0.3109289581712338,1.0670895187820832,0.7561605606108495,pabi'i,pïni'i,wannka'a,wannka'a,pïni'i,pahwa,aacci,pia,pia,aaccii,pahwa,aaccii,pahwa,aaccii,aacci,aacci,pahwa,pahwa,naa'a,pahwa,naa'a
+2,0.33389909809993434,0.5859526183035508,0.2520535202036165,pïni'i,pïni'i,wannka'a,wannka'a,pabi'i,aacci,pahwa,aacci,aaccii,aaccii,pia,naa'a,naa'a,pahwa,pahwa,pahwa,pahwa,aacci,aaccii,pia,pahwa
+3,0.23876307196092572,0.9949236325717752,0.7561605606108495,wannka'a,pabi'i,wannka'a,pïni'i,pïni'i,pahwa,naa'a,aacci,pahwa,aacci,pia,pahwa,pahwa,pahwa,aaccii,aaccii,aacci,pia,pahwa,aaccii,naa'a
+4,0.4908165921645421,1.3730039128771998,0.8821873207126577,pabi'i,wannka'a,pïni'i,wannka'a,pïni'i,pahwa,aaccii,aaccii,pahwa,pahwa,pahwa,aacci,pahwa,pia,aacci,naa'a,pia,pahwa,aaccii,naa'a,aacci
+5,0.6890092384766585,1.0670895187820832,0.37808028030542473,pïni'i,pïni'i,wannka'a,wannka'a,pabi'i,aaccii,aaccii,pahwa,pahwa,aacci,aacci,pahwa,pia,naa'a,pahwa,pia,aaccii,aacci,pahwa,naa'a,pahwa
+6,0.23876307196092572,0.9949236325717752,0.7561605606108495,pïni'i,wannka'a,pïni'i,pabi'i,wannka'a,naa'a,aaccii,aacci,pia,aaccii,aacci,pahwa,aacci,pahwa,pahwa,naa'a,pia,aaccii,pahwa,pahwa,pahwa
+7,0.065168298789613,0.47413931305783735,0.40897101426822435,pïni'i,wannka'a,pïni'i,pabi'i,wannka'a,pahwa,aacci,pahwa,pahwa,pia,aacci,aacci,pia,pahwa,pahwa,naa'a,aaccii,aaccii,aaccii,naa'a,pahwa
+8,0.23876307196092572,1.3730039128771998,1.134240840916274,pïni'i,wannka'a,wannka'a,pïni'i,pabi'i,pahwa,aaccii,aaccii,pahwa,aacci,aacci,naa'a,pahwa,pia,aacci,pahwa,naa'a,pahwa,aaccii,pahwa,pia
+9,0.23876307196092572,0.9949236325717752,0.7561605606108495,pïni'i,pabi'i,wannka'a,pïni'i,wannka'a,pahwa,aaccii,pia,aaccii,aacci,aacci,pahwa,aaccii,naa'a,pahwa,pahwa,naa'a,pahwa,aacci,pia,pahwa

@@ -1,0 +1,9 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,fyB,meZ,myZ,feZ,fyZ,mF,fF,mFeB,mFyB,mMeB,mMyB,mMeZ,fFeB,fFyB,fMeB,fMyB,fMeZ
+0,0.4848660531119159,0.6829081047004717,0.19804205158855578,"àŋa, numu","àŋa, nuk","àŋa, numu",ái,ái,"àŋa, nuk",àcu,àu,"pàla, popa",pàpche,hà̤mce,àu,"pàla, popa",hà̤mce,àjaŋ,àjaŋ,àjaŋ,pàpche,àjaŋ
+3,0.28682400152336013,0.6829081047004717,0.39608410317711157,àcu,"àŋa, nuk","àŋa, numu","àŋa, nuk",ái,ái,"àŋa, numu",àjaŋ,hà̤mce,àjaŋ,hà̤mce,pàpche,àjaŋ,àjaŋ,"pàla, popa",àu,pàpche,àu,"pàla, popa"
+4,0.28682400152336013,0.6829081047004717,0.39608410317711157,àcu,ái,"àŋa, nuk","àŋa, nuk","àŋa, numu","àŋa, numu",ái,àu,àjaŋ,àjaŋ,pàpche,hà̤mce,"pàla, popa",àjaŋ,"pàla, popa",àu,hà̤mce,àjaŋ,pàpche
+5,0.08878194993480437,0.6829081047004717,0.5941261547656673,ái,àcu,ái,"àŋa, nuk","àŋa, numu","àŋa, numu","àŋa, nuk",pàpche,àu,"pàla, popa",àjaŋ,àjaŋ,àjaŋ,pàpche,àjaŋ,"pàla, popa",hà̤mce,àu,hà̤mce
+6,0.08878194993480437,0.6829081047004717,0.5941261547656673,"àŋa, numu",àcu,"àŋa, numu",ái,"àŋa, nuk","àŋa, nuk",ái,àu,àjaŋ,hà̤mce,"pàla, popa",pàpche,hà̤mce,àu,àjaŋ,pàpche,àjaŋ,"pàla, popa",àjaŋ
+7,0.28682400152336013,0.6829081047004717,0.39608410317711157,ái,"àŋa, numu","àŋa, nuk",àcu,"àŋa, numu",ái,"àŋa, nuk",àu,àjaŋ,pàpche,hà̤mce,"pàla, popa",àjaŋ,àu,"pàla, popa",pàpche,àjaŋ,hà̤mce,àjaŋ
+8,0.28682400152336013,0.6829081047004717,0.39608410317711157,"àŋa, numu","àŋa, nuk",ái,ái,àcu,"àŋa, numu","àŋa, nuk","pàla, popa",àjaŋ,pàpche,àu,àjaŋ,pàpche,hà̤mce,àjaŋ,hà̤mce,àu,àjaŋ,"pàla, popa"
+9,0.28682400152336013,0.6829081047004717,0.39608410317711157,"àŋa, numu",ái,ái,àcu,"àŋa, nuk","àŋa, numu","àŋa, nuk","pàla, popa",àjaŋ,àjaŋ,hà̤mce,àu,pàpche,pàpche,hà̤mce,"pàla, popa",àjaŋ,àjaŋ,àu

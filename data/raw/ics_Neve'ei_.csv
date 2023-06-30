@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,mFZS,fFZS,mFeZS,mFyZS,mFZeS,mFZyS,fFeZS,fFyZS,fFZeS,fFZyS,mF,mM,fF,fM,mFeB,mFyB,mMeZ,mMyZ,fFeB,fFyB,fMeZ,fMyZ
+0,NA,NA,NA,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,nang,mamwilam,nang nganga',nang nganga',mamwilam,mamwinga',mamwinga',nang tokhtokh,nang tokhtokh,mamwe,nang,mamwe
+1,NA,NA,NA,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,nang tokhtokh,nang tokhtokh,nang,mamwinga',mamwilam,nang nganga',nang,mamwe,mamwe,nang nganga',mamwilam,mamwinga'
+2,NA,NA,NA,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,nang nganga',mamwilam,mamwe,nang,nang,nang tokhtokh,mamwe,mamwinga',nang nganga',mamwilam,mamwinga',nang tokhtokh
+3,NA,NA,NA,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,nang tokhtokh,nang nganga',mamwilam,mamwe,mamwilam,nang,nang tokhtokh,nang,mamwinga',nang nganga',mamwinga'
+4,NA,NA,NA,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwinga',nang,nang,nang tokhtokh,mamwilam,nang tokhtokh,mamwe,nang nganga',mamwinga',mamwe,nang nganga',mamwilam
+5,NA,NA,NA,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,nang,nang nganga',mamwinga',mamwilam,nang tokhtokh,nang tokhtokh,mamwilam,mamwe,nang,mamwinga',nang nganga',mamwe
+6,NA,NA,NA,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwinga',mamwilam,mamwe,nang nganga',mamwe,nang tokhtokh,nang nganga',nang tokhtokh,nang,mamwinga',mamwilam,nang
+7,NA,NA,NA,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,nang,nang,nang tokhtokh,mamwe,nang nganga',mamwilam,mamwilam,nang nganga',mamwinga',mamwe,mamwinga',nang tokhtokh
+8,NA,NA,NA,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,nang nganga',mamwe,mamwinga',nang tokhtokh,mamwe,nang,mamwilam,nang,mamwilam,nang tokhtokh,mamwinga',nang nganga'
+9,NA,NA,NA,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,mamwe,nang tokhtokh,mamwilam,mamwe,mamwinga',nang,nang tokhtokh,nang,mamwilam,nang nganga',mamwe,mamwinga',nang nganga'

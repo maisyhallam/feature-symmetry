@@ -1,0 +1,3 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,fyB,mF,mM,fF,fM,mMeB,mMyB,mMeZ,mMyZ,fMeB,fMyB,fMeZ,fMyZ
+2,2.220446049250313e-16,1.0114042647073518,1.0114042647073516,kai,kai,kai,nka,manai,apa,manai,manai,nka,nka,manai,nka,nka,apa,nka
+6,-2.220446049250313e-16,1.0114042647073516,1.0114042647073518,kai,kai,kai,apa,nka,nka,manai,manai,nka,manai,apa,nka,nka,nka,manai

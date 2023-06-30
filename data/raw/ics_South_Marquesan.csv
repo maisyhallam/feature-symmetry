@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,mB,mZ,myB,meB,meZ,myZ,fB,fZ,fyB,feB,feZ,fyZ,mF,mM,fF,fM
+0,0.04633335041305564,0.6806294878916634,0.6342961374786078,tuname,teina,e teina,teina,tuname,tuname,teina,teina,teina,e teina,teina,tuname,motua,motua,kui,kui
+1,0.1254083468463244,0.6806294878916634,0.555221141045339,e teina,e teina,tuname,teina,teina,tuname,teina,tuname,tuname,teina,teina,teina,motua,motua,kui,kui
+2,0.003913137647917009,0.6917614988524178,0.6878483612045008,teina,tuname,e teina,teina,tuname,tuname,tuname,teina,teina,e teina,teina,teina,motua,kui,kui,motua
+3,0.0015443412221355368,0.6917614988524178,0.6902171576302822,tuname,teina,tuname,teina,teina,teina,tuname,teina,e teina,e teina,tuname,teina,motua,kui,motua,kui
+4,0.007556372860651361,0.6917614988524178,0.6842051259917664,tuname,e teina,teina,teina,teina,teina,teina,tuname,teina,e teina,tuname,tuname,motua,kui,motua,kui
+5,0.1371803206609864,0.6806294878916634,0.543449167230677,teina,teina,tuname,e teina,tuname,e teina,teina,teina,teina,teina,tuname,tuname,kui,kui,motua,motua
+6,0.1371803206609864,0.6806294878916634,0.543449167230677,e teina,tuname,teina,e teina,teina,tuname,teina,teina,teina,tuname,teina,tuname,motua,motua,kui,kui
+7,0.13580368023466205,0.6806294878916634,0.5448258076570014,teina,teina,e teina,teina,tuname,e teina,tuname,tuname,teina,teina,teina,tuname,motua,motua,kui,kui
+8,0.0015443412221355368,0.6917614988524178,0.6902171576302822,teina,teina,teina,tuname,e teina,teina,teina,tuname,e teina,tuname,tuname,teina,motua,kui,kui,motua
+9,0.0023866093985943637,0.6917614988524178,0.6893748894538234,tuname,tuname,e teina,teina,teina,teina,teina,e teina,tuname,teina,tuname,teina,kui,motua,kui,motua

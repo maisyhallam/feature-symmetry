@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,meZ,myZ,feB,fyB,feZ,fyZ,mF,mM,mFeB,mFeZ,mFyZ,mMeZ,mMyB,fF,fM,fFeB,fFeZ,fFyZ,fMeZ,fMyB
+0,0.4848660531119162,1.376055285260417,0.8911892321485009,ko'cí,piní,ko'cí,piní,pa'čí,poní,poní,papói,ta'téi,ma'má,ma'má,kumú,nehsá,ye'yé,soló,ye'yé,kumú,nehsá,soló,ta'téi,papói
+1,0.24243302655595822,1.0346012329101812,0.792168206354223,poní,ko'cí,ko'cí,pa'čí,piní,piní,poní,soló,ma'má,ta'téi,kumú,ta'téi,nehsá,ye'yé,papói,soló,papói,ye'yé,kumú,nehsá,ma'má
+2,0.0887819499348046,1.3760552852604169,1.2872733353256123,poní,piní,ko'cí,poní,piní,ko'cí,pa'čí,ma'má,ta'téi,kumú,ma'má,soló,ye'yé,papói,nehsá,ye'yé,papói,ta'téi,soló,kumú,nehsá
+3,0.242433026555958,1.034601232910181,0.792168206354223,ko'cí,ko'cí,poní,pa'čí,poní,piní,piní,ta'téi,ma'má,papói,nehsá,ye'yé,soló,ye'yé,ta'téi,kumú,ma'má,nehsá,papói,kumú,soló
+4,0.08878194993480482,1.376055285260417,1.2872733353256123,ko'cí,poní,piní,pa'čí,piní,poní,ko'cí,ye'yé,ma'má,ta'téi,ye'yé,ta'téi,kumú,soló,papói,kumú,soló,papói,nehsá,ma'má,nehsá
+5,0.04439097496740252,1.0346012329101812,0.9902102579427787,poní,piní,ko'cí,piní,ko'cí,pa'čí,poní,papói,ye'yé,ta'téi,soló,ma'má,ma'má,kumú,papói,soló,ta'téi,nehsá,ye'yé,kumú,nehsá
+6,0.4848660531119162,1.376055285260417,0.8911892321485009,poní,poní,ko'cí,piní,pa'čí,ko'cí,piní,kumú,ma'má,ma'má,soló,nehsá,kumú,soló,ye'yé,ta'téi,ye'yé,papói,papói,nehsá,ta'téi
+7,0.4848660531119162,1.376055285260417,0.8911892321485009,ko'cí,poní,poní,ko'cí,piní,pa'čí,piní,ma'má,soló,ye'yé,ma'má,kumú,nehsá,ta'téi,ye'yé,nehsá,ta'téi,papói,kumú,soló,papói
+8,0.08878194993480482,1.376055285260417,1.2872733353256123,ko'cí,poní,piní,pa'čí,poní,ko'cí,piní,soló,papói,soló,papói,kumú,ye'yé,nehsá,ma'má,ta'téi,kumú,ma'má,nehsá,ye'yé,ta'téi
+9,0.2868240015233602,0.9799711820833054,0.6931471805599452,pa'čí,poní,piní,piní,ko'cí,ko'cí,poní,kumú,ye'yé,kumú,ma'má,ta'téi,ma'má,ta'téi,nehsá,nehsá,soló,papói,papói,ye'yé,soló

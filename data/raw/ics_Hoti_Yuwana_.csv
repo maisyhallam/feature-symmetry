@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,mB,mZ,myB,myZ,meB,meZ,fB,fZ,fyB,fyZ,feB,feZ,mF,mM,mFB,mFeB,mFyB,fF,fM,fFB,fFeB,fFyB
+0,0.003913137647917009,0.6917614988524178,0.6878483612045008,abalou,abãʰlõ,abalou,hãli hayu,abãʰlõ,hãyẽ,abãʰlõ,hãyẽ,abalou,hãli hayu,abãʰlõ,abalou,ʰlai,ai,ʰlai,ʰlai,ʰlai,ai,ʰlai,ʰlai,abã,abã
+1,0.00755637286065125,0.6917614988524178,0.6842051259917665,hãyẽ,hãyẽ,abalou,abãʰlõ,abalou,abãʰlõ,abalou,abãʰlõ,abalou,hãli hayu,hãli hayu,abãʰlõ,ʰlai,abã,ai,ʰlai,ʰlai,abã,ʰlai,ʰlai,ai,ʰlai
+2,0.003913137647916898,0.6917614988524178,0.6878483612045009,hãyẽ,abalou,abãʰlõ,abãʰlõ,abalou,hãli hayu,abãʰlõ,abalou,hãyẽ,abalou,hãli hayu,abãʰlõ,ʰlai,ai,ʰlai,abã,ʰlai,ai,ʰlai,ʰlai,ʰlai,abã
+3,0.07687599875949014,0.5146531654289292,0.4377771666694391,abalou,hãli hayu,hãyẽ,abãʰlõ,hãli hayu,abalou,abãʰlõ,hãyẽ,abãʰlõ,abãʰlõ,abalou,abalou,ʰlai,ʰlai,ʰlai,ʰlai,ai,abã,ʰlai,ʰlai,ai,abã
+4,0.0007599774660920211,0.5763341277567499,0.5755741502906578,hãli hayu,abalou,abãʰlõ,abalou,abalou,abãʰlõ,hãyẽ,hãyẽ,abalou,abãʰlõ,hãli hayu,abãʰlõ,abã,ʰlai,ai,ʰlai,ai,ʰlai,ʰlai,ʰlai,ʰlai,abã
+5,0.044066755626645526,0.5763341277567499,0.5322673721301043,hãli hayu,abalou,abãʰlõ,abalou,abãʰlõ,abalou,hãyẽ,abalou,abãʰlõ,hãli hayu,hãyẽ,abãʰlõ,ai,ʰlai,ʰlai,ʰlai,ai,ʰlai,ʰlai,abã,ʰlai,abã
+6,0.0865312656107402,1.017164350924834,0.9306330853140938,abãʰlõ,hãli hayu,abãʰlõ,hãli hayu,abalou,abalou,abalou,hãyẽ,hãyẽ,abãʰlõ,abalou,abãʰlõ,ʰlai,abã,ʰlai,ʰlai,ʰlai,ai,abã,ʰlai,ai,ʰlai
+7,0.11138829353777369,0.6236548495681085,0.5122665560303348,abalou,abãʰlõ,hãyẽ,abalou,abalou,abãʰlõ,abalou,hãyẽ,abãʰlõ,hãli hayu,abãʰlõ,hãli hayu,ʰlai,abã,ʰlai,abã,ai,ʰlai,ʰlai,ʰlai,ai,ʰlai
+8,0.042382219273727983,1.045978165699395,1.003595946425667,hãli hayu,hãyẽ,abãʰlõ,abalou,abãʰlõ,abalou,abalou,hãli hayu,abãʰlõ,abãʰlõ,hãyẽ,abalou,ʰlai,abã,abã,ai,ʰlai,ai,ʰlai,ʰlai,ʰlai,ʰlai
+9,0.10890087813629123,1.017164350924834,0.9082634727885428,hãyẽ,abãʰlõ,abãʰlõ,abãʰlõ,hãli hayu,abalou,hãli hayu,hãyẽ,abalou,abalou,abalou,abãʰlõ,abã,ʰlai,abã,ʰlai,ʰlai,ai,ʰlai,ai,ʰlai,ʰlai

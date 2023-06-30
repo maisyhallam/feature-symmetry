@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,mZ,meB,myB,meZ,myZ,fB,fZ,feB,fyB,feZ,fyZ,mF,mM,fF,fM
+0,0.00419110692502267,0.6914160776171183,0.6872249706920956,kaka,saba,saba,kaka,malakaka-ai,kaka,saba,saba,malakaka-ai,malakaka-ai,kaka,ama,ina,ina,ama
+1,0.09493477542719508,0.6914160776171183,0.5964813021899232,kaka,malakaka-ai,saba,saba,malakaka-ai,saba,kaka,kaka,kaka,malakaka-ai,saba,ina,ina,ama,ama
+2,0.00419110692502267,0.6914160776171183,0.6872249706920956,malakaka-ai,saba,malakaka-ai,saba,kaka,saba,kaka,saba,malakaka-ai,kaka,kaka,ina,ama,ama,ina
+3,0.0024849871169562165,0.6914160776171183,0.6889310905001621,saba,saba,saba,malakaka-ai,saba,malakaka-ai,kaka,kaka,kaka,kaka,malakaka-ai,ina,ama,ina,ama
+4,0.0024849871169562165,0.6914160776171183,0.6889310905001621,kaka,malakaka-ai,kaka,saba,kaka,saba,saba,kaka,saba,malakaka-ai,malakaka-ai,ama,ina,ina,ama
+5,0.00419110692502267,0.6914160776171183,0.6872249706920956,saba,saba,kaka,malakaka-ai,malakaka-ai,malakaka-ai,saba,kaka,kaka,kaka,saba,ama,ina,ama,ina
+6,0.04416735087688084,0.6914160776171183,0.6472487267402375,kaka,kaka,saba,malakaka-ai,saba,kaka,saba,kaka,saba,malakaka-ai,malakaka-ai,ina,ina,ama,ama
+7,0.0024849871169563276,0.6914160776171183,0.688931090500162,kaka,saba,kaka,saba,saba,malakaka-ai,malakaka-ai,saba,kaka,kaka,malakaka-ai,ama,ina,ama,ina
+8,0.00419110692502267,0.6914160776171183,0.6872249706920956,saba,malakaka-ai,kaka,malakaka-ai,kaka,saba,kaka,saba,saba,kaka,malakaka-ai,ama,ina,ina,ama
+9,0.0024849871169563276,0.6914160776171183,0.688931090500162,kaka,kaka,saba,malakaka-ai,kaka,saba,malakaka-ai,malakaka-ai,kaka,saba,saba,ama,ina,ama,ina

@@ -1,0 +1,9 @@
+simulation_number,mutual_information,entropy,conditional_entropy,meB,myB,mF,mM,mFB,mFZ,mMB,mMZ,mFeB,mFyB,mFeZ,mFyZ,mMeZ,mMyZ,mMyB,mMeB
+0,0.11849392256130031,0.6730116670092565,0.5545177444479562,ndugu,ndugu,mumechwe,mmétje,ndugu ya baba,måma,mmétje,ndugu ya baba,ndugu ya baba,ndugu ya baba,mumechwe,baba,ndugu ya baba,mumechwe,ndugu ya baba,mmétje
+1,0.11849392256130031,0.6730116670092565,0.5545177444479562,ndugu,ndugu,ndugu ya baba,mumechwe,ndugu ya baba,mumechwe,ndugu ya baba,mmétje,ndugu ya baba,ndugu ya baba,mmétje,baba,måma,mumechwe,mmétje,ndugu ya baba
+2,0.11849392256130031,0.6730116670092565,0.5545177444479562,ndugu,ndugu,ndugu ya baba,mumechwe,mumechwe,baba,ndugu ya baba,ndugu ya baba,mumechwe,mmétje,ndugu ya baba,mmétje,ndugu ya baba,ndugu ya baba,mmétje,måma
+3,0.11849392256130031,0.6730116670092565,0.5545177444479562,ndugu,ndugu,ndugu ya baba,mumechwe,ndugu ya baba,mmétje,ndugu ya baba,mumechwe,måma,ndugu ya baba,mmétje,baba,mumechwe,ndugu ya baba,ndugu ya baba,mmétje
+4,0.11849392256130031,0.6730116670092565,0.5545177444479562,ndugu,ndugu,baba,mmétje,ndugu ya baba,mmétje,ndugu ya baba,mumechwe,måma,ndugu ya baba,mmétje,ndugu ya baba,ndugu ya baba,ndugu ya baba,mumechwe,mumechwe
+5,0.11849392256130031,0.6730116670092565,0.5545177444479562,ndugu,ndugu,ndugu ya baba,mumechwe,ndugu ya baba,mumechwe,mumechwe,mmétje,mmétje,ndugu ya baba,ndugu ya baba,ndugu ya baba,mmétje,ndugu ya baba,måma,baba
+7,0.11849392256130031,0.6730116670092565,0.5545177444479562,ndugu,ndugu,ndugu ya baba,mmétje,måma,ndugu ya baba,mumechwe,ndugu ya baba,mmétje,ndugu ya baba,baba,ndugu ya baba,mumechwe,mmétje,mumechwe,ndugu ya baba
+8,0.11849392256130031,0.6730116670092565,0.5545177444479562,ndugu,ndugu,ndugu ya baba,mmétje,mmétje,mumechwe,måma,ndugu ya baba,ndugu ya baba,ndugu ya baba,ndugu ya baba,mmétje,baba,ndugu ya baba,mumechwe,mumechwe

@@ -1,0 +1,3 @@
+simulation_number,mutual_information,entropy,conditional_entropy,meB,meZ,feB,feZ,mF,mM,fF,fM
+0,0.6931471805599453,0.6931471805599453,-0.0,waboo,waboo,ava-ru,ava-ru,yanga,yanga,yabbo,yabbo
+9,0.6931471805599453,0.6931471805599453,-0.0,ava-ru,ava-ru,waboo,waboo,yabbo,yabbo,yanga,yanga

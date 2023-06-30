@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,meZ,feB,feZ,meB,mB,mZ,myB,myZ,fB,fZ,fyB,fyZ,mF,mM,fF,fM,mMB,mMeB,mMyB,fMB,fMeB,fMyB
+0,0.04110778048677499,1.0171643509248343,0.9760565704380593,yiba,yiba,yiba,gurdu,kooralla,gurdu,yipa,yiba,gurdu,gurdu,yipa,kooralla,nanga,mama,thami,mama,thami,thami,thami,thami,nanga,thami
+1,0.06100849290336441,0.5763341277567499,0.5153256348533855,yiba,gurdu,yipa,yiba,gurdu,kooralla,yiba,gurdu,yipa,kooralla,yiba,gurdu,nanga,thami,thami,thami,thami,mama,thami,thami,nanga,mama
+2,0.0023866093985944747,0.6917614988524178,0.6893748894538233,gurdu,yiba,gurdu,yiba,yiba,gurdu,gurdu,yiba,yipa,kooralla,kooralla,yipa,mama,thami,thami,mama,thami,thami,thami,nanga,nanga,thami
+3,0.05297985798461674,0.5146531654289292,0.4616733074443125,kooralla,gurdu,yiba,yipa,yiba,yipa,gurdu,yiba,yiba,gurdu,kooralla,gurdu,thami,thami,thami,mama,thami,thami,nanga,nanga,mama,thami
+4,0.05382212616107562,1.017164350924834,0.9633422247637584,gurdu,yiba,yiba,gurdu,kooralla,gurdu,yipa,yiba,yipa,yiba,gurdu,kooralla,mama,thami,thami,nanga,thami,thami,nanga,thami,mama,thami
+5,0.13654035780707874,0.5146531654289292,0.3781128076218505,kooralla,yiba,gurdu,yipa,yipa,gurdu,yiba,kooralla,gurdu,yiba,gurdu,yiba,thami,thami,thami,mama,thami,mama,nanga,thami,thami,nanga
+6,0.03356922059893652,0.5146531654289292,0.4810839448299927,yiba,yiba,yiba,yipa,kooralla,yiba,gurdu,gurdu,gurdu,yipa,kooralla,gurdu,thami,thami,mama,thami,nanga,mama,thami,thami,nanga,thami
+7,0.2896524467725139,1.0795295733255184,0.7898771265530045,gurdu,yipa,yiba,gurdu,kooralla,yiba,yiba,gurdu,yipa,gurdu,yiba,kooralla,mama,nanga,thami,thami,thami,thami,thami,mama,nanga,thami
+8,0.14161001758595604,1.017164350924834,0.875554333338878,yiba,yipa,yipa,gurdu,gurdu,yiba,gurdu,kooralla,yiba,yiba,gurdu,kooralla,nanga,thami,mama,thami,thami,thami,nanga,thami,thami,mama
+9,0.08500473736141773,0.5146531654289292,0.4296484280675115,yipa,gurdu,yiba,yiba,gurdu,yiba,kooralla,yiba,yipa,kooralla,gurdu,gurdu,thami,thami,mama,thami,thami,nanga,mama,thami,thami,nanga

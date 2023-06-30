@@ -1,0 +1,10 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,fyB,meZ,myZ,feZ,fyZ,mF,mM,fF,fM,mFeB,mFyB,mFeZ,mFyZ,mMeB,mMyB,mMeZ,mMyZ,fFeB,fFyB,fFeZ,fFyZ,fMeB,fMyB,fMeZ,fMyZ
+0,0.004143433819589815,0.5982695885852573,0.5941261547656674,hai,kaka,hai,kaka,hai,hai,kaka,naina,naina,maama,naina,maama,naina,ama,ina,maama,naina,maama,ina,ama,maama,maama,maama,maama,naina,naina,naina
+1,1.1102230246251565e-16,0.6931471805599453,0.6931471805599452,hai,kaka,hai,hai,hai,kaka,kaka,maama,naina,maama,naina,ina,maama,naina,maama,naina,maama,maama,maama,ama,naina,ina,maama,naina,ama,naina,naina
+2,1.1102230246251565e-16,0.6931471805599453,0.6931471805599452,hai,hai,hai,kaka,kaka,kaka,hai,naina,maama,naina,maama,maama,naina,naina,ama,maama,naina,ama,maama,naina,maama,naina,ina,naina,ina,maama,maama
+3,0.007016107555648965,1.0346012329101812,1.0275851253545323,hai,kaka,kaka,kaka,hai,hai,hai,naina,maama,maama,ina,naina,maama,naina,ama,ina,maama,naina,maama,ama,maama,naina,naina,maama,maama,naina,naina
+5,0.03149081771477463,0.5195798391305154,0.4880890214157408,hai,hai,hai,kaka,kaka,hai,kaka,maama,naina,naina,naina,maama,ina,ina,ama,maama,naina,naina,maama,maama,maama,naina,ama,naina,maama,naina,maama
+6,0.014032215111297486,0.6829081047004717,0.6688758895891742,hai,kaka,kaka,hai,kaka,hai,hai,naina,naina,maama,maama,naina,ama,maama,naina,ama,maama,maama,maama,naina,ina,maama,ina,maama,naina,naina,naina
+7,0.014032215111297597,0.9799711820833055,0.9659389669720079,hai,kaka,hai,kaka,hai,kaka,hai,maama,ina,naina,naina,maama,maama,naina,naina,ama,maama,ina,maama,naina,ama,maama,maama,maama,naina,naina,naina
+8,0.007016107555648965,1.0346012329101812,1.0275851253545323,kaka,hai,kaka,hai,hai,kaka,hai,naina,maama,ama,maama,maama,maama,naina,ama,ina,naina,naina,naina,maama,maama,maama,ina,naina,maama,naina,naina
+9,0.027135791552279853,0.5982695885852573,0.5711337970329774,kaka,hai,hai,hai,kaka,hai,kaka,maama,maama,maama,ina,naina,naina,maama,ama,naina,maama,maama,maama,naina,naina,maama,naina,ina,naina,naina,ama

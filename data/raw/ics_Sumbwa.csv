@@ -1,0 +1,10 @@
+simulation_number,mutual_information,entropy,conditional_entropy,mZ,myB,meZ,myZ,fB,fZ,fyB,feZ,fyZ,mB,meB,feB,mF,mM,mFZ,mFeZ,mFyZ,fF,fM,fFZ,fFeZ,fFyZ
+0,0.07132558967123581,1.0296530140645737,0.9583274243933378,þådúgú,kålùùmbù,þådúgú,kålùùmbù,kålùùmbù,kålùùmbù,kålùùmbù,þådúgú,kålùùmbù,múkúlú,þådúgú,múkúlú,mååyù,sèèngi,mååyù,sèèngi,sèèngi,þååþå,sèèngi,sèèngi,sèèngi,þååþå
+1,0.0592469612806501,1.0296530140645737,0.9704060527839236,múkúlú,kålùùmbù,þådúgú,þådúgú,kålùùmbù,kålùùmbù,kålùùmbù,kålùùmbù,þådúgú,kålùùmbù,þådúgú,múkúlú,mååyù,sèèngi,sèèngi,sèèngi,þååþå,þååþå,mååyù,sèèngi,sèèngi,sèèngi
+3,0.1263113227321524,1.0888999753452238,0.9625886526130714,kålùùmbù,múkúlú,kålùùmbù,þådúgú,kålùùmbù,múkúlú,kålùùmbù,þådúgú,kålùùmbù,kålùùmbù,þådúgú,þådúgú,mååyù,þååþå,sèèngi,sèèngi,þååþå,sèèngi,sèèngi,mååyù,sèèngi,sèèngi
+4,0.10005381704490401,0.6108643020548935,0.5108104850099895,múkúlú,múkúlú,þådúgú,þådúgú,kålùùmbù,kålùùmbù,kålùùmbù,þådúgú,kålùùmbù,þådúgú,kålùùmbù,kålùùmbù,mååyù,sèèngi,sèèngi,þååþå,mååyù,sèèngi,sèèngi,sèèngi,þååþå,sèèngi
+5,0.11592810237585949,1.0296530140645737,0.9137249116887142,múkúlú,þådúgú,múkúlú,kålùùmbù,kålùùmbù,þådúgú,kålùùmbù,kålùùmbù,þådúgú,kålùùmbù,þådúgú,kålùùmbù,þååþå,mååyù,sèèngi,sèèngi,sèèngi,þååþå,sèèngi,sèèngi,mååyù,sèèngi
+6,0.23531727820381643,1.0296530140645737,0.7943357358607572,kålùùmbù,þådúgú,þådúgú,kålùùmbù,þådúgú,kålùùmbù,múkúlú,kålùùmbù,múkúlú,kålùùmbù,þådúgú,kålùùmbù,þååþå,sèèngi,þååþå,sèèngi,mååyù,sèèngi,mååyù,sèèngi,sèèngi,sèèngi
+7,0.03693322717380487,0.6931471805599453,0.6562139533861404,kålùùmbù,kålùùmbù,múkúlú,kålùùmbù,þådúgú,þådúgú,þådúgú,þådúgú,múkúlú,kålùùmbù,kålùùmbù,kålùùmbù,sèèngi,mååyù,þååþå,sèèngi,sèèngi,mååyù,sèèngi,þååþå,sèèngi,sèèngi
+8,0.09668784209182735,1.0296530140645737,0.9329651719727463,kålùùmbù,kålùùmbù,múkúlú,þådúgú,múkúlú,kålùùmbù,kålùùmbù,þådúgú,kålùùmbù,kålùùmbù,þådúgú,þådúgú,þååþå,sèèngi,sèèngi,sèèngi,þååþå,sèèngi,mååyù,mååyù,sèèngi,sèèngi
+9,0.04315231086776705,0.6931471805599453,0.6499948696921782,þådúgú,þådúgú,kålùùmbù,kålùùmbù,þådúgú,þådúgú,kålùùmbù,múkúlú,múkúlú,kålùùmbù,kålùùmbù,kålùùmbù,þååþå,sèèngi,mååyù,sèèngi,sèèngi,sèèngi,þååþå,mååyù,sèèngi,sèèngi

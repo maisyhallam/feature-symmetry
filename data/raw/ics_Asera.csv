@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,fyB,meZ,myZ,feZ,fyZ,mF,mM,fF,fM,mFeB,mFyB,mFeZ,mFyZ,mMeB,mMyB,mMeZ,mMyZ,fFeB,fFyB,fFeZ,fFyZ,fMeB,fMyB,fMeZ,fMyZ
+0,0.36157373634686696,1.0789922078775833,0.7174184715307164,hai,hai,kaka,hai,hai,kaka,kaka,naina,naina,maama,ama,maama,naina,maama,naina,naina,maama,ina,naina,naina,maama,maama,ina,maama,naina,ama,maama
+1,0.007016107555648743,1.034601232910181,1.0275851253545323,kaka,hai,hai,hai,hai,kaka,kaka,ina,maama,naina,maama,ina,naina,naina,naina,naina,maama,naina,naina,naina,maama,maama,maama,maama,maama,ama,ama
+2,0.0443909749674023,1.0346012329101812,0.990210257942779,kaka,hai,hai,kaka,hai,hai,kaka,maama,naina,naina,ama,maama,ama,maama,maama,naina,ina,maama,naina,naina,ina,naina,maama,naina,maama,naina,maama
+3,0.08878194993480437,0.9799711820833055,0.8911892321485011,hai,hai,hai,kaka,kaka,kaka,hai,ama,maama,naina,naina,maama,maama,naina,naina,maama,naina,maama,maama,naina,naina,maama,ama,ina,maama,naina,ina
+4,1.1102230246251565e-16,0.6931471805599453,0.6931471805599452,kaka,hai,kaka,hai,hai,hai,kaka,maama,naina,naina,maama,naina,ama,maama,maama,naina,maama,naina,ina,naina,naina,ama,maama,naina,maama,maama,ina
+5,0.007016107555648965,1.0346012329101812,1.0275851253545323,kaka,hai,hai,hai,hai,kaka,kaka,maama,naina,ama,maama,ina,maama,maama,maama,naina,maama,naina,naina,naina,maama,ama,naina,naina,ina,naina,maama
+6,0.007016107555648743,1.034601232910181,1.0275851253545323,hai,kaka,hai,hai,kaka,kaka,hai,ina,maama,naina,maama,naina,naina,maama,naina,naina,maama,naina,ama,maama,ina,ama,maama,naina,maama,maama,naina
+7,0.004143433819589815,0.5982695885852573,0.5941261547656674,hai,hai,kaka,hai,kaka,kaka,hai,naina,naina,ama,naina,maama,naina,ama,maama,maama,maama,maama,ina,maama,naina,naina,maama,ina,naina,maama,naina
+8,0.014032215111297708,1.376055285260417,1.3620230701491194,hai,kaka,hai,kaka,hai,hai,kaka,maama,ama,naina,ina,maama,naina,maama,naina,ina,maama,ama,naina,naina,maama,naina,naina,naina,maama,maama,maama
+9,1.1102230246251565e-16,0.6931471805599453,0.6931471805599452,hai,kaka,hai,hai,kaka,kaka,hai,naina,maama,naina,maama,naina,naina,ama,maama,maama,maama,naina,naina,maama,maama,maama,ama,ina,ina,naina,naina

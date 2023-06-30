@@ -1,8 +1,8 @@
 ### KIN TYPES IN EACH GENERATION ###
 
-generation_n = [#'mB','mZ', # commented out for the purposes of ICS
-                #'meB', 'meZ',
-                #'myB', 'myZ',
+generation_n = ['mB','mZ',
+                'meB', 'meZ',
+                'myB', 'myZ',
                 'mMeZeS','mMeZeD', 'mMeZyS', 'mMeZyD','mMeZS', 'mMeZD',
                 'mMeBeS', 'mMeBeD', 'mMeByS', 'mMeByD', 'mMeBS','mMeBD',
                 'mMyZeS', 'mMyZeD', 'mMyZyS', 'mMyZyD', 'mMyZS', 'mMyZD',
@@ -11,13 +11,13 @@ generation_n = [#'mB','mZ', # commented out for the purposes of ICS
                 'mFeBeS', 'mFeBeD','mFeByS', 'mFeByD', 'mFeBS', 'mFeBD',
                 'mFyZeS', 'mFyZeD', 'mFyZyS','mFyZyD', 'mFyZS', 'mFyZD',
                 'mFyBeS', 'mFyBeD', 'mFyByS', 'mFyByD','mFyBS', 'mFyBD',
-                #'mMZeS','mMZeD','mMZyS','mMZyD','mMZS','mMZD',
-                #'mMBeS','mMBeD','mMByS','mMByD','mMBS','mMBD',
-                #'mFZeS','mFZeD','mFZyS','mFZyD','mFZS','mFZD',
-                #'mFBeS','mFBeD','mFByS','mFByD','mFBS','mFBD',
-                #'fB','fZ',
-                #'feB', 'feZ',
-                #'fyB', 'fyZ',
+                'mMZeS','mMZeD','mMZyS','mMZyD','mMZS','mMZD',
+                'mMBeS','mMBeD','mMByS','mMByD','mMBS','mMBD',
+                'mFZeS','mFZeD','mFZyS','mFZyD','mFZS','mFZD',
+                'mFBeS','mFBeD','mFByS','mFByD','mFBS','mFBD',
+                'fB','fZ',
+                'feB', 'feZ',
+                'fyB', 'fyZ',
                 'fMeZeS','fMeZeD', 'fMeZyS', 'fMeZyD','fMeZS', 'fMeZD',
                 'fMeBeS', 'fMeBeD', 'fMeByS', 'fMeByD', 'fMeBS','fMeBD',
                 'fMyZeS', 'fMyZeD', 'fMyZyS', 'fMyZyD', 'fMyZS', 'fMyZD',
@@ -25,20 +25,22 @@ generation_n = [#'mB','mZ', # commented out for the purposes of ICS
                 'fFeZeS','fFeZeD', 'fFeZyS', 'fFeZyD','fFeZS', 'fFeZD',
                 'fFeBeS', 'fFeBeD','fFeByS', 'fFeByD', 'fFeBS', 'fFeBD',
                 'fFyZeS', 'fFyZeD', 'fFyZyS','fFyZyD', 'fFyZS', 'fFyZD',
-                'fFyBeS', 'fFyBeD', 'fFyByS', 'fFyByD','fFyBS', 'fFyBD']
-                #'fMZeS','fMZeD','fMZyS','fMZyD','fMZS','fMZD',
-                #'fMBeS','fMBeD','fMByS','fMByD','fMBS','fMBD',
-                #'fFZeS','fFZeD','fFZyS','fFZyD','fFZS','fFZD',
-                #'fFBeS','fFBeD','fFByS','fFByD','fFBS','fFBD']
+                'fFyBeS', 'fFyBeD', 'fFyByS', 'fFyByD','fFyBS', 'fFyBD'
+                'fMZeS','fMZeD','fMZyS','fMZyD','fMZS','fMZD',
+                'fMBeS','fMBeD','fMByS','fMByD','fMBS','fMBD',
+                'fFZeS','fFZeD','fFZyS','fFZyD','fFZS','fFZD',
+                'fFBeS','fFBeD','fFByS','fFByD','fFBS','fFBD']
 
-generation_n1 = [#'mMB','mMZ',
-                 #'mFB','mFZ',
+generation_n1 = ['mMB','mMZ',
+                 'mFB','mFZ',
+                 'mM','mF',
                  'mMeB','mMeZ',
                  'mMyB','mMyZ',
                  'mFeB','mFeZ',
                  'mFyB','mFyZ',
-                 #'fMB','fMZ',
-                 #'fFB','fFZ',
+                 'fMB','fMZ',
+                 'fFB','fFZ',
+                 'fM','fF',
                  'fMeB','fMeZ',
                  'fMyB','fMyZ',
                  'fFeB','fFeZ',
@@ -228,30 +230,39 @@ si_gN1 = [('mMB','mFB'), ('mMZ','mFZ'),
 
 ### INTERNAL CO-SELECTING PAIRS ###
 
-ics_pairs = [#('mMB','mMBS'),('mMB','mMBeS'),('mMB','mMByS'),('mMB','mMBD'),('mMB','mMBeD'),('mMB','mMByD'),
-             ('mMeB','mMeBS'),('mMeB','mMeBD'),('mMeB','mMeByS'),('mMeB','mMeBD'),('mMeB','mMeBeD'),('mMeB','mMeByD'),
-             ('mMyB','mMyBS'),('mMyB','mMyBD'),('mMyB','mMyByS'),('mMyB','mMyBD'),('mMyB','mMyBeD'),('mMyB','mMyByD'),
-             #('mFB','mFBS'),('mFB','mFBD'),('mFB','mFByS'),('mFB','mFBD'),('mFB','mFBeD'),('mFB','mFByD'),
-             ('mFeB','mFeBS'),('mFeB','mFeBD'),('mFeB','mFeByS'),('mFeB','mFeBD'),('mFeB','mFeBeD'),('mFeB','mFeByD'),
-             ('mFyB','mFyBS'),('mFyB','mFyBD'),('mFyB','mFyByS'),('mFyB','mFyBD'),('mFyB','mFyBeD'),('mFyB','mFyByD'),
-             #('mMZ','mMZS'),('mMZ','mMZD'),('mMZ','mMZyS'),('mMZ','mMZD'),('mMZ','mMZeD'),('mMZ','mMZyD'),
-             ('mMeZ','mMeZS'),('mMeZ','mMeZD'),('mMeZ','mMeZyS'),('mMeZ','mMeZD'),('mMeZ','mMeZeD'),('mMeZ','mMeZyD'),
-             ('mMyZ','mMyZS'),('mMyZ','mMyZD'),('mMyZ','mMyZyS'),('mMyZ','mMyZD'),('mMyZ','mMyZeD'),('mMyZ','mMyZyD'),
-             #('mFZ','mFZS'),('mFZ','mFZD'),('mFZ','mFZyS'),('mFZ','mFZD'),('mFZ','mFZeD'),('mFZ','mFZyD'),
-             ('mFeZ','mFeZS'),('mFeZ','mFeZD'),('mFeZ','mFeZyS'),('mFeZ','mFeZD'),('mFeZ','mFeZeD'),('mFeZ','mFeZyD'),
-             ('mFyZ','mFyZS'),('mFyZ','mFyZD'),('mFyZ','mFyZyS'),('mFyZ','mFyZD'),('mFyZ','mFyZeD'),('mFyZ','mFyZyD'),
-             #('fMB','fMBS'),('fMB','fMBeS'),('fMB','fMByS'),('fMB','fMBD'),('fMB','fMBeD'),('fMB','fMByD'),
-             ('fMeB','fMeBS'),('fMeB','fMeBD'),('fMeB','fMeByS'),('fMeB','fMeBD'),('fMeB','fMeBeD'),('fMeB','fMeByD'),
-             ('fMyB','fMyBS'),('fMyB','fMyBD'),('fMyB','fMyByS'),('fMyB','fMyBD'),('fMyB','fMyBeD'),('fMyB','fMyByD'),
-             #('fFB','fFBS'),('fFB','fFBD'),('fFB','fFByS'),('fFB','fFBD'),('fFB','fFBeD'),('fFB','fFByD'),
-             ('fFeB','fFeBS'),('fFeB','fFeBD'),('fFeB','fFeByS'),('fFeB','fFeBD'),('fFeB','fFeBeD'),('fFeB','fFeByD'),
-             ('fFyB','fFyBS'),('fFyB','fFyBD'),('fFyB','fFyByS'),('fFyB','fFyBD'),('fFyB','fFyBeD'),('fFyB','fFyByD'),
-             #('fMZ','fMZS'),('fMZ','fMZD'),('fMZ','fMZyS'),('fMZ','fMZD'),('fMZ','fMZeD'),('fMZ','fMZyD'),
-             ('fMeZ','fMeZS'),('fMeZ','fMeZD'),('fMeZ','fMeZyS'),('fMeZ','fMeZD'),('fMeZ','fMeZeD'),('fMeZ','fMeZyD'),
-             ('fMyZ','fMyZS'),('fMyZ','fMyZD'),('fMyZ','fMyZyS'),('fMyZ','fMyZD'),('fMyZ','fMyZeD'),('fMyZ','fMyZyD'),
-             #('fFZ','fFZS'),('fFZ','fFZD'),('fFZ','fFZyS'),('fFZ','fFZD'),('fFZ','fFZeD'),('fFZ','fFZyD'),
-             ('fFeZ','fFeZS'),('fFeZ','fFeZD'),('fFeZ','fFeZyS'),('fFeZ','fFeZD'),('fFeZ','fFeZeD'),('fFeZ','fFeZyD'),
-             ('fFyZ','fFyZS'),('fFyZ','fFyZD'),('fFyZ','fFyZyS'),('fFyZ','fFyZD'),('fFyZ','fFyZeD'),('fFyZ','fFyZyD')]
+ics_pairs = [('mM','mB'),('mM','meB'),('mM','myB'),
+             ('mM','mZ'),('mM','meZ'),('mM','myZ'),
+             ('mF','mB'),('mF','meB'),('mF','myB'),
+             ('mF','mFZ'),('mF','meZ'),('mF','myZ'),
+             ('mMB','mMBS'),('mMB','mMBeS'),('mMB','mMByS'),('mMB','mMBD'),('mMB','mMBeD'),('mMB','mMByD'), #mother's brother
+             ('mMeB','mMeBS'),('mMeB','mMeBeS'),('mMeB','mMeByS'),('mMeB','mMeBD'),('mMeB','mMeBeD'),('mMeB','mMeByD'), 
+             ('mMyB','mMyBS'),('mMyB','mMyBeS'),('mMyB','mMyByS'),('mMyB','mMyBD'),('mMyB','mMyBeD'),('mMyB','mMyByD'), 
+             ('mFB','mFBS'),('mFB','mFBeS'),('mFB','mFByS'),('mFB','mFBD'),('mFB','mFBeD'),('mFB','mFByD'), # father's brother
+             ('mFeB','mFeBS'),('mFeB','mFeBeS'),('mFeB','mFeByS'),('mFeB','mFeBD'),('mFeB','mFeBeD'),('mFeB','mFeByD'),
+             ('mFyB','mFyBS'),('mFyB','mFyBeS'),('mFyB','mFeByS'),('mFyB','mFyBD'),('mFyB','mFyBeD'),('mFyB','mFyByD'),
+             ('mMZ','mMZS'),('mMZ','mMZeS'),('mMZ','mMZyS'),('mMZ','mMZD'),('mMZ','mMZeD'),('mMZ','mMZyD'), #mother's sister
+             ('mMeZ','mMeZS'),('mMeZ','mMeZeS'),('mMeZ','mMeZyS'),('mMeZ','mMeZD'),('mMeZ','mMeZeD'),('mMeZ','mMeZyD'), 
+             ('mMyZ','mMyZS'),('mMyZ','mMyZeS'),('mMyZ','mMyZyS'),('mMyZ','mMyZD'),('mMyZ','mMyZeD'),('mMyZ','mMyZyD'), 
+             ('mFZ','mFZS'),('mFZ','mFZeS'),('mFZ','mFZyS'),('mFZ','mFZD'),('mFZ','mFZeD'),('mFZ','mFZyD'), # father's sister
+             ('mFeZ','mFeZS'),('mFeZ','mFeZeS'),('mFeZ','mFeZyS'),('mFeZ','mFeZD'),('mFeZ','mFeZeD'),('mFeZ','mFeZyD'),
+             ('mFyZ','mFyZS'),('mFyZ','mFyZeS'),('mFyZ','mFeZyS'),('mFyZ','mFyZD'),('mFyZ','mFyZeD'),('mFyZ','mFyZyD'),
+             ('fM','fB'),('fM','feB'),('fM','fyB'),
+             ('fM','fZ'),('fM','feZ'),('fM','fyZ'),
+             ('fF','fB'),('fF','feB'),('fF','fyB'),
+             ('fF','fFZ'),('fF','feZ'),('fF','fyZ'),
+             ('fMB','fMBS'),('fMB','fMBeS'),('fMB','fMByS'),('fMB','fMBD'),('fMB','fMBeD'),('fMB','fMByD'), #mother's brother
+             ('fMeB','fMeBS'),('fMeB','fMeBeS'),('fMeB','fMeByS'),('fMeB','fMeBD'),('fMeB','fMeBeD'),('fMeB','fMeByD'), 
+             ('fMyB','fMyBS'),('fMyB','fMyBeS'),('fMyB','fMyByS'),('fMyB','fMyBD'),('fMyB','fMyBeD'),('fMyB','fMyByD'), 
+             ('fFB','fFBS'),('fFB','fFBeS'),('fFB','fFByS'),('fFB','fFBD'),('fFB','fFBeD'),('fFB','fFByD'), # father's brother
+             ('fFeB','fFeBS'),('fFeB','fFeBeS'),('fFeB','fFeByS'),('fFeB','fFeBD'),('fFeB','fFeBeD'),('fFeB','fFeByD'),
+             ('fFyB','fFyBS'),('fFyB','fFyBeS'),('fFyB','fFeByS'),('fFyB','fFyBD'),('fFyB','fFyBeD'),('fFyB','fFyByD'),
+             ('fMZ','fMZS'),('fMZ','fMZeS'),('fMZ','fMZyS'),('fMZ','fMZD'),('fMZ','fMZeD'),('fMZ','fMZyD'), #mother's sister
+             ('fMeZ','fMeZS'),('fMeZ','fMeZeS'),('fMeZ','fMeZyS'),('fMeZ','fMeZD'),('fMeZ','fMeZeD'),('fMeZ','fMeZyD'), 
+             ('fMyZ','fMyZS'),('fMyZ','fMyZeS'),('fMyZ','fMyZyS'),('fMyZ','fMyZD'),('fMyZ','fMyZeD'),('fMyZ','fMyZyD'), 
+             ('fFZ','fFZS'),('fFZ','fFZeS'),('fFZ','fFZyS'),('fFZ','fFZD'),('fFZ','fFZeD'),('fFZ','fFZyD'), # father's sister
+             ('fFeZ','fFeZS'),('fFeZ','fFeZeS'),('fFeZ','fFeZyS'),('fFeZ','fFeZD'),('fFeZ','fFeZeD'),('fFeZ','fFeZyD'),
+             ('fFyZ','fFyZS'),('fFyZ','fFyZeS'),('fFyZ','fFeZyS'),('fFyZ','fFyZD'),('fFyZ','fFyZeD'),('fFyZ','fFyZyD')]
+
 
 # ics_pairs = [('mMeB','mMeBS'),('mMeB','mMeBD'),('mMeZ','mMeZS'),('mMeZ','mMeZD'),('mFeB','mFeBS'),('mFeB','mFeBD'),('mFeZ','mFeZS'),('mFeZ','mFeZD'),('mMyB','mMyBS'),('mMyB','mMyBD'),('mMyZ','mMyZS'),('mMyZ','mMyZD'),('mFyB','mFyBS'),('mFyB','mFyBD'),('mFyZ','mFyZS'),('mFyZ','mFyZD')]
 

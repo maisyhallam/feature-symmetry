@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,mB,mZ,myB,myZ,meB,meZ,fB,fZ,fyB,fyZ,feB,feZ,mF,mM,mFZ,mMB,mFeZ,mFyZ,mMeB,mMyB,fF,fM,fFZ,fMB,fFeZ,fFyZ,fMeB,fMyB
+0,0.04772900266844937,0.6730116670092565,0.6252826643408071,bahini,bhái,bhái,bhái,bhāi,bahini,bahinī,bahinī,bahini,bhái,bahini,bhāi,āmā,āmā,māmā,bābu,māmā,phupū,phupū,māmā,māmā,māmā,phupū,phupū,māmā,bābu,phupū,phupū
+1,0.16164623342906737,0.9502705392332347,0.7886243058041673,bahinī,bhāi,bahinī,bahini,bhái,bahini,bhái,bhái,bahini,bhāi,bahini,bhái,āmā,āmā,bābu,māmā,māmā,māmā,phupū,phupū,phupū,māmā,māmā,phupū,bābu,māmā,phupū,phupū
+2,0.038241035578812976,0.6931471805599453,0.6549061449811323,bahinī,bahini,bahinī,bahini,bhái,bhāi,bhái,bhāi,bahini,bhái,bhái,bahini,māmā,phupū,āmā,phupū,phupū,bābu,māmā,āmā,phupū,māmā,māmā,māmā,phupū,māmā,bābu,phupū
+3,0.18524282043185392,1.0296530140645737,0.8444101936327197,bahini,bhái,bahini,bhāi,bhái,bhāi,bahini,bhái,bahini,bahinī,bhái,bahinī,bābu,phupū,phupū,āmā,māmā,phupū,māmā,phupū,āmā,bābu,māmā,phupū,māmā,māmā,māmā,phupū
+4,0.08105304175012307,0.5004024235381879,0.4193493817880648,bahinī,bahini,bahinī,bhái,bhái,bahini,bahini,bhāi,bhái,bhāi,bhái,bahini,phupū,phupū,bābu,phupū,bābu,phupū,āmā,āmā,māmā,phupū,phupū,māmā,māmā,māmā,māmā,māmā
+5,0.24448978171250413,1.0888999753452238,0.8444101936327196,bahini,bhái,bhái,bhái,bhāi,bahinī,bhái,bahini,bahini,bhāi,bahini,bahinī,āmā,māmā,bābu,māmā,phupū,māmā,māmā,āmā,phupū,phupū,māmā,māmā,phupū,bābu,phupū,phupū
+6,0.05433568599169614,1.0296530140645737,0.9753173280728775,bhái,bahini,bahinī,bhái,bhái,bahini,bhāi,bhāi,bhái,bahini,bahini,bahinī,māmā,bābu,phupū,āmā,āmā,bābu,māmā,māmā,phupū,māmā,māmā,phupū,māmā,phupū,phupū,phupū
+7,0.11938917582795716,1.0296530140645737,0.9102638382366165,bhái,bahinī,bhái,bhāi,bahinī,bahini,bahini,bhái,bahini,bhái,bhāi,bahini,phupū,māmā,āmā,phupū,māmā,māmā,māmā,āmā,bābu,māmā,phupū,phupū,phupū,māmā,bābu,phupū
+8,0.27837449057256247,1.366158847569202,1.0877843569966394,bahini,bhái,bhái,bahinī,bahinī,bhái,bhāi,bhāi,bahini,bhái,bahini,bahini,bābu,āmā,phupū,phupū,māmā,phupū,māmā,phupū,phupū,māmā,māmā,phupū,māmā,māmā,bābu,āmā
+9,0.09859789399986241,0.5004024235381879,0.40180452953832546,bahini,bhái,bahini,bhái,bahini,bahinī,bhái,bhái,bahini,bhāi,bahinī,bhāi,phupū,phupū,māmā,phupū,māmā,māmā,māmā,māmā,māmā,phupū,āmā,phupū,āmā,bābu,phupū,bābu

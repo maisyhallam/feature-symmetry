@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,meZ,myZ,feB,fyB,feZ,fyZ,mF,mM,mFeB,mFyB,mFeZ,mFyZ,mMeZ,mMyZ,mMeB,mMyB,fF,fM,fFeB,fFyB,fFeZ,fFyZ,fMeZ,fMyZ,fMeB,fMyB
+0,0.484866053111916,0.9799711820833055,0.4951051289713895,maun,nyima,ama,nyi,akou,ama,hnama,jiji,pharji,pharji,aphei,amei,pharji,jiji,dolei,dolei,dolei,ulei,ulei,aphei,jiji,amei,ulei,jiji,ulei,pharji,dolei
+1,0.34145405235023596,1.034601232910181,0.6931471805599451,nyi,nyima,akou,maun,ama,ama,hnama,dolei,pharji,jiji,dolei,amei,jiji,ulei,ulei,ulei,ulei,jiji,dolei,pharji,amei,jiji,aphei,aphei,pharji,pharji,dolei
+2,0.34145405235023607,1.0346012329101812,0.6931471805599452,akou,hnama,nyi,maun,ama,nyima,ama,jiji,dolei,aphei,jiji,amei,ulei,ulei,pharji,jiji,ulei,pharji,dolei,jiji,aphei,pharji,dolei,pharji,dolei,ulei,amei
+3,0.484866053111916,1.0789922078775833,0.5941261547656673,akou,hnama,ama,nyi,maun,ama,nyima,jiji,jiji,pharji,aphei,dolei,pharji,dolei,jiji,ulei,amei,pharji,aphei,pharji,amei,ulei,jiji,dolei,dolei,ulei,ulei
+4,0.4848660531119162,1.376055285260417,0.8911892321485009,hnama,nyima,ama,ama,nyi,maun,akou,ulei,dolei,jiji,pharji,amei,ulei,amei,pharji,dolei,ulei,jiji,pharji,dolei,dolei,ulei,jiji,jiji,pharji,aphei,aphei
+5,0.6829081047004717,1.0789922078775833,0.39608410317711157,hnama,maun,akou,nyima,nyi,ama,ama,jiji,jiji,pharji,ulei,ulei,pharji,dolei,ulei,jiji,pharji,amei,dolei,dolei,aphei,amei,ulei,dolei,jiji,pharji,aphei
+6,0.24243302655595833,1.0346012329101812,0.7921682063542229,ama,hnama,nyima,maun,akou,nyi,ama,pharji,ulei,pharji,dolei,jiji,aphei,amei,dolei,pharji,aphei,jiji,ulei,dolei,ulei,jiji,amei,pharji,dolei,jiji,ulei
+7,0.24243302655595822,1.0346012329101812,0.792168206354223,nyi,nyima,ama,maun,akou,ama,hnama,ulei,jiji,ulei,aphei,pharji,aphei,amei,ulei,pharji,pharji,dolei,jiji,ulei,dolei,dolei,amei,pharji,jiji,jiji,dolei
+8,0.3414540523502362,1.0346012329101812,0.6931471805599451,nyima,akou,hnama,nyi,ama,maun,ama,jiji,dolei,amei,ulei,ulei,aphei,jiji,dolei,pharji,dolei,jiji,pharji,aphei,jiji,ulei,ulei,amei,dolei,pharji,pharji
+9,0.6829081047004718,1.0789922078775833,0.3960841031771115,ama,nyima,ama,hnama,nyi,akou,maun,dolei,dolei,dolei,ulei,jiji,amei,ulei,ulei,pharji,aphei,jiji,ulei,jiji,amei,pharji,pharji,pharji,jiji,aphei,dolei

@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,mZ,meB,myB,meZ,myZ,fB,fZ,feB,fyB,feZ,fyZ,mF,mM,fF,fM
+0,0.00419110692502267,0.6914160776171183,0.6872249706920956,maranak,maranak,maroadi,malamailan,malamailan,malamailan,maranak,maroadi,maranak,malamailan,maroadi,ama,taina,taina,ama
+1,0.0024849871169562165,0.6914160776171183,0.6889310905001621,malamailan,malamailan,maroadi,maranak,maroadi,maranak,maroadi,maranak,maranak,malamailan,malamailan,taina,ama,ama,taina
+2,0.008262958045137547,0.6914160776171183,0.6831531195719808,malamailan,maroadi,maranak,malamailan,maranak,malamailan,malamailan,maroadi,maranak,maroadi,maranak,ama,taina,taina,ama
+3,0.0024849871169562165,0.6914160776171183,0.6889310905001621,malamailan,malamailan,malamailan,maranak,maranak,maroadi,maranak,maroadi,maranak,malamailan,maroadi,ama,taina,taina,ama
+4,0.0024849871169562165,0.6914160776171183,0.6889310905001621,maranak,malamailan,maroadi,maranak,maranak,malamailan,malamailan,malamailan,maroadi,maroadi,maranak,taina,ama,ama,taina
+5,0.00419110692502267,0.6914160776171183,0.6872249706920956,maroadi,maroadi,malamailan,malamailan,maranak,malamailan,maranak,malamailan,maranak,maroadi,maranak,taina,ama,taina,ama
+6,0.00419110692502267,0.6914160776171183,0.6872249706920956,maranak,malamailan,maranak,maroadi,maroadi,maroadi,maranak,maranak,malamailan,malamailan,malamailan,taina,ama,taina,ama
+7,0.18556656334228427,0.6914160776171183,0.505849514274834,malamailan,maranak,maroadi,malamailan,maroadi,maranak,maroadi,malamailan,maranak,malamailan,maranak,taina,taina,ama,ama
+8,0.008262958045137547,0.6914160776171183,0.6831531195719808,maroadi,maranak,malamailan,malamailan,maranak,maroadi,maranak,maroadi,malamailan,maranak,malamailan,ama,taina,taina,ama
+9,0.00419110692502267,0.6914160776171183,0.6872249706920956,malamailan,malamailan,maroadi,maranak,malamailan,malamailan,maranak,maranak,maranak,maroadi,maroadi,ama,taina,ama,taina

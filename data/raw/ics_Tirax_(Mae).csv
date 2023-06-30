@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,fyB,meZ,myZ,feZ,fyZ,mF,mM,fF,fM,mFeB,mFyB,mFeZ,mFyZ,mMeB,mMyB,mMeZ,mMyZ,fFeB,fFyB,fFeZ,fFyZ,fMeB,fMyB,fMeZ,fMyZ
+0,0.005147809834208705,0.5195798391305154,0.5144320292963067,vivni,vivni,lɛlɛ,lɛlɛ,vivni,vivni,lɛlɛ,vavɛ,tatɛ,tatɛ,tatɛ,dnɛ,tatɛ,vavɛ,tatɛ,vavɛ,dede,dede,dnɛ,tatɛ,dede,dnɛ,dede,dede,dnɛ,dede,vavɛ
+1,0.007016107555648965,1.0346012329101812,1.0275851253545323,vivni,vivni,lɛlɛ,vivni,lɛlɛ,lɛlɛ,vivni,dnɛ,vavɛ,dede,dnɛ,vavɛ,tatɛ,tatɛ,dede,dede,vavɛ,dede,tatɛ,dede,tatɛ,vavɛ,dnɛ,dnɛ,tatɛ,tatɛ,dede
+2,0.36157373634686707,0.9799711820833055,0.6183974457364384,vivni,vivni,lɛlɛ,vivni,vivni,lɛlɛ,lɛlɛ,tatɛ,vavɛ,dede,dede,dnɛ,dede,dnɛ,tatɛ,tatɛ,dede,vavɛ,tatɛ,dede,vavɛ,tatɛ,tatɛ,dnɛ,dede,dnɛ,vavɛ
+3,0.014032215111297708,1.376055285260417,1.3620230701491194,vivni,lɛlɛ,vivni,vivni,lɛlɛ,vivni,lɛlɛ,dnɛ,tatɛ,vavɛ,dede,dede,dede,tatɛ,dnɛ,vavɛ,tatɛ,dnɛ,dede,dede,vavɛ,dede,tatɛ,tatɛ,dnɛ,tatɛ,vavɛ
+4,0.007016107555648965,1.0346012329101812,1.0275851253545323,vivni,lɛlɛ,vivni,vivni,lɛlɛ,lɛlɛ,vivni,tatɛ,dnɛ,dnɛ,dede,dede,dede,vavɛ,vavɛ,vavɛ,dnɛ,tatɛ,dede,tatɛ,dede,dede,dnɛ,tatɛ,tatɛ,tatɛ,vavɛ
+5,0.08878194993480426,0.6829081047004717,0.5941261547656674,lɛlɛ,vivni,vivni,lɛlɛ,vivni,lɛlɛ,vivni,dede,dede,dnɛ,dnɛ,dede,tatɛ,vavɛ,dnɛ,vavɛ,vavɛ,tatɛ,tatɛ,dnɛ,dede,dede,dede,tatɛ,tatɛ,vavɛ,tatɛ
+6,0.004143433819589926,0.5982695885852573,0.5941261547656673,lɛlɛ,lɛlɛ,vivni,vivni,vivni,vivni,lɛlɛ,dede,dede,tatɛ,dede,dnɛ,dnɛ,dnɛ,tatɛ,vavɛ,dnɛ,vavɛ,tatɛ,tatɛ,vavɛ,dede,tatɛ,dede,vavɛ,tatɛ,dede
+7,0.007016107555648965,1.0346012329101812,1.0275851253545323,vivni,vivni,lɛlɛ,vivni,lɛlɛ,lɛlɛ,vivni,dnɛ,tatɛ,dnɛ,vavɛ,dnɛ,tatɛ,dede,dede,dede,dede,vavɛ,vavɛ,tatɛ,tatɛ,tatɛ,tatɛ,dede,dnɛ,vavɛ,dede
+8,0.03149081771477463,0.5195798391305154,0.4880890214157408,lɛlɛ,vivni,lɛlɛ,lɛlɛ,vivni,vivni,vivni,tatɛ,dede,tatɛ,tatɛ,tatɛ,tatɛ,dede,vavɛ,vavɛ,tatɛ,vavɛ,dede,dnɛ,vavɛ,dede,dede,dnɛ,dede,dnɛ,dnɛ
+9,0.044390974967402075,1.034601232910181,0.990210257942779,vivni,vivni,lɛlɛ,lɛlɛ,lɛlɛ,vivni,vivni,vavɛ,tatɛ,tatɛ,dnɛ,dede,dnɛ,dede,dnɛ,vavɛ,dede,dede,dede,tatɛ,tatɛ,dnɛ,dede,tatɛ,vavɛ,tatɛ,vavɛ

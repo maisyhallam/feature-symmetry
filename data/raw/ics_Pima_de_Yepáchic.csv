@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,mM,mFeZ,mMyZ,fM,fFeZ,fMyZ
+0,NA,NA,NA,disk,okasi,de'e,de'e,disk,okasi
+1,NA,NA,NA,disk,de'e,okasi,okasi,de'e,disk
+2,NA,NA,NA,de'e,okasi,okasi,disk,disk,de'e
+3,NA,NA,NA,disk,okasi,okasi,de'e,disk,de'e
+4,NA,NA,NA,de'e,de'e,okasi,disk,okasi,disk
+5,NA,NA,NA,okasi,de'e,okasi,disk,de'e,disk
+6,NA,NA,NA,disk,de'e,de'e,okasi,okasi,disk
+7,NA,NA,NA,disk,de'e,de'e,okasi,okasi,disk
+8,NA,NA,NA,okasi,de'e,okasi,disk,de'e,disk
+9,NA,NA,NA,okasi,disk,okasi,disk,de'e,de'e

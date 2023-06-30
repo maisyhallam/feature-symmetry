@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,meZ,mMyZS,mMyZD,feB,fyB,feZ,fMyZS,fMyZD,myZ,fyZ,mF,mM,mFyB,mFeZ,fF,fM,fFyB,fFeZ
+0,0.34145405235023607,1.0346012329101812,0.6931471805599452,ako,ako,wai,asowaala,asowaala,asowaala,pale,abachi,wai,wai,asowaala,achai,jaka yo'owe,achai,beme ja'aka,áewa,jaka yo'owe,áewa,beme ja'aka
+1,0.2050581591442049,1.0346012329101812,0.8295430737659764,wai,abachi,asowaala,ako,ako,wai,pale,asowaala,asowaala,wai,asowaala,áewa,achai,áewa,jaka yo'owe,achai,jaka yo'owe,beme ja'aka,beme ja'aka
+2,0.34145405235023607,1.0346012329101812,0.6931471805599452,pale,abachi,asowaala,asowaala,wai,ako,ako,wai,asowaala,asowaala,wai,beme ja'aka,jaka yo'owe,achai,jaka yo'owe,áewa,beme ja'aka,áewa,achai
+3,0.10603713334992693,1.0346012329101812,0.9285640995602543,asowaala,asowaala,asowaala,pale,asowaala,abachi,ako,ako,wai,wai,wai,achai,áewa,beme ja'aka,jaka yo'owe,beme ja'aka,áewa,achai,jaka yo'owe
+4,0.2120742666998533,0.9799711820833054,0.7678969153834521,asowaala,wai,abachi,asowaala,asowaala,ako,pale,ako,asowaala,wai,wai,jaka yo'owe,achai,beme ja'aka,jaka yo'owe,áewa,áewa,achai,beme ja'aka
+5,0.242433026555958,1.034601232910181,0.792168206354223,ako,asowaala,wai,asowaala,asowaala,wai,abachi,wai,asowaala,ako,pale,áewa,beme ja'aka,achai,beme ja'aka,jaka yo'owe,áewa,jaka yo'owe,achai
+6,0.2050581591442049,1.0346012329101812,0.8295430737659764,asowaala,pale,ako,asowaala,asowaala,asowaala,wai,wai,wai,abachi,ako,beme ja'aka,achai,áewa,áewa,beme ja'aka,jaka yo'owe,achai,jaka yo'owe
+7,0.6829081047004717,1.0789922078775833,0.39608410317711157,abachi,asowaala,wai,asowaala,wai,ako,wai,asowaala,asowaala,pale,ako,jaka yo'owe,jaka yo'owe,áewa,achai,áewa,beme ja'aka,achai,beme ja'aka
+8,0.21207426669985363,1.376055285260417,1.1639810185605635,wai,asowaala,asowaala,ako,asowaala,wai,wai,asowaala,pale,ako,abachi,achai,áewa,achai,jaka yo'owe,beme ja'aka,jaka yo'owe,áewa,beme ja'aka
+9,0.41011631828840933,1.376055285260417,0.9659389669720078,asowaala,wai,wai,asowaala,asowaala,ako,ako,abachi,pale,wai,asowaala,jaka yo'owe,achai,áewa,jaka yo'owe,beme ja'aka,áewa,achai,beme ja'aka

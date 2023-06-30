@@ -1,0 +1,10 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,fyB,meZ,myZ,feZ,fyZ,mF,mM,fF,fM,mFeB,mFyB,mFeZ,mFyZ,mMeB,mMyB,mMeZ,mMyZ,fFeB,fFyB,fFeZ,fFyZ,fMeB,fMyB,fMeZ,fMyZ
+0,0.08878194993480437,0.6829081047004717,0.5941261547656673,kaka,kaka,ca,adi,adi,adi,adi,wa,wa,may,may,ma,wa,"paq, apok",may,"paq, apok",wa,may,"maq, a.ëq, ët",ma,ma,wa,wa,ma,wa,"maq, a.ëq, ët",wa
+2,0.08176584237915563,1.034601232910181,0.9528353905310254,kaka,adi,adi,ca,adi,kaka,adi,wa,ma,"paq, apok",wa,"maq, a.ëq, ët",may,wa,may,"maq, a.ëq, ët",wa,may,"paq, apok",ma,wa,wa,ma,ma,wa,may,wa
+3,0.10624055253828146,0.5195798391305154,0.41333928659223396,adi,adi,ca,kaka,kaka,adi,adi,wa,ma,wa,wa,wa,ma,may,may,wa,may,"maq, a.ëq, ët",may,"paq, apok",wa,ma,wa,ma,wa,"maq, a.ëq, ët","paq, apok"
+4,0.36157373634686696,0.9799711820833054,0.6183974457364384,adi,kaka,ca,adi,adi,adi,kaka,wa,"paq, apok",ma,ma,may,may,wa,wa,ma,wa,wa,"paq, apok",may,wa,wa,"maq, a.ëq, ët",may,ma,"maq, a.ëq, ët",wa
+5,0.3615737363468672,1.376055285260417,1.01448154891355,adi,adi,kaka,adi,adi,kaka,ca,ma,wa,may,"maq, a.ëq, ët",wa,may,ma,may,may,"maq, a.ëq, ët",wa,wa,"paq, apok",ma,"paq, apok",wa,wa,ma,wa,wa
+6,0.1807868681734337,1.0346012329101812,0.8538143647367475,adi,kaka,kaka,adi,adi,adi,ca,wa,may,wa,ma,wa,"maq, a.ëq, ët",wa,ma,wa,ma,"paq, apok",ma,wa,may,wa,"maq, a.ëq, ët","paq, apok",wa,may,may
+7,0.0887819499348046,1.376055285260417,1.2872733353256125,adi,adi,ca,kaka,adi,adi,kaka,wa,"paq, apok","maq, a.ëq, ët",may,"maq, a.ëq, ët",ma,wa,wa,may,ma,wa,wa,may,ma,"paq, apok",may,wa,wa,ma,wa
+8,0.0887819499348046,1.376055285260417,1.2872733353256125,adi,adi,ca,kaka,adi,adi,kaka,ma,"paq, apok",may,"maq, a.ëq, ët",wa,wa,wa,wa,ma,wa,wa,"maq, a.ëq, ët",wa,may,wa,may,ma,may,"paq, apok",ma
+9,0.36157373634686707,1.0789922078775833,0.7174184715307163,adi,kaka,ca,adi,adi,kaka,adi,ma,ma,may,"maq, a.ëq, ët",wa,ma,"paq, apok",wa,"paq, apok",wa,wa,may,ma,wa,wa,wa,"maq, a.ëq, ët",may,may,wa

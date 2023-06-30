@@ -1,0 +1,4 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,fyB,meZ,myZ,feZ,fyZ,mF,mM,fF,fM
+2,0.08878194993480437,0.6829081047004717,0.5941261547656673,ava,tasi-,ava,tasi-,tasi-,tue-,tasi-,"mama, mira, rrese-","mama, mira, rrese-","teme-, mita, tata","teme-, mita, tata"
+8,0.08878194993480437,0.6829081047004717,0.5941261547656673,tasi-,tasi-,tasi-,ava,tasi-,ava,tue-,"teme-, mita, tata","teme-, mita, tata","mama, mira, rrese-","mama, mira, rrese-"
+9,0.16353168475831115,0.6829081047004717,0.5193764199421605,ava,tasi-,tasi-,tasi-,tue-,tasi-,ava,"teme-, mita, tata","teme-, mita, tata","mama, mira, rrese-","mama, mira, rrese-"

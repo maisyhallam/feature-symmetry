@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,mM,mFB,mFZ,mMZ,mFeB,mFyB,mFeZ,mFyZ,mMeZ,mMyZ
+0,NA,NA,NA,ta-mukasi,ngughu,ngughu,tata,ngughu,tata,ta-mukasi,ta-mukasi,tata,ngughu
+1,NA,NA,NA,tata,ta-mukasi,ngughu,ta-mukasi,tata,ta-mukasi,ngughu,ngughu,ngughu,tata
+2,NA,NA,NA,ngughu,ngughu,tata,tata,ta-mukasi,tata,ngughu,ngughu,ta-mukasi,ta-mukasi
+3,NA,NA,NA,ngughu,ta-mukasi,ta-mukasi,ngughu,tata,ngughu,tata,ngughu,ta-mukasi,tata
+4,NA,NA,NA,ngughu,ngughu,ngughu,ngughu,tata,tata,ta-mukasi,ta-mukasi,ta-mukasi,tata
+5,NA,NA,NA,ta-mukasi,tata,tata,ngughu,ta-mukasi,ngughu,ta-mukasi,ngughu,ngughu,tata
+6,NA,NA,NA,ta-mukasi,ta-mukasi,ngughu,ngughu,tata,ngughu,tata,tata,ta-mukasi,ngughu
+7,NA,NA,NA,tata,ngughu,tata,ngughu,ngughu,tata,ta-mukasi,ngughu,ta-mukasi,ta-mukasi
+8,NA,NA,NA,tata,ta-mukasi,ngughu,ngughu,ngughu,tata,ta-mukasi,ta-mukasi,ngughu,tata
+9,NA,NA,NA,ta-mukasi,ngughu,tata,ngughu,ngughu,tata,ngughu,ta-mukasi,ta-mukasi,tata

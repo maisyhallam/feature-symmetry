@@ -1,0 +1,4 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,meZ,myZ,feZ,fyZ,mM,fM,mFeZ,mFyZ,mMeZ,mMyZ,fFeZ,fFyZ,fMeZ,fMyZ
+6,0.4620981203732969,0.6931471805599453,0.23104906018664842,ifaxa,"ifaxa, mama, tejin","jin, tejin",mama,"jin, tejin","ifaxa, mama",tete,teifenie,teifenie,tete,tete,tete,tete,tete,tete,tete
+7,0.6931471805599453,0.6931471805599453,-0.0,"jin, tejin",ifaxa,mama,"jin, tejin","ifaxa, mama, tejin","ifaxa, mama",teifenie,tete,tete,teifenie,tete,tete,tete,tete,tete,tete
+8,0.6931471805599453,0.6931471805599453,-0.0,ifaxa,"jin, tejin","ifaxa, mama","ifaxa, mama, tejin",mama,"jin, tejin",teifenie,tete,tete,tete,tete,tete,tete,tete,tete,teifenie

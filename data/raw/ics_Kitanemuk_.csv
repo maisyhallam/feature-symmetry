@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,meZ,myZ,fyB,feZ,fyZ,mFB,mMB,mMZ,mFeB,mFyB,mMeZ,mMyZ,mMeB,mMyB,fFB,fMB,fMZ,fFeB,fFyB,fMeZ,fMyZ,fMeB,fMyB
+0,NA,NA,NA,-pit,koha-č,koha-č,-pit,-pit,kum,yïha,nïhma,kum,yïha,kuhm,kum,yïha,nïhma,kum,kum,yïha,kuhm,kuhm,kuhm,kuhm,kum,kuhm
+1,NA,NA,NA,-pit,koha-č,-pit,koha-č,-pit,yïha,nïhma,kum,kuhm,yïha,kum,kuhm,yïha,kum,kum,kum,yïha,kuhm,kum,kuhm,kuhm,nïhma,kuhm
+2,NA,NA,NA,-pit,koha-č,koha-č,-pit,-pit,kum,kuhm,yïha,yïha,kum,kum,kum,kuhm,nïhma,kuhm,nïhma,kum,kuhm,kum,kuhm,yïha,kuhm,yïha
+3,NA,NA,NA,koha-č,-pit,koha-č,-pit,-pit,kum,kum,kuhm,yïha,kuhm,kuhm,yïha,yïha,kum,yïha,kuhm,kuhm,nïhma,kum,kum,nïhma,kuhm,kum
+4,NA,NA,NA,koha-č,-pit,-pit,koha-č,-pit,nïhma,kuhm,yïha,kuhm,kuhm,yïha,kum,kum,kum,yïha,nïhma,kuhm,kuhm,yïha,kuhm,kum,kum,kum
+5,NA,NA,NA,koha-č,koha-č,-pit,-pit,-pit,kuhm,yïha,kum,yïha,kum,kuhm,kum,yïha,kuhm,kum,kum,nïhma,yïha,nïhma,kum,kuhm,kuhm,kuhm
+6,NA,NA,NA,koha-č,-pit,-pit,koha-č,-pit,kum,kuhm,nïhma,nïhma,yïha,kuhm,yïha,kum,kuhm,yïha,kum,kuhm,kuhm,kum,kum,kuhm,yïha,kum
+7,NA,NA,NA,-pit,-pit,koha-č,koha-č,-pit,kuhm,yïha,kum,yïha,nïhma,kum,kuhm,kuhm,kum,kuhm,kum,yïha,yïha,kum,kuhm,kum,nïhma,kuhm
+8,NA,NA,NA,-pit,-pit,koha-č,-pit,koha-č,kuhm,yïha,nïhma,kum,kum,kum,kuhm,yïha,kum,nïhma,yïha,yïha,kuhm,kuhm,kum,kum,kuhm,kuhm
+9,NA,NA,NA,-pit,koha-č,-pit,koha-č,-pit,kuhm,yïha,nïhma,kuhm,kum,kuhm,kuhm,yïha,kum,yïha,kuhm,kum,nïhma,kum,yïha,kuhm,kum,kum

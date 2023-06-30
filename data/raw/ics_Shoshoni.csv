@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,meZ,myZ,feB,fyB,feZ,fyZ,mF,mM,mFB,mFZ,mMB,mFeB,mFyB,mFeZ,mFyZ,mMeB,mMyB,fF,fM,fFB,fFZ,fMB,fFeB,fFyB,fFeZ,fFyZ,fMeB,fMyB
+0,0.5060840611644993,1.0606018056124555,0.5545177444479562,tami,nammi,nammi,paci,tami,paci,papi,paha,paha,hee,hee,hee,ata,paha,pii,ata,paha,appï,ata,hee,ata,hee,ata,pii,paha,ata,hee,appï,paha
+1,0.3626763896514229,1.3792922544726758,1.0166158648212529,tami,papi,paci,tami,paci,nammi,nammi,hee,paha,paha,paha,hee,ata,hee,ata,paha,pii,hee,appï,ata,hee,ata,ata,paha,appï,ata,pii,hee,paha
+2,0.13640556486586197,1.0606018056124555,0.9241962407465936,nammi,paci,tami,paci,papi,tami,nammi,ata,paha,hee,ata,hee,ata,hee,hee,pii,paha,paha,paha,hee,ata,hee,paha,appï,paha,appï,ata,pii,ata
+3,0.2288251889405214,1.0606018056124555,0.8317766166719341,papi,tami,paci,nammi,tami,paci,nammi,appï,ata,paha,paha,pii,hee,hee,hee,paha,ata,ata,ata,paha,ata,pii,paha,hee,paha,hee,ata,hee,appï
+4,0.7323548859500599,1.009613758174038,0.2772588722239781,papi,tami,tami,nammi,paci,nammi,paci,appï,paha,hee,ata,paha,paha,hee,ata,paha,appï,hee,pii,pii,ata,ata,paha,hee,paha,hee,ata,hee,ata
+5,0.03762743164839488,0.5799151714181009,0.542287739769706,tami,paci,nammi,nammi,papi,tami,paci,ata,ata,paha,paha,hee,paha,ata,paha,paha,hee,paha,appï,ata,ata,hee,hee,ata,pii,hee,hee,appï,pii
+6,0.04398594079120244,0.6909233093138181,0.6469373685226156,papi,paci,tami,nammi,paci,nammi,tami,paha,ata,hee,hee,ata,paha,pii,appï,appï,pii,paha,paha,ata,hee,hee,ata,paha,ata,hee,hee,paha,ata
+7,0.050534307843141224,0.5004024235381879,0.44986811569504664,nammi,tami,paci,nammi,tami,papi,paci,hee,paha,paha,ata,ata,hee,ata,hee,paha,appï,paha,hee,hee,pii,paha,pii,paha,appï,ata,ata,ata,hee
+8,0.7323548859500602,1.3792922544726758,0.6469373685226156,papi,tami,tami,paci,paci,nammi,nammi,paha,ata,hee,hee,ata,paha,paha,paha,ata,ata,hee,hee,pii,ata,appï,appï,paha,hee,hee,ata,paha,pii
+9,0.17783714150210383,1.009613758174038,0.8317766166719343,paci,nammi,tami,tami,papi,paci,nammi,hee,ata,paha,paha,hee,paha,paha,hee,paha,ata,hee,appï,appï,ata,hee,ata,ata,ata,pii,paha,pii,hee

@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,meZ,myZ,feB,fyB,feZ,fyZ,mFB,mFeZ,mFyZ,mMeZ,mMyZ,mMeB,mMyB,mFeB,mFyB,fFB,fFeZ,fFyZ,fMeZ,fMyZ,fMeB,fMyB,fFeB,fFyB
+0,NA,NA,NA,mu'n,k'itc,mu'n,k'itc,la'n,k'itc,la'n,kai^nt,ai^nt,ka^nc,kai^nt,ai^nt,kai^nt,kikan,kikan,pa^ntcet,kai^nt,nai^nt,kai^nt,kai^nt,ka^nc,nai^nt,pa^ntcet,p'oyam,p'oyam
+1,NA,NA,NA,k'itc,la'n,mu'n,k'itc,k'itc,mu'n,la'n,ai^nt,nai^nt,kikan,ai^nt,pa^ntcet,kai^nt,kai^nt,ka^nc,kai^nt,pa^ntcet,p'oyam,p'oyam,kai^nt,nai^nt,kai^nt,kai^nt,ka^nc,kikan
+2,NA,NA,NA,k'itc,mu'n,la'n,la'n,mu'n,k'itc,k'itc,kai^nt,kai^nt,kai^nt,pa^ntcet,p'oyam,ai^nt,nai^nt,pa^ntcet,kikan,kai^nt,kai^nt,kai^nt,p'oyam,ka^nc,kikan,ka^nc,ai^nt,nai^nt
+3,NA,NA,NA,k'itc,la'n,la'n,mu'n,mu'n,k'itc,k'itc,nai^nt,kai^nt,kai^nt,kikan,p'oyam,kai^nt,ai^nt,ka^nc,pa^ntcet,kai^nt,kikan,p'oyam,pa^ntcet,kai^nt,nai^nt,ai^nt,kai^nt,ka^nc
+4,NA,NA,NA,mu'n,k'itc,la'n,la'n,k'itc,mu'n,k'itc,nai^nt,ai^nt,kai^nt,kai^nt,p'oyam,kai^nt,kikan,pa^ntcet,ka^nc,ai^nt,p'oyam,ka^nc,pa^ntcet,kai^nt,kikan,kai^nt,kai^nt,nai^nt
+5,NA,NA,NA,la'n,k'itc,k'itc,k'itc,mu'n,mu'n,la'n,p'oyam,ka^nc,pa^ntcet,ai^nt,kikan,nai^nt,kai^nt,pa^ntcet,kai^nt,kai^nt,nai^nt,kai^nt,kai^nt,p'oyam,ai^nt,kai^nt,kikan,ka^nc
+6,NA,NA,NA,la'n,k'itc,mu'n,mu'n,la'n,k'itc,k'itc,p'oyam,nai^nt,kai^nt,p'oyam,kai^nt,kai^nt,pa^ntcet,kikan,ai^nt,ka^nc,nai^nt,kai^nt,kai^nt,kai^nt,kikan,pa^ntcet,ka^nc,ai^nt
+7,NA,NA,NA,mu'n,la'n,mu'n,k'itc,la'n,k'itc,k'itc,p'oyam,kai^nt,kai^nt,nai^nt,kikan,ai^nt,kai^nt,p'oyam,pa^ntcet,kai^nt,pa^ntcet,kai^nt,ka^nc,nai^nt,ai^nt,kai^nt,kikan,ka^nc
+8,NA,NA,NA,la'n,k'itc,mu'n,k'itc,mu'n,la'n,k'itc,kai^nt,ai^nt,kikan,kai^nt,nai^nt,ka^nc,nai^nt,pa^ntcet,ka^nc,kikan,p'oyam,ai^nt,kai^nt,kai^nt,pa^ntcet,kai^nt,kai^nt,p'oyam
+9,NA,NA,NA,k'itc,mu'n,mu'n,k'itc,k'itc,la'n,la'n,ai^nt,kikan,ai^nt,kai^nt,p'oyam,kai^nt,pa^ntcet,kai^nt,nai^nt,ka^nc,kai^nt,kai^nt,pa^ntcet,kikan,p'oyam,nai^nt,ka^nc,kai^nt

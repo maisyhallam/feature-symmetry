@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,fyB,meZ,myZ,feZ,fyZ,mF,mM,fF,fM,mFeZ,mFyZ,mMeB,mMyB,fFeZ,fFyZ,fMeB,fMyB
+0,0.4848660531119162,1.376055285260417,0.8911892321485009,titih,"alik, ngoreŋ",suaŋ,nana,titih,"alik, ngoreŋ",nana,lolo,"anu, bilan",tama,miim,miim,lolo,"anu, bilan",miim,lolo,miim,lolo,tama
+1,0.242433026555958,1.034601232910181,0.792168206354223,nana,titih,suaŋ,titih,nana,"alik, ngoreŋ","alik, ngoreŋ",lolo,miim,miim,"anu, bilan",miim,miim,lolo,"anu, bilan",lolo,lolo,tama,tama
+2,0.484866053111916,1.0789922078775833,0.5941261547656673,nana,"alik, ngoreŋ",suaŋ,nana,"alik, ngoreŋ",titih,titih,lolo,lolo,miim,tama,tama,miim,lolo,"anu, bilan",miim,lolo,miim,"anu, bilan"
+3,0.08878194993480482,1.376055285260417,1.2872733353256123,titih,suaŋ,titih,nana,"alik, ngoreŋ",nana,"alik, ngoreŋ",lolo,tama,miim,"anu, bilan",lolo,lolo,"anu, bilan",miim,miim,miim,lolo,tama
+4,0.16087060336515724,0.5195798391305154,0.3587092357653582,"alik, ngoreŋ",nana,titih,nana,"alik, ngoreŋ",suaŋ,titih,miim,lolo,lolo,lolo,tama,"anu, bilan",tama,miim,lolo,miim,miim,"anu, bilan"
+5,0.4848660531119162,1.376055285260417,0.8911892321485009,"alik, ngoreŋ",titih,titih,"alik, ngoreŋ",nana,nana,suaŋ,lolo,tama,miim,"anu, bilan",lolo,miim,lolo,miim,lolo,miim,tama,"anu, bilan"
+6,0.0788931686430967,0.5982695885852573,0.5193764199421605,titih,"alik, ngoreŋ",nana,"alik, ngoreŋ",suaŋ,titih,nana,lolo,lolo,tama,lolo,"anu, bilan",miim,miim,lolo,miim,tama,miim,"anu, bilan"
+7,0.2868240015233605,1.376055285260417,1.0892312837370566,suaŋ,titih,"alik, ngoreŋ",nana,titih,nana,"alik, ngoreŋ",tama,lolo,"anu, bilan",miim,lolo,"anu, bilan",miim,lolo,miim,miim,tama,lolo
+8,0.09922444498263283,0.5195798391305154,0.4203553941478826,suaŋ,titih,"alik, ngoreŋ",titih,"alik, ngoreŋ",nana,nana,miim,lolo,lolo,lolo,"anu, bilan",tama,lolo,tama,miim,miim,"anu, bilan",miim
+9,0.242433026555958,1.034601232910181,0.792168206354223,titih,"alik, ngoreŋ",suaŋ,nana,nana,titih,"alik, ngoreŋ",lolo,miim,miim,"anu, bilan",tama,lolo,lolo,tama,miim,"anu, bilan",miim,lolo

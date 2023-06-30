@@ -1,0 +1,10 @@
+simulation_number,mutual_information,entropy,conditional_entropy,meB,meZ,feB,feZ,mF,mM,mFZ,mMZ,mFeZ,mFyZ,mMeZ,mMyZ,mMyB,fF,fM,fFZ,fMZ,fFeZ,fFyZ,fMeZ,fMyZ,fMyB
+0,0.13666070641142758,0.6365141682948128,0.4998534618833852,šiiši,šiiši,šiiši,šiiši,tatari,vovič,vovič,diska,'oog,vovič,daad,tatari,vovič,vovič,vovič,diska,vovič,vovič,'oog,vovič,vovič,daad
+1,0.029852737174269284,0.5297061990576545,0.4998534618833852,šiiši,šiiši,šiiši,šiiši,vovič,vovič,'oog,vovič,vovič,tatari,daad,vovič,daad,vovič,diska,tatari,vovič,'oog,diska,vovič,vovič,vovič
+2,0.07083074943292755,0.6869615765973234,0.6161308271643958,šiiši,šiiši,šiiši,šiiši,tatari,vovič,'oog,vovič,vovič,vovič,vovič,daad,vovič,tatari,vovič,vovič,vovič,'oog,daad,vovič,diska,diska
+3,0.029852737174269284,0.5297061990576545,0.4998534618833852,šiiši,šiiši,šiiši,šiiši,vovič,daad,vovič,tatari,'oog,tatari,vovič,vovič,vovič,vovič,vovič,vovič,daad,vovič,vovič,diska,diska,'oog
+5,0.13666070641142758,1.0608569471580214,0.9241962407465938,šiiši,šiiši,šiiši,šiiši,daad,vovič,vovič,tatari,vovič,vovič,vovič,diska,vovič,vovič,tatari,'oog,diska,vovič,vovič,daad,'oog,vovič
+6,0.13666070641142758,1.0608569471580214,0.9241962407465938,šiiši,šiiši,šiiši,šiiši,daad,vovič,tatari,vovič,daad,vovič,'oog,vovič,diska,vovič,'oog,vovič,tatari,vovič,vovič,vovič,diska,vovič
+7,0.07083074943292744,0.9950269901795212,0.9241962407465938,šiiši,šiiši,šiiši,šiiši,vovič,'oog,vovič,vovič,vovič,'oog,tatari,vovič,vovič,diska,vovič,vovič,diska,vovič,vovič,daad,tatari,daad
+8,0.07083074943292744,0.9950269901795212,0.9241962407465938,šiiši,šiiši,šiiši,šiiši,vovič,diska,vovič,'oog,vovič,daad,daad,vovič,vovič,vovič,tatari,vovič,vovič,diska,'oog,tatari,vovič,vovič
+9,0.07083074943292744,0.9950269901795212,0.9241962407465938,šiiši,šiiši,šiiši,šiiši,vovič,diska,vovič,daad,vovič,vovič,daad,vovič,tatari,'oog,vovič,vovič,vovič,diska,tatari,vovič,'oog,vovič

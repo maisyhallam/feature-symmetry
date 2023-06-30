@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,fyB,meZ,myZ,feZ,fyZ,mF,mM,fF,fM,mFeB,mFyB,mFeZ,mFyZ,mMeB,mMyB,mMeZ,mMyZ,fFeB,fFyB,fFeZ,fFyZ,fMeB,fMyB,fMeZ,fMyZ
+0,0.24243302655595822,1.0346012329101812,0.792168206354223,oƒe,oƒe,ɔtsɛ,ɔda,ɔda,ofo,ɔtsɛ,oneda,ɔkabi,ɔkabi,ɔka,ɔka,one,ɔkada,ɔnyrɛ,ɔnyrɛ,one,ɔnyrɛ,ɔkada,oneda,ɔnyrɛ,ɔkada,oneda,ɔkabi,ɔkabi,oneda,ɔkada
+1,0.14341200076168037,1.0346012329101812,0.8911892321485009,ofo,ɔda,ɔtsɛ,oƒe,ɔda,ɔtsɛ,oƒe,ɔnyrɛ,ɔka,ɔnyrɛ,ɔkabi,oneda,one,ɔka,oneda,one,oneda,ɔkada,ɔkabi,ɔkabi,ɔnyrɛ,ɔkabi,ɔkada,ɔkada,ɔnyrɛ,oneda,ɔkada
+2,0.2868240015233603,1.0789922078775833,0.792168206354223,ɔtsɛ,ɔda,ɔtsɛ,oƒe,ofo,ɔda,oƒe,ɔkabi,ɔkabi,ɔkada,oneda,oneda,ɔnyrɛ,one,ɔnyrɛ,ɔkabi,oneda,one,ɔka,ɔkada,ɔkada,oneda,ɔka,ɔkabi,ɔnyrɛ,ɔkada,ɔnyrɛ
+3,0.34145405235023607,1.0346012329101812,0.6931471805599452,ofo,ɔtsɛ,ɔtsɛ,ɔda,ɔda,oƒe,oƒe,ɔnyrɛ,ɔkabi,ɔnyrɛ,ɔka,ɔkabi,oneda,ɔkada,ɔkabi,oneda,ɔkabi,ɔkada,ɔkada,ɔka,ɔkada,ɔnyrɛ,one,ɔnyrɛ,oneda,one,oneda
+4,0.04439097496740252,1.0346012329101812,0.9902102579427787,oƒe,ofo,ɔtsɛ,ɔtsɛ,ɔda,oƒe,ɔda,ɔkabi,oneda,ɔnyrɛ,oneda,ɔka,ɔnyrɛ,ɔkada,oneda,ɔka,oneda,ɔkabi,ɔkabi,ɔnyrɛ,one,ɔnyrɛ,one,ɔkabi,ɔkada,ɔkada,ɔkada
+5,1.1102230246251565e-16,0.6931471805599453,0.6931471805599452,ɔda,ofo,ɔda,oƒe,oƒe,ɔtsɛ,ɔtsɛ,ɔkada,oneda,ɔkada,oneda,ɔkabi,ɔka,ɔnyrɛ,ɔkabi,ɔka,ɔnyrɛ,ɔnyrɛ,ɔkada,one,one,ɔkabi,oneda,ɔkada,ɔnyrɛ,oneda,ɔkabi
+6,0.04439097496740252,1.0346012329101812,0.9902102579427787,ɔtsɛ,ofo,ɔda,ɔda,oƒe,ɔtsɛ,oƒe,oneda,ɔkabi,ɔkada,ɔkabi,ɔkada,ɔnyrɛ,ɔka,ɔkada,one,ɔkabi,oneda,oneda,ɔnyrɛ,ɔkabi,ɔkada,ɔnyrɛ,ɔnyrɛ,oneda,ɔka,one
+7,0.2868240015233605,1.376055285260417,1.0892312837370566,oƒe,ɔtsɛ,oƒe,ɔtsɛ,ofo,ɔda,ɔda,oneda,ɔkabi,ɔka,one,ɔnyrɛ,one,ɔkada,ɔkada,oneda,ɔnyrɛ,ɔnyrɛ,oneda,ɔkabi,oneda,ɔkada,ɔkada,ɔkabi,ɔkabi,ɔnyrɛ,ɔka
+8,0.2868240015233603,1.3760552852604169,1.0892312837370566,ɔtsɛ,ɔda,oƒe,ɔda,ofo,oƒe,ɔtsɛ,one,ɔka,ɔnyrɛ,ɔkada,ɔkada,ɔkabi,oneda,ɔnyrɛ,ɔkabi,oneda,oneda,ɔnyrɛ,oneda,ɔkada,ɔkabi,ɔka,ɔnyrɛ,one,ɔkada,ɔkabi
+9,0.08878194993480482,1.376055285260417,1.2872733353256123,ɔda,ɔtsɛ,ofo,oƒe,ɔtsɛ,ɔda,oƒe,ɔnyrɛ,ɔkabi,ɔkada,oneda,ɔkabi,ɔkabi,oneda,oneda,ɔkabi,ɔkada,ɔka,oneda,one,one,ɔkada,ɔnyrɛ,ɔnyrɛ,ɔka,ɔkada,ɔnyrɛ

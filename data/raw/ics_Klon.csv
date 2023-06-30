@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myZ,fyZ,myB,fyB,meZ,feZ,meB,feB
+0,NA,NA,NA,ik,òm,"òm, odoin","ik, odoin",ik,"òm, odoin","ik, odoin",òm
+1,NA,NA,NA,òm,ik,"ik, odoin",ik,òm,"òm, odoin","òm, odoin","ik, odoin"
+2,NA,NA,NA,òm,ik,"òm, odoin","òm, odoin",ik,òm,"ik, odoin","ik, odoin"
+3,NA,NA,NA,"òm, odoin",ik,òm,òm,"òm, odoin","ik, odoin",ik,"ik, odoin"
+4,NA,NA,NA,ik,ik,"ik, odoin",òm,òm,"òm, odoin","òm, odoin","ik, odoin"
+5,NA,NA,NA,"ik, odoin","òm, odoin",òm,"ik, odoin","òm, odoin",ik,òm,ik
+6,NA,NA,NA,"ik, odoin",ik,"òm, odoin",òm,ik,"òm, odoin","ik, odoin",òm
+7,NA,NA,NA,òm,"òm, odoin","ik, odoin","ik, odoin",òm,ik,"òm, odoin",ik
+8,NA,NA,NA,"ik, odoin","ik, odoin",ik,"òm, odoin",òm,ik,"òm, odoin",òm
+9,NA,NA,NA,"òm, odoin",òm,ik,òm,"ik, odoin","ik, odoin","òm, odoin",ik

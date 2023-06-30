@@ -1,0 +1,7 @@
+simulation_number,mutual_information,entropy,conditional_entropy,myB,meZ,myZ,fZ,fyB,feZ,fyZ,mF,mM,fF,fM
+0,-1.1102230246251565e-16,0.6931471805599453,0.6931471805599454,mˀaʔaḥ-syˀi-,yˀokʷiˑqso,mˀaʔaḥ-syˀi-,yˀokʷiˑqso,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,taˑta,ʔomʔiˑqso,taˑta,ʔomʔiˑqso
+5,0.3182570841474064,0.6931471805599453,0.3748900964125389,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,yˀokʷiˑqso,yˀokʷiˑqso,mˀaʔaḥ-syˀi-,ʔomʔiˑqso,ʔomʔiˑqso,taˑta,taˑta
+6,-1.1102230246251565e-16,0.6931471805599453,0.6931471805599454,yˀokʷiˑqso,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,yˀokʷiˑqso,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,ʔomʔiˑqso,taˑta,taˑta,ʔomʔiˑqso
+7,0.1323041247188982,0.6931471805599453,0.5608430558410471,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,yˀokʷiˑqso,mˀaʔaḥ-syˀi-,yˀokʷiˑqso,mˀaʔaḥ-syˀi-,taˑta,taˑta,ʔomʔiˑqso,ʔomʔiˑqso
+8,0.3182570841474064,0.6931471805599453,0.3748900964125389,mˀaʔaḥ-syˀi-,yˀokʷiˑqso,yˀokʷiˑqso,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,ʔomʔiˑqso,ʔomʔiˑqso,taˑta,taˑta
+9,0.3182570841474064,0.6931471805599453,0.3748900964125389,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,mˀaʔaḥ-syˀi-,yˀokʷiˑqso,yˀokʷiˑqso,ʔomʔiˑqso,ʔomʔiˑqso,taˑta,taˑta

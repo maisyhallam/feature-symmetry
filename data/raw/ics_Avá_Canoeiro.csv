@@ -1,0 +1,11 @@
+simulation_number,mutual_information,entropy,conditional_entropy,fB,fyZ,feB,fyB,mZ,feZ,mM,fF,fM,fMyZ
+0,0.005000792454427527,0.6869615765973234,0.6819607841428958,txi-kyguga,txi-pykyga,kwima,pia,pia,pia,ai,txi-kupialika,ai,-uw
+1,0.3488320958430319,0.9649629230074277,0.6161308271643958,pia,txi-kyguga,pia,txi-pykyga,kwima,pia,ai,-uw,txi-kupialika,ai
+2,0.34883209584303193,0.34883209584303193,-0.0,pia,txi-kyguga,txi-pykyga,pia,kwima,pia,-uw,ai,ai,txi-kupialika
+3,0.3488320958430319,0.9649629230074277,0.6161308271643958,txi-pykyga,pia,pia,pia,txi-kyguga,kwima,txi-kupialika,ai,-uw,ai
+4,0.34883209584303193,0.34883209584303193,-0.0,txi-pykyga,txi-kyguga,pia,pia,kwima,pia,txi-kupialika,ai,ai,-uw
+5,0.13666070641142758,0.9649629230074277,0.8283022165960001,pia,pia,kwima,txi-kyguga,pia,txi-pykyga,-uw,txi-kupialika,ai,ai
+6,0.005000792454427416,0.6869615765973234,0.681960784142896,txi-kyguga,pia,txi-pykyga,pia,pia,kwima,ai,ai,-uw,txi-kupialika
+7,0.07083074943292755,0.6869615765973234,0.6161308271643958,pia,txi-kyguga,kwima,pia,txi-pykyga,pia,ai,-uw,ai,txi-kupialika
+8,0.012692066792422296,0.6869615765973234,0.6742695098049011,pia,pia,txi-pykyga,kwima,pia,txi-kyguga,ai,-uw,ai,txi-kupialika
+9,0.13666070641142758,0.9649629230074277,0.8283022165960001,pia,txi-kyguga,txi-pykyga,kwima,pia,pia,-uw,txi-kupialika,ai,ai
