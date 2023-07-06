@@ -1,9 +1,0 @@
-simulation_number,mutual_information,entropy,conditional_entropy,myB,meZ,myZ,feB,fyB,feZ,fyZ,mF,mM,mFB,mFZ,mMB,mMZ,mFeB,mFyB,mFeZ,mFyZ,mMeZ,mMyZ,mMeB,mMyB
-0,0.08878194993480437,0.6829081047004717,0.5941261547656673,kodu,ndomu,kodu,ndembi,ndomu,ndembi,mbomu,tata,kokwè,mamonimbé,yayè,yayè,yayè,mamonimbé,yayè,mamonimbé,kokwè,kokwè,tata,tata,tata
-2,0.08878194993480437,0.6829081047004717,0.5941261547656673,kodu,ndomu,kodu,ndembi,ndembi,ndomu,mbomu,yayè,tata,yayè,tata,yayè,kokwè,tata,yayè,mamonimbé,mamonimbé,kokwè,tata,kokwè,mamonimbé
-4,0.08878194993480437,0.6829081047004717,0.5941261547656673,ndembi,ndembi,kodu,kodu,ndomu,mbomu,ndomu,kokwè,mamonimbé,mamonimbé,mamonimbé,kokwè,kokwè,yayè,tata,tata,yayè,yayè,tata,tata,yayè
-5,0.08878194993480437,0.6829081047004717,0.5941261547656673,ndomu,ndembi,ndomu,kodu,kodu,mbomu,ndembi,yayè,mamonimbé,mamonimbé,kokwè,yayè,kokwè,yayè,tata,mamonimbé,tata,tata,kokwè,yayè,tata
-6,0.08878194993480437,0.6829081047004717,0.5941261547656673,ndomu,kodu,mbomu,ndomu,kodu,ndembi,ndembi,yayè,mamonimbé,mamonimbé,yayè,mamonimbé,kokwè,tata,tata,tata,tata,kokwè,kokwè,yayè,yayè
-7,0.08878194993480437,0.6829081047004717,0.5941261547656673,ndembi,mbomu,ndomu,ndomu,ndembi,kodu,kodu,mamonimbé,tata,yayè,mamonimbé,tata,yayè,tata,tata,kokwè,yayè,yayè,kokwè,kokwè,mamonimbé
-8,0.08878194993480437,0.6829081047004717,0.5941261547656673,kodu,ndomu,ndembi,ndembi,kodu,ndomu,mbomu,kokwè,mamonimbé,tata,yayè,kokwè,yayè,yayè,tata,mamonimbé,kokwè,tata,yayè,mamonimbé,tata
-9,0.08878194993480437,0.6829081047004717,0.5941261547656673,ndomu,mbomu,kodu,kodu,ndembi,ndembi,ndomu,tata,mamonimbé,tata,yayè,yayè,mamonimbé,kokwè,kokwè,yayè,mamonimbé,tata,kokwè,tata,yayè

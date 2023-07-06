@@ -1,8 +1,0 @@
-simulation_number,mutual_information,entropy,conditional_entropy,myB,meZ,feB,fyB,feZ,mM,mFeB,fM
-0,0.3957527947852784,0.6730116670092565,0.2772588722239781,woní,wací-r,woní,kocí,kocí,tayí,inyá-r,inyá-r
-3,0.11849392256130031,0.6730116670092565,0.5545177444479562,woní,kocí,wací-r,kocí,woní,tayí,inyá-r,inyá-r
-4,0.6730116670092565,0.6730116670092565,-0.0,kocí,kocí,woní,wací-r,woní,tayí,inyá-r,inyá-r
-6,0.11849392256130031,0.6730116670092565,0.5545177444479562,woní,kocí,wací-r,woní,kocí,inyá-r,inyá-r,tayí
-7,0.11849392256130031,0.6730116670092565,0.5545177444479562,woní,kocí,wací-r,kocí,woní,inyá-r,inyá-r,tayí
-8,0.11849392256130031,0.6730116670092565,0.5545177444479562,woní,kocí,kocí,woní,wací-r,inyá-r,inyá-r,tayí
-9,0.6730116670092565,0.6730116670092565,-0.0,woní,woní,kocí,kocí,wací-r,tayí,inyá-r,inyá-r

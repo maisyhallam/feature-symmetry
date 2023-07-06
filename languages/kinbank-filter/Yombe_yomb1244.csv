@@ -1,0 +1,36 @@
+parameter,word
+mM,mama
+mF,tata
+mMeB,ngwa khazi
+mFeB,papa nkulutu
+mFyB,papa nleki
+mMeZ,mama nkulutu
+mMyZ,mama nleki
+mFeZ,papa nketo
+meB,bakhomba
+myB,baphangi
+meZ,bakhomba
+mMBeS,ngwa khazi
+mMeBS,ngwa khazi
+mMyBS,ngwa khazi
+mFBeS,papa nkulutu
+mFByS,papa nleki
+mMZeS,ngwa khazi
+mMeZS,ngwa khazi
+mMyZS,ngwa khazi
+mFZeS,papa nkulutu
+mFZyS,papa nleki
+mMBeD,mama nkulutu
+mMByD,mama nleki
+mMeBD,bana bakhazi
+mMyBD,bana bakhazi
+mFBeD,papa nketo
+mFeBD,papa nketo
+mFyBD,papa nketo
+mMZeD,mama nkulutu
+mMZyD,mama nleki
+mMeZD,bana bakhazi
+mMyZD,bana bakhazi
+mFZeD,papa nketo
+mFeZD,papa nketo
+mFyZD,papa nketo

@@ -1,9 +1,0 @@
-simulation_number,mutual_information,entropy,conditional_entropy,meZ,feB,feZ,mF,mM,mFZ,mFeZ,mFyZ,mMyB,fF,fM,fFZ,fFeZ,fFyZ,fMyB
-0,0.16353168475831115,0.9556998911125343,0.7921682063542231,kuudzin,paadzi,kuudzin,paawaa,toohan,paawaa,'aabuu,'aabuu,paawaa,paawaa,'aanaa,paawaa,'aanaa,paawaa,toohan
-2,0.20218548540814568,0.5982695885852573,0.39608410317711157,paadzi,kuudzin,kuudzin,paawaa,paawaa,toohan,paawaa,'aanaa,paawaa,'aanaa,paawaa,toohan,paawaa,'aabuu,'aabuu
-3,0.2868240015233603,1.0789922078775833,0.792168206354223,kuudzin,paadzi,kuudzin,paawaa,paawaa,paawaa,'aanaa,'aabuu,paawaa,toohan,'aabuu,'aanaa,toohan,paawaa,paawaa
-4,0.6829081047004717,1.0789922078775833,0.39608410317711157,paadzi,kuudzin,kuudzin,'aanaa,'aanaa,paawaa,paawaa,paawaa,toohan,toohan,paawaa,'aabuu,paawaa,paawaa,'aabuu
-6,0.16353168475831115,0.9556998911125343,0.7921682063542231,kuudzin,paadzi,kuudzin,paawaa,'aanaa,'aanaa,'aabuu,paawaa,paawaa,paawaa,'aabuu,paawaa,toohan,paawaa,toohan
-7,0.36157373634686696,0.9556998911125343,0.5941261547656673,kuudzin,paadzi,kuudzin,paawaa,toohan,paawaa,paawaa,toohan,paawaa,'aanaa,'aanaa,'aabuu,paawaa,'aabuu,paawaa
-8,0.2769352202316525,0.5982695885852573,0.32133436835360474,kuudzin,paadzi,kuudzin,'aanaa,paawaa,paawaa,paawaa,'aanaa,paawaa,paawaa,paawaa,'aabuu,'aabuu,toohan,toohan
-9,0.7576578395239785,0.9556998911125343,0.19804205158855578,paadzi,kuudzin,kuudzin,toohan,'aanaa,paawaa,paawaa,'aabuu,'aanaa,paawaa,paawaa,paawaa,paawaa,'aabuu,toohan

@@ -1,9 +1,0 @@
-simulation_number,mutual_information,entropy,conditional_entropy,myB,fyB,myZ,feZ,fyZ,mF,mM,fF,fM,mMeB,mMyB,fMeB,fMyB
-0,0.11157177565710508,1.0296530140645737,0.9180812384074686,kakak,adiek,adiek,adiek,adiek,mamak,bapak,mamak,mandai,mandai,mamak,bapak,mamak
-1,0.11849392256130031,0.6730116670092565,0.5545177444479562,adiek,kakak,adiek,adiek,adiek,mandai,mandai,mamak,mamak,mamak,mamak,bapak,bapak
-2,0.11849392256130042,0.9502705392332347,0.8317766166719343,adiek,kakak,adiek,adiek,adiek,bapak,mandai,mamak,mamak,mandai,mamak,bapak,mamak
-3,0.11849392256130031,0.6730116670092565,0.5545177444479562,adiek,adiek,adiek,kakak,adiek,mandai,mandai,mamak,mamak,mamak,mamak,bapak,bapak
-4,0.05053430784314117,0.5004024235381879,0.4498681156950467,adiek,kakak,adiek,adiek,adiek,mamak,mandai,mamak,mamak,bapak,mamak,mandai,bapak
-5,0.022366750247857725,0.6108643020548935,0.5884975518070358,adiek,kakak,adiek,adiek,adiek,mamak,mamak,mamak,mandai,mandai,bapak,mamak,bapak
-7,0.05924696128065032,1.0296530140645737,0.9704060527839233,adiek,adiek,adiek,kakak,adiek,bapak,mamak,mandai,mamak,mandai,bapak,mamak,mamak
-8,0.05924696128065032,1.0296530140645737,0.9704060527839233,adiek,adiek,adiek,adiek,kakak,mamak,bapak,mamak,mandai,bapak,mamak,mandai,mamak

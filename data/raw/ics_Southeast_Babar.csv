@@ -1,8 +1,0 @@
-simulation_number,mutual_information,entropy,conditional_entropy,myB,feB,fyB,meZ,myZ,feZ,fyZ,mF,mM,fF,fM
-1,1.1102230246251565e-16,0.6931471805599453,0.6931471805599452,'viau,'viau,'au,'au,'au,'viau,'viau,'rɛl,oi'mal,'rɛl,oi'mal
-2,1.1102230246251565e-16,0.6931471805599453,0.6931471805599452,'viau,'au,'viau,'viau,'viau,'au,'au,oi'mal,'rɛl,'rɛl,oi'mal
-4,1.1102230246251565e-16,0.6931471805599453,0.6931471805599452,'viau,'au,'au,'au,'viau,'viau,'viau,'rɛl,oi'mal,'rɛl,oi'mal
-5,0.36157373634686696,0.6829081047004717,0.32133436835360474,'viau,'au,'au,'viau,'viau,'viau,'au,oi'mal,oi'mal,'rɛl,'rɛl
-6,1.1102230246251565e-16,0.6931471805599453,0.6931471805599452,'au,'au,'au,'viau,'viau,'viau,'viau,'rɛl,oi'mal,'rɛl,oi'mal
-8,0.08878194993480437,0.6829081047004717,0.5941261547656673,'viau,'au,'viau,'au,'au,'viau,'viau,oi'mal,oi'mal,'rɛl,'rɛl
-9,1.1102230246251565e-16,0.6931471805599453,0.6931471805599452,'viau,'viau,'viau,'au,'viau,'au,'au,'rɛl,oi'mal,'rɛl,oi'mal

@@ -1,8 +1,0 @@
-simulation_number,mutual_information,entropy,conditional_entropy,meB,myB,meZ,fB,feB,fyB,feZ,mF,mM,fF,fM
-0,-1.1102230246251565e-16,0.6931471805599453,0.6931471805599454,n-sàsuí,mó,m-bɛ̀tnʒèm,n-sàsuí,n-sàsuí,n-sàsuí,m-bɛ̀tnʒèm,wǎ,nǎ,wǎ,nǎ
-2,-1.1102230246251565e-16,0.6931471805599453,0.6931471805599454,n-sàsuí,n-sàsuí,m-bɛ̀tnʒèm,n-sàsuí,n-sàsuí,m-bɛ̀tnʒèm,mó,wǎ,nǎ,nǎ,wǎ
-4,-1.1102230246251565e-16,0.6931471805599453,0.6931471805599454,m-bɛ̀tnʒèm,n-sàsuí,n-sàsuí,n-sàsuí,m-bɛ̀tnʒèm,n-sàsuí,mó,wǎ,nǎ,wǎ,nǎ
-5,-1.1102230246251565e-16,0.6931471805599453,0.6931471805599454,n-sàsuí,m-bɛ̀tnʒèm,m-bɛ̀tnʒèm,n-sàsuí,n-sàsuí,mó,n-sàsuí,wǎ,nǎ,wǎ,nǎ
-6,0.1438410362258904,0.6931471805599453,0.5493061443340549,n-sàsuí,n-sàsuí,m-bɛ̀tnʒèm,n-sàsuí,m-bɛ̀tnʒèm,mó,n-sàsuí,wǎ,wǎ,nǎ,nǎ
-7,0.3182570841474064,0.6931471805599453,0.3748900964125389,m-bɛ̀tnʒèm,mó,n-sàsuí,m-bɛ̀tnʒèm,n-sàsuí,n-sàsuí,n-sàsuí,nǎ,nǎ,wǎ,wǎ
-9,0.3748900964125389,0.6931471805599453,0.3182570841474064,mó,n-sàsuí,n-sàsuí,n-sàsuí,m-bɛ̀tnʒèm,n-sàsuí,m-bɛ̀tnʒèm,wǎ,wǎ,nǎ,nǎ

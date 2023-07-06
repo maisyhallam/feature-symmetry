@@ -1,7 +1,0 @@
-simulation_number,mutual_information,entropy,conditional_entropy,feB,meZ,feZ,mF,mM,fF,fM,mMeB,mMyB
-0,0.08720802396075811,1.0114042647073518,0.9241962407465937,yiba,yiba,"gurda, gurdu",thami,"guyu, mama, mamadi",thami,"nanga, ngangga","nanga, ngangga","guyu, mama, mamadi"
-2,0.08720802396075811,1.0114042647073518,0.9241962407465937,"gurda, gurdu",yiba,yiba,"guyu, mama, mamadi","nanga, ngangga",thami,"guyu, mama, mamadi",thami,"nanga, ngangga"
-4,0.08720802396075811,1.0114042647073518,0.9241962407465937,yiba,yiba,"gurda, gurdu","nanga, ngangga",thami,"guyu, mama, mamadi",thami,"guyu, mama, mamadi","nanga, ngangga"
-7,0.3182570841474063,1.0114042647073516,0.6931471805599453,yiba,"gurda, gurdu",yiba,"guyu, mama, mamadi",thami,"guyu, mama, mamadi","nanga, ngangga",thami,"nanga, ngangga"
-8,0.17441604792151588,1.0986122886681096,0.9241962407465937,yiba,yiba,"gurda, gurdu","guyu, mama, mamadi","guyu, mama, mamadi",thami,"nanga, ngangga","nanga, ngangga",thami
-9,0.6365141682948128,0.8675632284814612,0.23104906018664842,yiba,"gurda, gurdu",yiba,"nanga, ngangga","guyu, mama, mamadi",thami,thami,"nanga, ngangga","guyu, mama, mamadi"

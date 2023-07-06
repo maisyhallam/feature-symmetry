@@ -1,9 +1,0 @@
-simulation_number,mutual_information,entropy,conditional_entropy,meB,meZ,myB,mF,mM,mFZ,mMB,mFeZ,mFyZ,mMeB,mMyB
-0,0.08878194993480437,0.6829081047004717,0.5941261547656673,keribyari,mondogo,keribyari,ma:ma,mteregwe,ma:ma,baba,ma,mteregwe,mteregwe,ma:ma
-1,0.08878194993480437,0.6829081047004717,0.5941261547656673,keribyari,mondogo,keribyari,ma:ma,baba,ma:ma,mteregwe,mteregwe,mteregwe,ma,ma:ma
-2,0.08878194993480437,0.6829081047004717,0.5941261547656673,keribyari,keribyari,mondogo,mteregwe,ma:ma,ma:ma,mteregwe,ma,baba,mteregwe,ma:ma
-3,0.08878194993480437,0.6829081047004717,0.5941261547656673,mondogo,keribyari,keribyari,ma:ma,ma,mteregwe,mteregwe,baba,ma:ma,mteregwe,ma:ma
-4,0.08878194993480437,0.6829081047004717,0.5941261547656673,mondogo,keribyari,keribyari,ma:ma,baba,ma:ma,mteregwe,ma:ma,mteregwe,ma,mteregwe
-7,0.08878194993480437,0.6829081047004717,0.5941261547656673,keribyari,mondogo,keribyari,mteregwe,ma:ma,ma:ma,mteregwe,ma,baba,mteregwe,ma:ma
-8,0.08878194993480437,0.6829081047004717,0.5941261547656673,mondogo,keribyari,keribyari,ma,mteregwe,ma:ma,mteregwe,ma:ma,baba,ma:ma,mteregwe
-9,0.08878194993480437,0.6829081047004717,0.5941261547656673,mondogo,keribyari,keribyari,ma:ma,mteregwe,ma:ma,mteregwe,ma,mteregwe,baba,ma:ma

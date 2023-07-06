@@ -1,5 +1,0 @@
-simulation_number,mutual_information,entropy,conditional_entropy,meB,myB,meZ,myZ,fB,feB,fyB,feZ,fyZ,mF,mM,fF,fM
-0,0.5198603854199589,0.6931471805599453,0.17328679513998632,kurrkarni,kurrkarni,ngathanha,pathanga,ngathanha,purghi,patharn,pathanga,purghi,narmaquia,narmaquia,tatanya,tatanya
-2,0.34657359027997264,0.6931471805599453,0.34657359027997264,ngathanha,purghi,kurrkarni,purghi,pathanga,kurrkarni,patharn,pathanga,ngathanha,tatanya,tatanya,narmaquia,narmaquia
-6,0.5198603854199589,0.6931471805599453,0.17328679513998632,ngathanha,pathanga,patharn,pathanga,kurrkarni,kurrkarni,purghi,ngathanha,purghi,narmaquia,narmaquia,tatanya,tatanya
-7,0.34657359027997264,0.6931471805599453,0.34657359027997264,kurrkarni,ngathanha,patharn,pathanga,kurrkarni,purghi,ngathanha,purghi,pathanga,tatanya,tatanya,narmaquia,narmaquia
