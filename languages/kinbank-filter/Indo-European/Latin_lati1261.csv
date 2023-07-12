@@ -1,0 +1,36 @@
+parameter,word
+mM,māter
+mF,pater
+mMeB,avunculus
+mFeB,patrus
+mMeZ,matertera
+mFeZ,amita
+mB,frāter
+meZ,soror
+myZ,soror minor
+mMBeS,consobrinu
+mMeBS,consobrinu
+mMyBS,consobrinu
+mFBeS,consobrinu
+mFeBS,consobrinu
+mFyBS,consobrinu
+mMZeS,consobrinu
+mMeZS,consobrinu
+mMyZS,consobrinu
+mFZeS,consobrinu
+mFeZS,consobrinu
+mFyZS,consobrinu
+mMBeD,consobrina
+mMeBD,consobrina
+mMyBD,consobrina
+mFBeD,consobrina
+mFeBD,consobrina
+mFyBD,consobrina
+mMZeD,consobrina
+mMeZD,consobrina
+mMyZD,consobrina
+mFZeD,consobrina
+mFeZD,consobrina
+mFyZD,consobrina
+feB,frāter
+fyB,frāter minor

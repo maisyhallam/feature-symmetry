@@ -1,0 +1,54 @@
+parameter,word
+mM,ema
+mF,esa
+mMeB,mama temun
+mMyB,mama caun
+mFeB,esa temun
+mFyB,esa caun
+mMeZ,ema temun
+mMyZ,ema caun
+mFeZ,wowa temun
+mFyZ,wowa caun
+meZ,dunan pas temun
+myZ,dunan pas cicaun
+mMBeS,korawan
+mMeBS,korawan
+mMyBS,korawan
+mFBeS,kian
+mFeBS,kian
+mFyBS,kian
+mMZeS,kian
+mMeZS,kian
+mMyZS,kian
+mFZeS,korawan
+mFeZS,korawan
+mFyZS,korawan
+mMBeD,korawan
+mMeBD,korawan
+mMyBD,korawan
+mFBeD,dudanan
+mFeBD,dudanan
+mFyBD,dudanan
+mMZeD,dudanan
+mMeZD,dudanan
+mMyZD,dudanan
+mFZeD,korawan
+mFeZD,korawan
+mFyZD,korawan
+fFyB,ema caun
+feB,dunan canam temun
+fyB,dunan canam cicaun
+feZ,kian pas temun
+fyZ,kian pas cicaun
+fFBeS,dudanan
+fFeBS,dudanan
+fFyBS,dudanan
+fMZeS,dudanan
+fMeZS,dudanan
+fMyZS,dudanan
+fFBeD,kian
+fFeBD,kian
+fFyBD,kian
+fMZeD,kian
+fMeZD,kian
+fMyZD,kian

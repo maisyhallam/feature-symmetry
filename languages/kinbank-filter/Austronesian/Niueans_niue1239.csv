@@ -1,0 +1,69 @@
+parameter,word
+mM,matua fifine
+mF,matua tane
+mMeB,matua tane
+mFeB,matua tane
+mMeZ,matua fifine
+mFeZ,matua fifine
+meB,taokete
+myB,tehina
+meZ,mahakainaga
+mMBeS,taokete
+mMByS,tehina
+mMeBS,matakainaga
+mMyBS,matakainaga
+mFBeS,taokete
+mFByS,tehina
+mFeBS,matakainaga
+mFyBS,matakainaga
+mMZeS,taokete
+mMZyS,tehina
+mMeZS,matakainaga
+mMyZS,matakainaga
+mFZeS,taokete
+mFZyS,tehina
+mFeZS,matakainaga
+mFyZS,matakainaga
+mMBeD,mahakainaga
+mMeBD,mahakainaga
+mMyBD,mahakainaga
+mFBeD,mahakainaga
+mFeBD,mahakainaga
+mFyBD,mahakainaga
+mMZeD,mahakainaga
+mMeZD,mahakainaga
+mMyZD,mahakainaga
+mFZeD,mahakainaga
+mFeZD,mahakainaga
+mFyZD,mahakainaga
+feB,mahakainaga
+feZ,taokete
+fyZ,tehina
+fMBeS,mahakainaga
+fMeBS,mahakainaga
+fMyBS,mahakainaga
+fFBeS,mahakainaga
+fFeBS,mahakainaga
+fFyBS,mahakainaga
+fMZeS,mahakainaga
+fMeZS,mahakainaga
+fMyZS,mahakainaga
+fFZeS,mahakainaga
+fFeZS,mahakainaga
+fFyZS,mahakainaga
+fMBeD,taokete
+fMByD,tehina
+fMeBD,matakainaga
+fMyBD,matakainaga
+fFBeD,taokete
+fFByD,tehina
+fFeBD,matakainaga
+fFyBD,matakainaga
+fMZeD,taokete
+fMZyD,tehina
+fMeZD,matakainaga
+fMyZD,matakainaga
+fFZeD,taokete
+fFZyD,tehina
+fFeZD,matakainaga
+fFyZD,matakainaga

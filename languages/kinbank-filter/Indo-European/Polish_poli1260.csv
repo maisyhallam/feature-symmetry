@@ -1,0 +1,33 @@
+parameter,word
+mM,matka
+mF,ojciec
+mMeB,wujek
+mFeB,stryj
+mMeZ,ciotka
+mFeZ,stryjenka
+meB,brat
+meZ,siostra
+mMBeS,brat wujeczny
+mMeBS,brat wujeczny
+mMyBS,brat wujeczny
+mFBeS,brat stryjeczny
+mFeBS,brat stryjeczny
+mFyBS,brat stryjeczny
+mMZeS,brat cioteczny
+mMeZS,brat cioteczny
+mMyZS,brat cioteczny
+mFZeS,cioteczny brat ze strony ojca
+mFeZS,cioteczny brat ze strony ojca
+mFyZS,cioteczny brat ze strony ojca
+mMBeD,siostra wujeczna
+mMeBD,siostra wujeczna
+mMyBD,siostra wujeczna
+mFBeD,siostra stryjeczna
+mFeBD,siostra stryjeczna
+mFyBD,siostra stryjeczna
+mMZeD,siostra cioteczna
+mMeZD,siostra cioteczna
+mMyZD,siostra cioteczna
+mFZeD,cioteczna siostra ze strony ojca
+mFeZD,cioteczna siostra ze strony ojca
+mFyZD,cioteczna siostra ze strony ojca
