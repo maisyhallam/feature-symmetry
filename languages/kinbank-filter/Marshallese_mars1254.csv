@@ -1,0 +1,43 @@
+parameter,word
+mM,jinu
+mF,jema
+mMeB,jema
+mFeB,uleba
+mMeZ,jinu
+mFeZ,jinu
+meZ,jeu
+myZ,jetu
+mMBeS,jeu
+mMByS,jetu
+mFBeS,jeu
+mFByS,jetu
+mMZeS,jeu
+mMZyS,jetu
+mFZeS,jeu
+mFZyS,jetu
+mMBeD,jeu reliku
+mMByD,jetu reliku
+mFBeD,jeu jinu
+mFByD,jetu jinu
+mMZeD,jeu jinu
+mMZyD,jetu jinu
+mFZeD,jeu reliku
+mFZyD,jetu reliku
+feB,jeu
+fyB,jetu
+fMBeS,jeu reliku
+fMByS,jetu reliku
+fFBeS,jeu jinu
+fFByS,jetu jinu
+fMZeS,jeu jinu
+fMZyS,jetu jinu
+fFZeS,jeu reliku
+fFZyS,jetu reliku
+fMBeD,jeu
+fMByD,jetu
+fFBeD,jeu
+fFByD,jetu
+fMZeD,jeu
+fMZyD,jetu
+fFZeD,jeu
+fFZyD,jetu

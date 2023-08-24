@@ -1,0 +1,35 @@
+parameter,word
+mM,metua vahine
+mF,metua tane
+mMeB,metua tane
+mFeB,metua tane
+mMeZ,metua vahine
+mFeZ,metua vahine
+meZ,tua-hine
+mMBeS,tua'ana
+mMByS,teina tu'ane
+mFBeS,tua'ana
+mFByS,teina tu'ane
+mMZeS,tua'ana
+mMZyS,teina tu'ane
+mFZeS,tua'ana
+mFZyS,teina tu'ane
+mMBeD,tua-hine
+mFBeD,tua-hine
+mMZeD,tua-hine
+mFZeD,tua-hine
+feB,tu'ane
+feZ,tua'ana
+fyZ,taina tuahine
+fMBeS,tu'ane
+fFBeS,tu'ane
+fMZeS,tu'ane
+fFZeS,tu'ane
+fMBeD,tua'ana
+fMByD,taina tuahine
+fFBeD,tua'ana
+fFByD,taina tuahine
+fMZeD,tua'ana
+fMZyD,taina tuahine
+fFZeD,tua'ana
+fFZyD,taina tuahine

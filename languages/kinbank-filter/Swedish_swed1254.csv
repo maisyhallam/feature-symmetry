@@ -1,0 +1,35 @@
+parameter,word
+mM,mor
+mF,far
+mMeB,mor-bror
+mFeB,far-bror
+mMeZ,moster
+mFeZ,faster
+meB,bror
+myB,yngre bror
+meZ,syster
+myZ,yngre syster
+mMBeS,kusin
+mMeBS,kusin
+mMyBS,kusin
+mFBeS,kusin
+mFeBS,kusin
+mFyBS,kusin
+mMZeS,kusin
+mMeZS,kusin
+mMyZS,kusin
+mFZeS,kusin
+mFeZS,kusin
+mFyZS,kusin
+mMBeD,kusin
+mMeBD,kusin
+mMyBD,kusin
+mFBeD,kusin
+mFeBD,kusin
+mFyBD,kusin
+mMZeD,kusin
+mMeZD,kusin
+mMyZD,kusin
+mFZeD,kusin
+mFeZD,kusin
+mFyZD,kusin

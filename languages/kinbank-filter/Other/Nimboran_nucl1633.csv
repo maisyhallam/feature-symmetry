@@ -1,0 +1,43 @@
+parameter,word
+mM,me
+mF,ngayo
+mMeB,iniewo
+mFeB,ngayo
+mMeZ,me
+mFeZ,yau
+meZ,nenggambu
+mMeBS,nesking
+mMyBS,nesking
+mFeBS,nesking
+mFyBS,nengko
+mMeZS,nesking
+mMyZS,nengko
+mFeZS,keitero (nengko)
+mFyZS,keitero (nengko)
+mMeBD,nenggambu
+mMyBD,nenggambu
+mFeBD,nenggambu
+mFyBD,nenggambu
+mMeZD,nenggambu
+mMyZD,nenggambu
+mFeZD,keitero nenggambu
+mFyZD,keitero nenggambu
+feB,nesu
+feZ,nesking
+fyZ,nengko
+fMeBS,nesu
+fMyBS,nesu
+fFeBS,nesu
+fFyBS,nesu
+fMeZS,nesu
+fMyZS,nesu
+fFeZS,keitero nenggambu
+fFyZS,keitero nenggambu
+fMeBD,nesking
+fMyBD,nesking
+fFeBD,nesking
+fFyBD,nengko
+fMeZD,nesking
+fMyZD,nengko
+fFeZD,keitero (nengko)
+fFyZD,keitero (nengko)

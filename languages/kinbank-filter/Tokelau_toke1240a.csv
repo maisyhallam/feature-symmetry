@@ -1,0 +1,54 @@
+parameter,word
+mM,maatua
+mF,tamana
+mFeB,tamana
+mMeZ,maatua
+mFeZ,matua sa
+meZ,tua-fafine
+mMBeS,tua-tina
+mMeBS,tua-tina
+mMyBS,tua-tina
+mFBeS,taina
+mFeBS,taina
+mFyBS,taina
+mMZeS,taina
+mMeZS,taina
+mMyZS,taina
+mFZeS,ilamutu
+mFeZS,ilamutu
+mFyZS,ilamutu
+mMBeD,fai-tua-fafine
+mMeBD,fai-tua-fafine
+mMyBD,fai-tua-fafine
+mFBeD,taina fetau taina
+mFeBD,taina fetau taina
+mFyBD,taina fetau taina
+mMZeD,tuafafine fetau taina
+mMeZD,tuafafine fetau taina
+mMyZD,tuafafine fetau taina
+mFZeD,ilamutu
+mFeZD,ilamutu
+mFyZD,ilamutu
+feB,tua-gane
+feZ,fetau-taina
+fMBeS,fai-tuagane
+fMeBS,fai-tuagane
+fMyBS,fai-tuagane
+fFBeS,taina fetau taina
+fFeBS,taina fetau taina
+fFyBS,taina fetau taina
+fMZeS,tuafafine fetau taina
+fMeZS,tuafafine fetau taina
+fMyZS,tuafafine fetau taina
+fFZeS,ilamutu
+fFeZS,ilamutu
+fFyZS,ilamutu
+fMBeD,tua-tina
+fMeBD,tua-tina
+fMyBD,tua-tina
+fMZeD,taina
+fMeZD,taina
+fMyZD,taina
+fFZeD,ilamutu
+fFeZD,ilamutu
+fFyZD,ilamutu
