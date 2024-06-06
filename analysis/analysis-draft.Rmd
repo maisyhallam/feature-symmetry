@@ -1,0 +1,327 @@
+---
+title: "ics-z-score"
+author: "Maisy Hallam"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(patchwork)
+```
+
+```{r}
+theme_set(theme_bw())
+
+# theme_update(text = element_text(family = "Fira Sans", size=20))
+
+# axis.title.y = element_text(angle=90, vjust=0.5, hjust = 0))
+```
+
+## Import the data
+
+```{r}
+sims <- read_csv('../../data/raw/simulated-kinship-mi-data.csv')
+kb <- read_csv('../../data/raw/full-kinship-mi-data.csv')
+```
+
+What does the data look like for English?
+
+```{r}
+sims %>% filter(code == 'stan1293')
+
+kb %>% filter(code == 'stan1293')
+```
+
+
+Get the mean mutual information score across simulations for each language.
+
+```{r}
+mi <- sims %>% 
+  group_by(code) %>% 
+  summarise(
+    mean = mean(mutual_information), 
+    sd = sd(mutual_information))
+```
+
+Order kb in alphabetical order.
+
+```{r}
+# mean_mi$real_value = kb$mutual_information
+
+filter(mi, code == 'stan1293')
+
+
+kb <- arrange(kb, code)
+mi <- arrange(mi,code)
+
+mi <- mi %>% mutate(
+  real_value = kb$mutual_information,
+  language = kb$language
+)
+
+filter(mi,language == 'Tagalog')
+```
+
+
+Add the z-score for each language - the real MI value minus the mean MI value of the simulations, divided by the SD of the simulations.
+
+```{r}
+mi$mi_z <- ((mi$real_value - mi$mean) / mi$sd)
+
+mi
+```
+
+Repeat kb 1000 times.
+
+```{r}
+kb_repeat <- kb %>% slice(rep(seq_len(n()), 1000))
+
+kb_repeat
+
+kb_repeat = kb_repeat[order(kb_repeat$code),]
+```
+
+```{r}
+kb_repeat
+```
+
+Combine kb and sims
+
+```{r}
+
+sims <- arrange(sims, code)
+kb_repeat <- arrange(kb_repeat, code)
+all <- sims
+all$real_value <- kb_repeat$mutual_information
+
+filter(all, code == 'stan1293')
+```
+
+## Sample languages
+
+Take a random sample of languages.
+
+```{r}
+ie <- c(filter(kb, mutual_information > 0, language_family == 'Indo-European')$code %>% sample(3), 'stan1293')
+au <- c(filter(kb, mutual_information > 0, language_family == 'Austronesian')$code %>% sample(3), 'taga1270')
+pn <- c(filter(kb, mutual_information > 0, language_family == 'Pama-Nyungan')$code %>% sample(3), 'warl1254')
+
+ie
+```
+
+```{r}
+# original sample
+ie <- c('Dari','Hindi','Russian','English')
+au <- c("Tanampedagi_Taje","Tikopia","Watut", "Tagalog")
+pn <- c("Bunganditj","Ngiyambaa","Wajarri", "Warlpiri")
+```
+
+And subset `mi_repeat` by this sample.
+
+```{r}
+ie_sample <- subset(all, code %in% ie)
+au_sample <- subset(all, code %in% au)
+pn_sample <- subset(all, code %in% pn)
+
+table(au_sample$language)
+```
+
+```{r}
+ie_sample <- subset(all, language %in% ie)
+au_sample <- subset(all,language %in% au)
+pn_sample <- subset(all,language %in% pn)
+
+table(au_sample$language)
+
+ie_sample <- filter(ie_sample,code != 'russ1263a')
+au_sample <- filter(au_sample,code != 'tiko1237')
+pn_sample <- filter(pn_sample,code != 'warl1254a')
+
+
+```
+
+## Plot real values within simulated distributions
+
+```{r}
+ie_sample$language = factor(ie_sample$language, levels=c("Dari","Hindi","Russian", "English"))
+
+ie_plot <- ie_sample %>%
+  ggplot(aes(mutual_information)) +
+  geom_histogram(colour = '#d95f02', fill = '#d95f02') +
+  geom_vline(aes(xintercept = real_value),linetype = 4) +
+  ggtitle('Indo-European') +
+  xlab('') +
+  facet_grid(~language) +
+  theme(
+    panel.background = element_rect(fill='transparent'), #transparent panel bg
+    plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
+    # panel.grid.major = element_blank(), #remove major gridlines
+    # panel.grid.minor = element_blank(), #remove minor gridlines
+    legend.background = element_rect(fill='transparent'), #transparent legend bg
+    legend.box.background = element_rect(fill='transparent') #transparent legend panel
+  )
+
+ie_plot
+
+ggsave('../../plots/ie_plot.png', ie_plot, bg = 'transparent',width = 9, height = 3)
+
+```
+
+```{r}
+au_sample$language = factor(au_sample$language, levels=c("Tanampedagi_Taje","Tikopia","Watut", "Tagalog"))
+
+au_plot <- au_sample %>%
+  ggplot(aes(mutual_information)) +
+  geom_histogram(colour = '#7570b3', fill = '#7570b3') +
+  geom_vline(aes(xintercept = real_value),linetype = 4) +
+  ggtitle('Austronesian') +
+  xlab('') +
+  facet_grid(~language) +
+  theme(
+    panel.background = element_rect(fill='transparent'), #transparent panel bg
+    plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
+    # panel.grid.major = element_blank(), #remove major gridlines
+    # panel.grid.minor = element_blank(), #remove minor gridlines
+    legend.background = element_rect(fill='transparent'), #transparent legend bg
+    legend.box.background = element_rect(fill='transparent') #transparent legend panel
+  )
+
+au_plot
+
+ggsave('../../plots/au_plot.png', au_plot, bg = 'transparent',width = 9, height = 3)
+
+```
+
+```{r}
+pn_sample$language = factor(pn_sample$language, levels=c("Bunganditj","Ngiyambaa","Wajarri", "Warlpiri"))
+
+pn_plot <- pn_sample %>%
+  ggplot(aes(mutual_information)) +
+  geom_histogram(colour = '#1b9e77', fill = '#1b9e77') +
+  geom_vline(aes(xintercept = real_value),linetype = 4) +
+  ggtitle('Pama-Nyungan') +
+  xlab('Mutual information') +
+  facet_grid(~language) +
+  theme(
+    panel.background = element_rect(fill='transparent'), #transparent panel bg
+    plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
+    # panel.grid.major = element_blank(), #remove major gridlines
+    # panel.grid.minor = element_blank(), #remove minor gridlines
+    legend.background = element_rect(fill='transparent'), #transparent legend bg
+    legend.box.background = element_rect(fill='transparent') #transparent legend panel
+  )
+
+pn_plot
+
+ggsave('../../plots/pn_plot.png', pn_plot, bg = 'transparent',width = 9, height = 3)
+```
+
+```{r}
+grid_plot <- ie_plot + au_plot + pn_plot +
+  plot_layout(nrow = 3)
+  # plot_annotation(title = 'Distribution of mutual information for simulated kinship systems')
+
+grid_plot
+
+ggsave('../../plots/sample_of_languages_tsp.png', width = 9, height = 9, bg='transparent')
+```
+
+
+```{r}
+all_long <- rbind(sims,kb)
+
+filter(all_long,simulation == 'N')
+```
+
+```{r}
+filter(all_long,mutual_information > 0) %>%
+  ggplot(aes(mutual_information, fill = simulation)) +
+  scale_fill_manual(values = c('#d95f02','#7570b3'),
+                    name="data type:",
+                    labels=c("natural languages", "simulations")) +
+  geom_density(alpha = 0.5) +
+  # ggtitle('Distribution of mutual information for real and simulated kinship systems') +
+  xlab('Mutual information (bits)') +
+  theme_minimal() + 
+  theme(
+    axis.line.x = element_line(color = "black"),
+    axis.line.y = element_line(color = 'black'),
+    legend.position = c(0.7, 0.8))
+
+ggsave('../../plots/all_sims_distributions_tsp.png',height=5,width=5,bg='transparent')
+```
+
+```{r}
+
+hindi_plot <- filter(all,language == 'Hindi') %>%
+  ggplot(aes(mutual_information)) +
+  geom_histogram(colour = '#d95f02', fill = '#d95f02') +
+  geom_vline(aes(xintercept = real_value),linetype = 4,size=1) +
+  # ggtitle('Indo-European') +
+  xlab('Mutual information (bits)')
+  # facet_grid(~language) +
+  # theme_bw() +
+  # theme(
+    # panel.background = element_rect(fill='transparent'), #transparent panel bg
+    # plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
+    # # panel.grid.major = element_blank(), #remove major gridlines
+    # # panel.grid.minor = element_blank(), #remove minor gridlines
+    # legend.background = element_rect(fill='transparent'), #transparent legend bg
+    # legend.box.background = element_rect(fill='transparent') #transparent legend panel
+
+hindi_plot
+ggsave('hindi_plot.png',hindi_plot, width=5,height=5)
+
+```
+
+```{r}
+tagalog_plot <- filter(all,language == 'Tagalog') %>%
+  ggplot(aes(mutual_information)) +
+  geom_histogram(colour = '#d95f02', fill = '#d95f02') +
+  geom_vline(aes(xintercept = real_value),linetype = 4,size=1)+
+  # ggtitle('Indo-European') +
+  xlab('Mutual information (bits)') +
+  ylab('')
+  # facet_grid(~language) +
+  # theme_bw() +
+  # theme(
+    # panel.background = element_rect(fill='transparent'), #transparent panel bg
+    # plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
+    # # panel.grid.major = element_blank(), #remove major gridlines
+    # # panel.grid.minor = element_blank(), #remove minor gridlines
+    # legend.background = element_rect(fill='transparent'), #transparent legend bg
+    # legend.box.background = element_rect(fill='transparent') #transparent legend panel
+
+ggsave('tagalog_plot.png',tagalog_plot, width=5,height=5)
+```
+
+```{r}
+hind_tag_plot <- hindi_plot + tagalog_plot +
+  plot_layout(widths = c(2,2))
+  # plot_annotation(title = 'Distribution of mutual information for simulated kinship systems')
+
+hind_tag_plot
+
+ggsave('../../../sample_of_languages_2.png', width = 9, height = 9, bg='transparent')
+
+```
+
+```{r}
+hind_sund_plot <- filter(all, language == 'English' | language == 'Hindi' | language == 'Sundanese' | code == 'warl1254') %>%
+  ggplot(aes(mutual_information)) +
+  geom_histogram(colour = '#d95f02', fill = '#d95f02') +
+  geom_vline(aes(xintercept = real_value),linetype = 2,linewidth=1) +
+  xlab('Mutual information (bits)') +
+  facet_wrap(~language,ncol =2)
+
+hind_sund_plot
+
+ggsave('hind_sund_plot.png',hind_sund_plot,height=5,width=5)
+```
+
+```{r}
+table(filter(all,language_family == 'Pama-Nyungan')$code)
+```
+

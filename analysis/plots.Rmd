@@ -1,0 +1,172 @@
+---
+title: "plots"
+author: "Maisy Hallam"
+date: "2024-02-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(patchwork)
+library(ggtext)
+```
+
+# Plots
+
+Set theme.
+
+```{r}
+theme_set(theme_minimal(base_size = 25))
+theme_update(axis.line.x = element_line(color = "black"),
+    axis.line.y = element_line(color = 'black'))
+```
+
+## Comparing real distribution with simulated distribution.
+
+```{r}
+# sims <- read_csv('../data/raw/simulated-mi.csv')
+# sims <- filter(sims, mutual_information > 0)
+# kb <- read_csv('../data/raw/kinbank-mi.csv')
+
+sims <- read_csv('../data/raw/simulated_mi_UPDATED.csv')
+# sims <- filter(sims, mutual_information > 0)
+kb <- read_csv('../data/raw/kinbank_mi_UPDATED.csv')
+
+sims <- read_csv('../data/raw/simulated_mi_UPDATED_NEW_KINTYPES.csv')
+kb <- read_csv('../data/raw/kinbank_mi_UPDATED_NEW_KINTYPES.csv')
+# 
+# sims <- filter(sims,mutual_information > 0)
+```
+
+```{r}
+rbind(sims,kb) %>% filter(variation_gn > 1 & variation_gn1 > 2) %>%
+  ggplot(aes(mutual_information, fill = simulation, colour = simulation)) +
+  scale_fill_manual(values = c('#d95f50','#7570b3'),
+                    name="data type:",
+                    labels=c("natural languages", "random baseline")) +
+  scale_colour_manual(values = c('#d95f50','#7570b3'),
+                      name="data type:",
+                    labels=c("natural languages", "random baseline")) +
+  geom_density(alpha = 0.8) +
+  # ggtitle('Distribution of mutual information for real and simulated kinship systems') +
+  xlab('Mutual information (bits)') +
+  theme(
+    legend.position = c(0.7, 0.8))
+
+ggsave('../plots/all_sims_distributions_UPDATED.png')
+```
+
+```{r}
+rbind(sims,kb) %>% filter(mutual_information > 0, simulation == 'Y') %>%
+  ggplot(aes(mutual_information, fill = simulation, colour = simulation)) +
+  scale_fill_manual(values = c('#7570b3'),
+                    name="data type:",
+                    labels=c("random baseline")) +
+  scale_colour_manual(values = c('#7570b3'),
+                      name="data type:",
+                    labels=c("random baseline")) +
+  geom_density(alpha = 0.8) +
+  # ggtitle('Distribution of mutual information for real and simulated kinship systems') +
+  xlab('Mutual information (bits)') +
+  theme(
+    legend.position = c(0.7, 0.8))
+
+
+ggsave('../plots/sims_ONLY_distributions_evolang.png')
+```
+
+
+## Comparing simulated distribution with real value for individual languages
+
+```{r}
+sample <- read_csv('../data/processed/sampled_data_UPDATED.csv')
+```
+
+```{r}
+ie <- filter(sample,language_family == 'Indo-European') %>%
+  ggplot(aes(simulated_value)) +
+  geom_density(colour = '#d95f02', fill = '#d95f02') +
+  geom_vline(aes(xintercept = real_value),linetype = 4) +
+  ggtitle('Indo-European') +
+  xlab('') +
+  facet_grid(~language)
+
+ie
+```
+
+```{r}
+au <- filter(sample,language_family == 'Austronesian') %>%
+  ggplot(aes(simulated_value)) +
+  geom_density(colour = '#7570b3', fill = '#7570b3') +
+  geom_vline(aes(xintercept = real_value),linetype = 4) +
+  ggtitle('Austronesian') +
+  xlab('') +
+  facet_grid(~language)
+
+au
+```
+
+```{r}
+pn <- filter(sample,language_family == 'Pama-Nyungan') %>%
+  ggplot(aes(simulated_value)) +
+  geom_density(colour = '#1b9e77', fill = '#1b9e77') +
+  geom_vline(aes(xintercept = real_value),linetype = 4) +
+  ggtitle('Pama-Nyungan') +
+  xlab('') +
+  facet_grid(~language)
+
+pn
+```
+
+```{r}
+ie + au + pn +
+  plot_layout(nrow = 3)
+```
+Small sample of languages for evolang abstract.
+
+```{r}
+sample2 <- read_csv('../data/processed/sample_for_evolang.csv')
+
+sample2
+```
+
+```{r}
+sample2 %>%
+  ggplot(aes(x = simulated_value, fill = language,colour = language)) +
+  scale_fill_manual(values = c('#d95f50','#7570b3','#1b9e77','#ffeda0')) +
+  scale_colour_manual(values = c('#d95f50','#7570b3','#1b9e77','#ffeda0')) +
+  geom_density() +
+  geom_vline(aes(xintercept = real_value),linetype = 'dashed') +
+  geom_richtext(data=z_labels, mapping=aes(x= 1.6, y=8, label=paste0('<i>z = </i>', round(z,2))), inherit.aes = FALSE) +
+  facet_wrap(~language) +
+  labs(x = 'Mutual information (bits)',
+       y = 'density') +
+  theme_bw(base_size = 18) +
+  theme(legend.position = 'none')
+
+ggsave('../plots/small_sample_grid.png',width = 5,height = 5)
+```
+
+
+## Plot participant z-scores relative to 1.96 SD.
+
+```{r}
+lang_z <- read_csv('../data/processed/z_scores_UPDATED.csv')
+```
+
+
+```{r}
+lang_z %>%
+  ggplot(aes(x = language_family, y = zscore)) +
+  geom_jitter(aes(colour = language_family)) +
+  geom_hline(yintercept = 1.96, linetype = 'dashed') +
+  geom_hline(yintercept = -1.96, linetype = 'dashed') +
+  xlab('Language family') +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+
+
+
+```
+

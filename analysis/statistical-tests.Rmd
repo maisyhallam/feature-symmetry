@@ -1,0 +1,73 @@
+---
+title: "statistical-tests"
+author: "Maisy Hallam"
+date: "2024-02-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+```{r}
+z <- read_csv('../data/processed/z_scores_UPDATED.csv')
+
+sims <- read_csv('../data/processed/kinbank_sims_combined_UPDATED.csv')
+
+z
+
+
+z_labels <- tibble(
+  language = filter(z, language %in% c('English', 'Hindi', 'Sundanese', 'Warlpiri'))$language,
+  z = filter(z, language %in% c('English', 'Hindi', 'Sundanese', 'Warlpiri'))$zscore,
+  x = c(1.7, 1.6, 0.65,0.65, 0.65)
+)
+
+z_labels <- z_labels %>% filter(!row_number() %in% c(4))
+```
+
+```{r}
+by_language_z <- sims %>% filter(simulated_value > 0) %>%
+  group_by(language,language_family) %>%
+    summarise(
+      mean = mean(simulated_value),
+      sd = sd(simulated_value),
+      real_value = real_value,
+      extreme = sum(real_value <= simulated_value),
+      denom = n(),
+      z = (real_value - mean) / sd,
+      p_language = extreme/denom
+    ) %>%
+  unique() %>%
+  na.omit()
+
+by_language_z
+
+sum(by_language_z$z>1.96)/717
+sum(by_language_z$z<-1.96)/717
+
+table(sims$language_family)
+  
+by_language_z %>%  ggplot(aes(x = language_family, y = z)) +
+  geom_jitter(aes(colour = language_family),alpha = 0.2,height = 0.1, width = 0.1) +
+  geom_hline(yintercept = 1.96, linetype = 'dashed') +
+  geom_hline(yintercept = -1.96, linetype = 'dashed') +
+  theme(legend.position = 'none')
+```
+
+```{r}
+sims %>% filter(simulated_value > 0) %>% 
+    summarise(
+      sim_mean = mean(simulated_value),
+      real_mean = mean(real_value),
+      sd = sd(simulated_value),
+      extreme = sum(real_mean <= simulated_value),
+      denom = n(),
+      z = (real_mean - sim_mean) / sd,
+      p = extreme/denom
+    ) %>%
+  unique()
+```
+

@@ -1,0 +1,80 @@
+---
+title: "preprocessing"
+author: "Maisy Hallam"
+date: "2024-02-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+# Preprocessing
+
+Combining kinbank data with simulated data.
+
+```{r}
+# sims <- read_csv('../data/raw/simulated-mi.csv')
+# kb <- read_csv('../data/raw/kinbank-mi.csv')
+
+sims <- read_csv('../data/raw/simulated_mi_UPDATED.csv')
+kb <- read_csv('../data/raw/kinbank_mi_UPDATED.csv')
+```
+
+```{r}
+all <- merge(sims, select(kb, c(code,mutual_information)),by = 'code') %>%
+  rename(
+    real_value = mutual_information.y,
+    simulated_value = mutual_information.x
+  )
+
+write_csv(all, '../data/processed/kinbank_sims_combined_UPDATED.csv')
+```
+
+
+Grab random samples from Indo-European, Austronesian, and Pama-Nyungan.
+
+```{r}
+ie <- c(filter(kb, mutual_information > 0, language_family == 'Indo-European')$code %>% sample(3), 'stan1293')
+au <- c(filter(kb, mutual_information > 0, language_family == 'Austronesian')$code %>% sample(3), 'taga1270')
+pn <- c(filter(kb, mutual_information > 0, language_family == 'Pama-Nyungan')$code %>% sample(3), 'warl1254')
+```
+
+```{r}
+ie_sample <- subset(all, code %in% ie)
+au_sample <- subset(all, code %in% au)
+pn_sample <- subset(all, code %in% pn)
+
+
+
+write_csv(rbind(ie_sample,au_sample,pn_sample), '../data/processed/sampled_data_UPDATED.csv')
+```
+
+Get a sample for evolang abstract.
+
+```{r}
+sample_group <- c('English','Hindi','Warlpiri','Sundanese')
+            
+sample <- subset(all, language %in% sample_group) %>% filter(code != 'warl1254a')
+
+table(sample$code)
+
+write_csv(sample,'../data/processed/sample_for_evolang.csv')
+```
+
+
+Get z-scores for each language.
+
+```{r}
+z_scores <- all %>%
+  group_by(language,real_value,language_family) %>%
+  summarise(
+    simulated_mean = mean(simulated_value),
+    simulated_sd = sd(simulated_value)) %>%
+  mutate(
+    zscore = (real_value - simulated_mean) / simulated_sd)
+
+write_csv(z_scores, '../data/processed/z_scores_UPDATED.csv')
+```
+

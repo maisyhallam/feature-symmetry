@@ -1,0 +1,125 @@
+---
+title: "edit-distance"
+author: "Maisy Hallam"
+date: "2024-06-05"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggtext)
+```
+
+## Import the data
+
+In Python I created a dataframe of different languages, their correlation between form and meaning, and their z-score
+relative to a series of simulations created by randomly sampling form- and meaning distances.
+
+```{r}
+ed <- read_csv('../data/raw/edit_distance_UPDATED_NEW_KINTYPES.csv')
+```
+
+```{r}
+theme_set(theme_minimal())
+theme_update(axis.line.x = element_line(color = "black"),
+    axis.line.y = element_line(color = 'black'))
+```
+
+```{r}
+ed %>%
+  ggplot(aes(x = family, y = z)) +
+  geom_point() +
+  geom_hline(yintercept = 1.96) +
+  geom_hline(yintercept = -1.96) +
+  # geom_rect(aes(xmin = 0, xmax = Inf, ymin = -1.96, ymax = 1.96)) +
+  annotate("rect", xmin = 0, xmax = Inf, ymin = -1.96, ymax = 1.96,
+        alpha = .2) +
+  scale_y_continuous(breaks = c(-15,-10,-5,-1.96,0,1.96,5)) +
+
+  coord_flip() +
+  labs(
+    title = 'z-scored correlation between edit distance and semantic distance'
+  )
+
+ggsave('../plots/edit_distance_z.png')
+```
+
+```{r}
+ed %>%
+  ggplot(aes(x = family, y = correlation)) +
+  geom_point() +
+  coord_flip()
+```
+
+```{r}
+ed %>%
+  ggplot(aes(x = correlation)) +
+  geom_histogram() +
+  labs(
+    title = 'correlations between edit distance and semantic distance')
+  )
+```
+
+```{r}
+mi <- read_csv('../data/raw/kinbank_mi_UPDATED_NEW_KINTYPES.csv')
+```
+
+```{r}
+all <- merge(ed,mi,.by = code)
+
+```
+
+```{r}
+all %>% filter(variation_gn > 1 & variation_gn1 > 2) %>%
+  ggplot(aes(x = mutual_information, y = z)) +
+  geom_point() +
+  geom_smooth(colour = 'red', se = FALSE, method='lm') +
+  geom_label(
+    label="correlation = 0.31", 
+    x=2.5,
+    y=5.5,
+    label.padding = unit(0.55, "lines"), # Rectangle size around label
+    label.size = 0.35
+  ) +
+    labs(title = 'correlation between compositionality of parent and child 
+kin terms and systemic predictability',
+       x = 'mutual information',
+       y = 'z-score correlation btwn edit and semantic distance')
+
+# data=labels, mapping=aes(x=0.75, y=4, label=paste0('n = ', n))
+
+ggsave('../plots/edit_distance_vs_mi.png')
+```
+
+```{r}
+all %>%
+  ggplot(aes(x = mutual_information, y = z)) +
+  geom_point() +
+  geom_smooth(method='lm') +
+  geom_label(
+  label="correlation = 0.03", 
+  x=2.5,
+  y=5.5,
+  label.padding = unit(0.55, "lines"), # Rectangle size around label
+  label.size = 0.35
+) +
+  labs(title = 'correlation between compositionality of parent and child \nkin terms and systemic predictability',
+       x = 'mutual information',
+       y = 'z-score correlation btwn edit and semantic distance')
+```
+
+```{r}
+cor.test(all$mutual_information,all$z,use='complete.obs')
+```
+
+```{r}
+all_filt <- filter(all,variation_gn > 1 & variation_gn1 > 2)
+
+cor.test(all_filt$mutual_information, all_filt$z, use='complete.obs')
+```
+
+```{r}
+filter(all,mutual_information == 0 & language_family == 'Indo-European')
+```
+

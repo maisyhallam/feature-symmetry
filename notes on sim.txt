@@ -1,3 +1,0 @@
-Deleted kinbank files:
-
-ASF_Auslan_aust1271 – ‘word’ column populated by links
