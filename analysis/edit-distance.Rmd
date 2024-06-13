@@ -17,7 +17,11 @@ In Python I created a dataframe of different languages, their correlation betwee
 relative to a series of simulations created by randomly sampling form- and meaning distances.
 
 ```{r}
-ed <- read_csv('../data/raw/edit_distance_UPDATED_NEW_KINTYPES.csv')
+# ed <- read_csv('../data/raw/edit_distance_UPDATED_NEW_KINTYPES.csv')
+
+# ed <- read_csv('../data/raw/edit_distance_UPDATED_SEMD.csv')
+
+ed <- read_csv('../data/raw/edit_distance_FINAL.csv')
 ```
 
 ```{r}
@@ -42,7 +46,7 @@ ed %>%
     title = 'z-scored correlation between edit distance and semantic distance'
   )
 
-ggsave('../plots/edit_distance_z.png')
+ggsave('../plots/edit_distance_z_UPDATED.png')
 ```
 
 ```{r}
@@ -63,25 +67,39 @@ ed %>%
 
 ```{r}
 mi <- read_csv('../data/raw/kinbank_mi_UPDATED_NEW_KINTYPES.csv')
+
+mi_z <- read_csv('../data/processed/z_scores_UPDATED.csv')
+
 ```
 
 ```{r}
 all <- merge(ed,mi,.by = code)
 
+all_z <- merge(ed,mi_z, .by = code)
+
+all_z <- all_z %>%
+  rename(
+    compositionality_z = z,
+    mutual_information_z = zscore)
+```
+
+
+```{r}
+all %>% filter(mutual_information < 0)
 ```
 
 ```{r}
 all %>% filter(variation_gn > 1 & variation_gn1 > 2) %>%
   ggplot(aes(x = mutual_information, y = z)) +
   geom_point() +
-  geom_smooth(colour = 'red', se = FALSE, method='lm') +
-  geom_label(
-    label="correlation = 0.31", 
-    x=2.5,
-    y=5.5,
-    label.padding = unit(0.55, "lines"), # Rectangle size around label
-    label.size = 0.35
-  ) +
+  geom_smooth(colour = 'red', method='lm') +
+  # geom_label(
+  #   label="correlation = 0.16", 
+  #   x=2.5,
+  #   y=5.5,
+  #   label.padding = unit(0.55, "lines"), # Rectangle size around label
+  #   label.size = 0.35
+  # ) +
     labs(title = 'correlation between compositionality of parent and child 
 kin terms and systemic predictability',
        x = 'mutual information',
@@ -89,21 +107,51 @@ kin terms and systemic predictability',
 
 # data=labels, mapping=aes(x=0.75, y=4, label=paste0('n = ', n))
 
-ggsave('../plots/edit_distance_vs_mi.png')
+ggsave('../plots/edit_distance_vs_mi_UPDATED.png')
 ```
+
+```{r}
+all_z %>% 
+  ggplot(aes(x = mutual_information_z, y = compositionality_z)) +
+  geom_point() +
+  geom_smooth(colour = 'red', method='lm') +
+  # geom_label(
+  #   label="correlation = 0.16", 
+  #   x=2.5,
+  #   y=5.5,
+  #   label.padding = unit(0.55, "lines"), # Rectangle size around label
+  #   label.size = 0.35
+  # ) +
+    labs(title = 'correlation between compositionality of parent and child 
+kin terms and systemic predictability',
+       x = 'z-score mutual information',
+       y = 'z-score correlation btwn edit and semantic distance')
+
+# data=labels, mapping=aes(x=0.75, y=4, label=paste0('n = ', n))
+```
+
+
+```{r}
+mi_z_mdl <- lm(compositionality_z ~ mutual_information_z, data = all_z)
+
+summary(mi_z_mdl)
+
+mean(all_filt$mutual_information)
+```
+
 
 ```{r}
 all %>%
   ggplot(aes(x = mutual_information, y = z)) +
   geom_point() +
   geom_smooth(method='lm') +
-  geom_label(
-  label="correlation = 0.03", 
-  x=2.5,
-  y=5.5,
-  label.padding = unit(0.55, "lines"), # Rectangle size around label
-  label.size = 0.35
-) +
+#   geom_label(
+#   label="correlation = 0.03", 
+#   x=2.5,
+#   y=5.5,
+#   label.padding = unit(0.55, "lines"), # Rectangle size around label
+#   label.size = 0.35
+# ) +
   labs(title = 'correlation between compositionality of parent and child \nkin terms and systemic predictability',
        x = 'mutual information',
        y = 'z-score correlation btwn edit and semantic distance')

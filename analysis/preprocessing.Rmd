@@ -18,8 +18,8 @@ Combining kinbank data with simulated data.
 # sims <- read_csv('../data/raw/simulated-mi.csv')
 # kb <- read_csv('../data/raw/kinbank-mi.csv')
 
-sims <- read_csv('../data/raw/simulated_mi_UPDATED.csv')
-kb <- read_csv('../data/raw/kinbank_mi_UPDATED.csv')
+sims <- read_csv('../data/raw/simulated_mi_UPDATED_NEW_KINTYPES.csv')
+kb <- read_csv('../data/raw/kinbank_mi_UPDATED_NEW_KINTYPES.csv')
 ```
 
 ```{r}
@@ -67,13 +67,13 @@ write_csv(sample,'../data/processed/sample_for_evolang.csv')
 Get z-scores for each language.
 
 ```{r}
-z_scores <- all %>%
-  group_by(language,real_value,language_family) %>%
+z_scores <- sims %>%
+  group_by(language,true_value,language_family,code) %>%
   summarise(
-    simulated_mean = mean(simulated_value),
-    simulated_sd = sd(simulated_value)) %>%
+    simulated_mean = mean(mutual_information),
+    simulated_sd = sd(mutual_information)) %>%
   mutate(
-    zscore = (real_value - simulated_mean) / simulated_sd)
+    zscore = ifelse(true_value == simulated_mean, 0, (true_value - simulated_mean) / simulated_sd))
 
 write_csv(z_scores, '../data/processed/z_scores_UPDATED.csv')
 ```

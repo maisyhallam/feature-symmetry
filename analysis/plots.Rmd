@@ -40,7 +40,7 @@ kb <- read_csv('../data/raw/kinbank_mi_UPDATED_NEW_KINTYPES.csv')
 ```
 
 ```{r}
-rbind(sims,kb) %>% filter(variation_gn > 1 & variation_gn1 > 2) %>%
+rbind(select(sims, -c(true_value)),kb) %>% filter(variation_gn > 1 & variation_gn1 > 2) %>%
   ggplot(aes(mutual_information, fill = simulation, colour = simulation)) +
   scale_fill_manual(values = c('#d95f50','#7570b3'),
                     name="data type:",
@@ -48,13 +48,14 @@ rbind(sims,kb) %>% filter(variation_gn > 1 & variation_gn1 > 2) %>%
   scale_colour_manual(values = c('#d95f50','#7570b3'),
                       name="data type:",
                     labels=c("natural languages", "random baseline")) +
-  geom_density(alpha = 0.8) +
+  geom_histogram(alpha=0.5) +
   # ggtitle('Distribution of mutual information for real and simulated kinship systems') +
   xlab('Mutual information (bits)') +
   theme(
-    legend.position = c(0.7, 0.8))
+    legend.position = c(0.7, 0.8)) +
+  facet_wrap(~simulation, scales = 'free', nrow = 2)
 
-ggsave('../plots/all_sims_distributions_UPDATED.png')
+ggsave('../plots/all_sims_distributions_HIST.png')
 ```
 
 ```{r}
@@ -86,7 +87,7 @@ sample <- read_csv('../data/processed/sampled_data_UPDATED.csv')
 ```{r}
 ie <- filter(sample,language_family == 'Indo-European') %>%
   ggplot(aes(simulated_value)) +
-  geom_density(colour = '#d95f02', fill = '#d95f02') +
+  geom_histogram(colour = '#d95f02', fill = '#d95f02') +
   geom_vline(aes(xintercept = real_value),linetype = 4) +
   ggtitle('Indo-European') +
   xlab('') +
@@ -98,7 +99,7 @@ ie
 ```{r}
 au <- filter(sample,language_family == 'Austronesian') %>%
   ggplot(aes(simulated_value)) +
-  geom_density(colour = '#7570b3', fill = '#7570b3') +
+  geom_histogram(colour = '#7570b3', fill = '#7570b3') +
   geom_vline(aes(xintercept = real_value),linetype = 4) +
   ggtitle('Austronesian') +
   xlab('') +
@@ -110,7 +111,7 @@ au
 ```{r}
 pn <- filter(sample,language_family == 'Pama-Nyungan') %>%
   ggplot(aes(simulated_value)) +
-  geom_density(colour = '#1b9e77', fill = '#1b9e77') +
+  geom_histogram(colour = '#1b9e77', fill = '#1b9e77') +
   geom_vline(aes(xintercept = real_value),linetype = 4) +
   ggtitle('Pama-Nyungan') +
   xlab('') +
@@ -157,14 +158,16 @@ lang_z <- read_csv('../data/processed/z_scores_UPDATED.csv')
 
 
 ```{r}
-lang_z %>%
+lang_z %>% filter(zscore != 0) %>%
   ggplot(aes(x = language_family, y = zscore)) +
-  geom_jitter(aes(colour = language_family)) +
+  geom_point(aes(colour = language_family),alpha = 0.3) +
   geom_hline(yintercept = 1.96, linetype = 'dashed') +
   geom_hline(yintercept = -1.96, linetype = 'dashed') +
   xlab('Language family') +
   theme_bw() +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+  theme(legend.position = 'none') +
+  # theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  coord_flip()
 
 
 
