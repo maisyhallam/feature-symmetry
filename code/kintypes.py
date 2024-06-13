@@ -31,3 +31,39 @@ ics_pairs = [
 ('fFeZ','fFeZS'),('fFeZ','fFeZD'),('fFyZ','fFyZS'),('fFyZ','fFyZD')
 
 ]
+
+generation_n = [
+                'meB', 'meZ',
+                'myB', 'myZ',
+                'mMeZS', 'mMeZD',
+                'mMeBS','mMeBD',
+                'mMyZS', 'mMyZD',
+                'mMyBS', 'mMyBD',
+                'mFeZS', 'mFeZD',
+                'mFeBS', 'mFeBD',
+                'mFyZS', 'mFyZD',
+                'mFyBS', 'mFyBD',
+                
+                'feB', 'feZ',
+                'fyB', 'fyZ',
+                'fMeZS', 'fMeZD',
+                'fMeBS','fMeBD',
+                'fMyZS', 'fMyZD',
+                'fMyBS', 'fMyBD',
+                'fFeZS', 'fFeZD',
+                'fFeBS', 'fFeBD',
+                'fFyZS', 'fFyZD',
+                'fFyBS', 'fFyBD']
+
+
+generation_n1 = [
+                 'mM','mF',
+                 'mMeB','mMeZ',
+                 'mMyB','mMyZ',
+                 'mFeB','mFeZ',
+                 'mFyB','mFyZ',
+                 'fM','fF',
+                 'fMeB','fMeZ',
+                 'fMyB','fMyZ',
+                 'fFeB','fFeZ',
+                 'fFyB','fFyZ']
