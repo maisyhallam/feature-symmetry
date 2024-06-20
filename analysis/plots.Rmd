@@ -29,18 +29,24 @@ theme_update(axis.line.x = element_line(color = "black"),
 # sims <- filter(sims, mutual_information > 0)
 # kb <- read_csv('../data/raw/kinbank-mi.csv')
 
-sims <- read_csv('../data/raw/simulated_mi_UPDATED.csv')
+sims <- read_csv('../data/raw/simulated_mi_FINAL.csv')
 # sims <- filter(sims, mutual_information > 0)
-kb <- read_csv('../data/raw/kinbank_mi_UPDATED.csv')
+kb <- read_csv('../data/raw/kinbank_mi_FINAL.csv')
 
-sims <- read_csv('../data/raw/simulated_mi_UPDATED_NEW_KINTYPES.csv')
-kb <- read_csv('../data/raw/kinbank_mi_UPDATED_NEW_KINTYPES.csv')
+sims <- sims %>% filter(true_value > 0)
+kb <- kb %>% filter(mutual_information > 0)
+
 # 
 # sims <- filter(sims,mutual_information > 0)
 ```
 
 ```{r}
-rbind(select(sims, -c(true_value)),kb) %>% filter(variation_gn > 1 & variation_gn1 > 2) %>%
+facet_labels <- c(
+                    'Y' = 'random baseline',
+                    'N' = 'natural languages'
+                    )
+
+rbind(select(sims, -c(true_value)),kb) %>%
   ggplot(aes(mutual_information, fill = simulation, colour = simulation)) +
   scale_fill_manual(values = c('#d95f50','#7570b3'),
                     name="data type:",
@@ -52,14 +58,14 @@ rbind(select(sims, -c(true_value)),kb) %>% filter(variation_gn > 1 & variation_g
   # ggtitle('Distribution of mutual information for real and simulated kinship systems') +
   xlab('Mutual information (bits)') +
   theme(
-    legend.position = c(0.7, 0.8)) +
-  facet_wrap(~simulation, scales = 'free', nrow = 2)
+    legend.position = 'none') +
+  facet_wrap(~simulation, scales = 'free', nrow = 2,labeller = as_labeller(facet_labels))
 
-ggsave('../plots/all_sims_distributions_HIST.png')
+ggsave('../plots/sims_kb_distributions_HIST.png')
 ```
 
 ```{r}
-rbind(sims,kb) %>% filter(mutual_information > 0, simulation == 'Y') %>%
+sims %>%
   ggplot(aes(mutual_information, fill = simulation, colour = simulation)) +
   scale_fill_manual(values = c('#7570b3'),
                     name="data type:",
@@ -74,7 +80,7 @@ rbind(sims,kb) %>% filter(mutual_information > 0, simulation == 'Y') %>%
     legend.position = c(0.7, 0.8))
 
 
-ggsave('../plots/sims_ONLY_distributions_evolang.png')
+ggsave('../plots/sims_ONLY_distributions.png')
 ```
 
 

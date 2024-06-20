@@ -66,7 +66,7 @@ ed %>%
 ```
 
 ```{r}
-mi <- read_csv('../data/raw/kinbank_mi_UPDATED_NEW_KINTYPES.csv')
+mi <- read_csv('../data/raw/kinbank_mi_FINAL.csv')
 
 mi_z <- read_csv('../data/processed/z_scores_UPDATED.csv')
 
@@ -85,11 +85,11 @@ all_z <- all_z %>%
 
 
 ```{r}
-all %>% filter(mutual_information < 0)
+all %>% filter(mutual_information > 0)
 ```
 
 ```{r}
-all %>% filter(variation_gn > 1 & variation_gn1 > 2) %>%
+all %>% filter(mutual_information > 0) %>%
   ggplot(aes(x = mutual_information, y = z)) +
   geom_point() +
   geom_smooth(colour = 'red', method='lm') +
@@ -128,6 +128,9 @@ kin terms and systemic predictability',
        y = 'z-score correlation btwn edit and semantic distance')
 
 # data=labels, mapping=aes(x=0.75, y=4, label=paste0('n = ', n))
+
+ggsave('../plots/edit_distance_vs_mi_z.png')
+
 ```
 
 
