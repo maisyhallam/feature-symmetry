@@ -21,7 +21,9 @@ relative to a series of simulations created by randomly sampling form- and meani
 
 # ed <- read_csv('../data/raw/edit_distance_UPDATED_SEMD.csv')
 
-ed <- read_csv('../data/raw/edit_distance_FINAL.csv')
+ed <- read_csv('../data/raw/average_edit_distance.csv')
+
+ed_n <- read_csv('../data/raw/average_edit_distance_nuncles.csv')
 ```
 
 ```{r}
@@ -31,7 +33,7 @@ theme_update(axis.line.x = element_line(color = "black"),
 ```
 
 ```{r}
-ed %>%
+ed_n %>%
   ggplot(aes(x = family, y = z)) +
   geom_point() +
   geom_hline(yintercept = 1.96) +
@@ -50,15 +52,15 @@ ggsave('../plots/edit_distance_z_UPDATED.png')
 ```
 
 ```{r}
-ed %>%
-  ggplot(aes(x = family, y = correlation)) +
+ed_n %>%
+  ggplot(aes(x = family, y = average_edit_distance)) +
   geom_point() +
   coord_flip()
 ```
 
 ```{r}
 ed %>%
-  ggplot(aes(x = correlation)) +
+  ggplot(aes(x = average_edit_distance)) +
   geom_histogram() +
   labs(
     title = 'correlations between edit distance and semantic distance')
@@ -75,11 +77,11 @@ mi_z <- read_csv('../data/processed/z_scores_UPDATED.csv')
 ```{r}
 all <- merge(ed,mi,.by = code)
 
-all_z <- merge(ed,mi_z, .by = code)
+all_z <- merge(ed_n,mi_z, .by = code)
 
 all_z <- all_z %>%
   rename(
-    compositionality_z = z,
+    edit_distance_z = z,
     mutual_information_z = zscore)
 ```
 
@@ -90,9 +92,11 @@ all %>% filter(mutual_information > 0)
 
 ```{r}
 all %>% filter(mutual_information > 0) %>%
-  ggplot(aes(x = mutual_information, y = z)) +
+  ggplot(aes(x = mutual_information, y = average_edit_distance)) +
   geom_point() +
   geom_smooth(colour = 'red', method='lm') +
+  # geom_hline(yintercept = 1.96,linetype = 'dashed') +
+  # geom_hline(yintercept = -1.96,linetype = 'dashed')+
   # geom_label(
   #   label="correlation = 0.16", 
   #   x=2.5,
@@ -100,20 +104,22 @@ all %>% filter(mutual_information > 0) %>%
   #   label.padding = unit(0.55, "lines"), # Rectangle size around label
   #   label.size = 0.35
   # ) +
-    labs(title = 'correlation between compositionality of parent and child 
-kin terms and systemic predictability',
+    labs(title = 'correlation between average edit distance and mutual information',
        x = 'mutual information',
-       y = 'z-score correlation btwn edit and semantic distance')
+       y = 'z-score average edit distance')
 
 # data=labels, mapping=aes(x=0.75, y=4, label=paste0('n = ', n))
 
-ggsave('../plots/edit_distance_vs_mi_UPDATED.png')
+ggsave('../plots/edit_distance_vs_mi.png')
 ```
+
+Still weird to be getting so many low z values - this would indicate that languages actively avoid having similar labels, rather than just accidentally having e.g. 'sister' share more letters with 'aunt' than cousin by chance. But I have an idea. Perhaps low mutual information may have far lower than chance average edit distance between parents and children intentionally, to further distinguish the category. From a production perspective, a similar label e.g. pur and purza helps you uncover meaning but is susceptible to ambiguity in a noisy channel. If we are not interested in encoding a meaning similarity between these kin, is it not beneficial to make their labels extremely far apart from each other? 
+-> More likely, this is just because the averages we're working with are incredibly tiny.
 
 ```{r}
 all_z %>% 
-  ggplot(aes(x = mutual_information_z, y = compositionality_z)) +
-  geom_point() +
+  ggplot(aes(x = mutual_information_z, y = edit_distance_z)) +
+geom_point() + 
   geom_smooth(colour = 'red', method='lm') +
   # geom_label(
   #   label="correlation = 0.16", 
@@ -131,6 +137,9 @@ kin terms and systemic predictability',
 
 ggsave('../plots/edit_distance_vs_mi_z.png')
 
+```
+```{r}
+ed %>% filter(z < -3)
 ```
 
 
