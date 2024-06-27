@@ -2,10 +2,10 @@ ics_pairs = [
 
 # parents and siblings
 
-('mM','meB'),('mM','myB'),('mF','meB'),('mF','myB'),
-('mM','meZ'),('mM','myZ'),('mF','meZ'),('mF','myZ'),
-('fM','feB'),('fM','fyB'),('fF','feB'),('fF','fyB'),
-('fM','feZ'),('fM','fyZ'),('fF','feZ'),('fF','fyZ'),
+('mM','meB'),('mM','myB'), ('mF','meB'),('mF','myB'),
+('mM','meZ'),('mM','myZ'), ('mF','meZ'),('mF','myZ'),
+('fM','feB'),('fM','fyB'), ('fF','feB'),('fF','fyB'),
+('fM','feZ'),('fM','fyZ'), ('fF','feZ'),('fF','fyZ'),
 
 
 # nuncles and cousins

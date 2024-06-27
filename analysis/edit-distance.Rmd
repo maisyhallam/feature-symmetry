@@ -22,8 +22,9 @@ relative to a series of simulations created by randomly sampling form- and meani
 # ed <- read_csv('../data/raw/edit_distance_UPDATED_SEMD.csv')
 
 ed <- read_csv('../data/raw/average_edit_distance.csv')
+ed <- filter(ed, language != 'ASF_Auslan')
 
-ed_n <- read_csv('../data/raw/average_edit_distance_nuncles.csv')
+# ed_n <- read_csv('../data/raw/average_edit_distance_nuncles.csv')
 ```
 
 ```{r}
@@ -33,7 +34,7 @@ theme_update(axis.line.x = element_line(color = "black"),
 ```
 
 ```{r}
-ed_n %>%
+ed %>%
   ggplot(aes(x = family, y = z)) +
   geom_point() +
   geom_hline(yintercept = 1.96) +
@@ -52,10 +53,15 @@ ggsave('../plots/edit_distance_z_UPDATED.png')
 ```
 
 ```{r}
-ed_n %>%
+ed %>%
   ggplot(aes(x = family, y = average_edit_distance)) +
   geom_point() +
   coord_flip()
+```
+
+```{r}
+summary(ed)
+
 ```
 
 ```{r}
@@ -77,7 +83,7 @@ mi_z <- read_csv('../data/processed/z_scores_UPDATED.csv')
 ```{r}
 all <- merge(ed,mi,.by = code)
 
-all_z <- merge(ed_n,mi_z, .by = code)
+all_z <- merge(ed,mi_z, .by = code)
 
 all_z <- all_z %>%
   rename(
@@ -92,9 +98,11 @@ all %>% filter(mutual_information > 0)
 
 ```{r}
 all %>% filter(mutual_information > 0) %>%
-  ggplot(aes(x = mutual_information, y = average_edit_distance)) +
+  ggplot(aes(x = mutual_information, y = z)) +
   geom_point() +
   geom_smooth(colour = 'red', method='lm') +
+  geom_hline(yintercept = 1.96,linetype = 'dashed') +
+  geom_hline(yintercept = -1.96,linetype = 'dashed') +
   # geom_hline(yintercept = 1.96,linetype = 'dashed') +
   # geom_hline(yintercept = -1.96,linetype = 'dashed')+
   # geom_label(
@@ -121,6 +129,10 @@ all_z %>%
   ggplot(aes(x = mutual_information_z, y = edit_distance_z)) +
 geom_point() + 
   geom_smooth(colour = 'red', method='lm') +
+  geom_hline(yintercept = 1.96,linetype = 'dashed') +
+  geom_hline(yintercept = -1.96,linetype = 'dashed') +
+  geom_vline(xintercept = 1.96,linetype = 'dashed') +
+  geom_vline(xintercept = -1.96,linetype = 'dashed') +
   # geom_label(
   #   label="correlation = 0.16", 
   #   x=2.5,
@@ -151,35 +163,9 @@ summary(mi_z_mdl)
 mean(all_filt$mutual_information)
 ```
 
-
 ```{r}
-all %>%
-  ggplot(aes(x = mutual_information, y = z)) +
-  geom_point() +
-  geom_smooth(method='lm') +
-#   geom_label(
-#   label="correlation = 0.03", 
-#   x=2.5,
-#   y=5.5,
-#   label.padding = unit(0.55, "lines"), # Rectangle size around label
-#   label.size = 0.35
-# ) +
-  labs(title = 'correlation between compositionality of parent and child \nkin terms and systemic predictability',
-       x = 'mutual information',
-       y = 'z-score correlation btwn edit and semantic distance')
+filter(mi, mutual_information < 1)
 ```
-
-```{r}
-cor.test(all$mutual_information,all$z,use='complete.obs')
-```
-
-```{r}
-all_filt <- filter(all,variation_gn > 1 & variation_gn1 > 2)
-
-cor.test(all_filt$mutual_information, all_filt$z, use='complete.obs')
-```
-
-```{r}
-filter(all,mutual_information == 0 & language_family == 'Indo-European')
-```
+Speak with Fiona about whether it is necessary to use phylogenetically independent contrasts to check
+for the relationship between edit distance and mutual information. We are implicitly making a claim about whether they co-evolve, after all (e.g. low edit distance implies high MI and low MI implies low edit distance).
 
