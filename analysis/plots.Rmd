@@ -65,6 +65,26 @@ ggsave('../plots/sims_kb_distributions_HIST.png')
 ```
 
 ```{r}
+rbind(select(sims, -c(true_value)),kb) %>%
+  ggplot(aes(mutual_information, fill = simulation, colour = simulation)) +
+  scale_fill_manual(values = c('#d95f50','#7570b3'),
+                    name="data type:",
+                    labels=c("natural languages", "random baseline")) +
+  scale_colour_manual(values = c('#d95f50','#7570b3'),
+                      name="data type:",
+                    labels=c("natural languages", "random baseline")) +
+  geom_density(alpha = 0.8) +
+  # ggtitle('Distribution of mutual information for real and simulated kinship systems') +
+  xlab('Mutual information (bits)') +
+  theme(
+    legend.position = c(0.7, 0.8))
+
+ggsave('../plots/sims_kb_distributions_DENSITY.png')
+
+```
+
+
+```{r}
 sims %>%
   ggplot(aes(mutual_information, fill = simulation, colour = simulation)) +
   scale_fill_manual(values = c('#7570b3'),
@@ -80,7 +100,7 @@ sims %>%
     legend.position = c(0.7, 0.8))
 
 
-ggsave('../plots/sims_ONLY_distributions.png')
+ggsave('../plots/sims_distribution_ONLY.png')
 ```
 
 
@@ -159,14 +179,14 @@ ggsave('../plots/small_sample_grid.png',width = 5,height = 5)
 ## Plot participant z-scores relative to 1.96 SD.
 
 ```{r}
-lang_z <- read_csv('../data/processed/z_scores_UPDATED.csv')
+z <- read_csv('../data/processed/kinbank_sims_z_scores.csv')
 ```
 
 
 ```{r}
-lang_z %>% filter(zscore != 0) %>%
-  ggplot(aes(x = language_family, y = zscore)) +
-  geom_point(aes(colour = language_family),alpha = 0.3) +
+z %>% filter()
+  ggplot(aes(x = family, y = true_zscore)) +
+  geom_point(aes(colour = family),alpha = 0.3) +
   geom_hline(yintercept = 1.96, linetype = 'dashed') +
   geom_hline(yintercept = -1.96, linetype = 'dashed') +
   xlab('Language family') +
@@ -176,6 +196,49 @@ lang_z %>% filter(zscore != 0) %>%
   coord_flip()
 
 
+
+```
+
+```{r}
+z %>% filter(true_zscore > 0) %>%
+  ggplot() +
+  geom_histogram(aes(x = true_zscore), fill = '#d95f50', colour = '#d95f50',alpha = 0.5) +
+  geom_histogram(aes(x = simulated_zscore), fill = '#7570b3',colour = '#7570b3', alpha = 0.5) +
+  geom_vline(xintercept = 1.96, linetype = 'dashed') +
+  geom_vline(xintercept = -1.96,linetype = 'dashed') +
+  labs(x = 'z-score mutual information')
+
+ggsave('../plots/sims_kb_z_distribution_HIST.png')
+```
+
+```{r}
+minmax <- read_csv('../data/processed/min_max_mi.csv')
+
+sample_group = c('English','French','Hindi','Tagalog','Japanese','Sundanese','Tsonga')
+
+mm_sample <- sample_n(filter(minmax,true_value > 0), 13)
+
+chosen_sample <- subset(minmax, language %in% sample_group) %>% filter(code != 	
+'japa1256')
+
+full_sample <- rbind(mm_sample,chosen_sample) %>% mutate(
+  language = str_replace_all(language, '_', ' ')
+)
+
+```
+
+```{r}
+full_sample %>%
+  ggplot(aes(x = reorder(language, -true_value, FUN = 'mean'), y = true_value)) +
+  # geom_errorbar(aes(ymax = true_upper_limit, ymin = lower_limit),colour = 'red') +
+    geom_errorbar(aes(ymax = true_upper_limit, ymin = lower_limit),colour = 'darkgrey',linewidth =1) +
+  geom_errorbar(aes(ymax = sim_upper_limit, ymin = lower_limit),linewidth =1) +
+  geom_point(size = 3,colour = '#d95f50') +
+  labs(y = 'Mutual information (bits)',
+       x = 'Language') +
+  coord_flip()
+    
+ggsave('../plots/min_max_mi.png', width = 8)
 
 ```
 

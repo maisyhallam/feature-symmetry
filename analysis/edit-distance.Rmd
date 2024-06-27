@@ -59,10 +59,6 @@ ed %>%
   coord_flip()
 ```
 
-```{r}
-summary(ed)
-
-```
 
 ```{r}
 ed %>%
@@ -121,8 +117,7 @@ all %>% filter(mutual_information > 0) %>%
 ggsave('../plots/edit_distance_vs_mi.png')
 ```
 
-Still weird to be getting so many low z values - this would indicate that languages actively avoid having similar labels, rather than just accidentally having e.g. 'sister' share more letters with 'aunt' than cousin by chance. But I have an idea. Perhaps low mutual information may have far lower than chance average edit distance between parents and children intentionally, to further distinguish the category. From a production perspective, a similar label e.g. pur and purza helps you uncover meaning but is susceptible to ambiguity in a noisy channel. If we are not interested in encoding a meaning similarity between these kin, is it not beneficial to make their labels extremely far apart from each other? 
--> More likely, this is just because the averages we're working with are incredibly tiny.
+
 
 ```{r}
 all_z %>% 
@@ -140,32 +135,16 @@ geom_point() +
   #   label.padding = unit(0.55, "lines"), # Rectangle size around label
   #   label.size = 0.35
   # ) +
-    labs(title = 'correlation between compositionality of parent and child 
-kin terms and systemic predictability',
+    labs(title = 'correlation between extreme values of edit distance and mutual information',
        x = 'z-score mutual information',
-       y = 'z-score correlation btwn edit and semantic distance')
+       y = 'z-score average edit distance')
 
 # data=labels, mapping=aes(x=0.75, y=4, label=paste0('n = ', n))
 
 ggsave('../plots/edit_distance_vs_mi_z.png')
 
 ```
-```{r}
-ed %>% filter(z < -3)
-```
 
-
-```{r}
-mi_z_mdl <- lm(compositionality_z ~ mutual_information_z, data = all_z)
-
-summary(mi_z_mdl)
-
-mean(all_filt$mutual_information)
-```
-
-```{r}
-filter(mi, mutual_information < 1)
-```
 Speak with Fiona about whether it is necessary to use phylogenetically independent contrasts to check
 for the relationship between edit distance and mutual information. We are implicitly making a claim about whether they co-evolve, after all (e.g. low edit distance implies high MI and low MI implies low edit distance).
 

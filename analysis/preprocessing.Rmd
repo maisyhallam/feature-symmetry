@@ -18,8 +18,8 @@ Combining kinbank data with simulated data.
 # sims <- read_csv('../data/raw/simulated-mi.csv')
 # kb <- read_csv('../data/raw/kinbank-mi.csv')
 
-sims <- read_csv('../data/raw/simulated_mi_UPDATED_NEW_KINTYPES.csv')
-kb <- read_csv('../data/raw/kinbank_mi_UPDATED_NEW_KINTYPES.csv')
+sims <- read_csv('../data/raw/simulated_mi_FINAL.csv')
+kb <- read_csv('../data/raw/kinbank_mi_FINAL.csv')
 ```
 
 ```{r}
@@ -76,5 +76,48 @@ z_scores <- sims %>%
     zscore = ifelse(true_value == simulated_mean, 0, (true_value - simulated_mean) / simulated_sd))
 
 write_csv(z_scores, '../data/processed/z_scores_UPDATED.csv')
+```
+
+Get z-scores for each simulation:
+
+```{r}
+sim_z_scores <- sims %>%
+  reframe(
+    language = language,
+    code = code,
+    family = language_family,
+    true_value = true_value,
+    simulated_value = mutual_information,
+    simulated_mean = mean(mutual_information),
+    simulated_sd = sd(mutual_information)) %>%
+  mutate(
+    simulated_zscore = ifelse(simulated_value == simulated_mean,0, (simulated_value - simulated_mean) / simulated_sd),
+    true_zscore = ifelse(true_value == simulated_mean, 0, (true_value - simulated_mean) / simulated_sd))
+
+filter(sim_z_scores, language == 'English')
+
+write_csv(sim_z_scores, '../data/processed/kinbank_sims_z_scores.csv')
+
+```
+
+
+
+Get the range of possible values:
+
+```{r}
+min_max <- sims %>% group_by(language) %>%
+  reframe(
+    language = language,
+    code = code,
+    family = language_family,
+    true_value = true_value,
+    true_upper_limit = max(max(mutual_information),true_value),
+    sim_upper_limit = max(mutual_information),
+    lower_limit = min(mutual_information),
+    mean = mean(mutual_information)
+  ) %>%
+  unique()
+
+write_csv(min_max, '../data/processed/min_max_mi.csv')
 ```
 
