@@ -9,6 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(ggtext)
+library(ggExtra)
 ```
 
 ## Import the data
@@ -93,10 +94,10 @@ all %>% filter(mutual_information > 0)
 ```
 
 ```{r}
-all %>% filter(mutual_information > 0) %>%
+plot <- all %>% filter(mutual_information > 0) %>%
   ggplot(aes(x = mutual_information, y = z)) +
   geom_point() +
-  geom_smooth(colour = 'red', method='lm') +
+  geom_smooth(colour = '#d95f50', method='lm') +
   geom_hline(yintercept = 1.96,linetype = 'dashed') +
   geom_hline(yintercept = -1.96,linetype = 'dashed') +
   # geom_hline(yintercept = 1.96,linetype = 'dashed') +
@@ -108,22 +109,25 @@ all %>% filter(mutual_information > 0) %>%
   #   label.padding = unit(0.55, "lines"), # Rectangle size around label
   #   label.size = 0.35
   # ) +
+    geom_rug(alpha = 0.2) +
     labs(title = 'correlation between average edit distance and mutual information',
        x = 'mutual information',
        y = 'z-score average edit distance')
 
+ggMarginal(plot,type = 'histogram', fill = '#d95f50', colour = '#d95f50',alpha = 0.2)
+
 # data=labels, mapping=aes(x=0.75, y=4, label=paste0('n = ', n))
 
-ggsave('../plots/edit_distance_vs_mi.png')
+ggsave('../plots/edit_distance_vs_mi_w_density.png')
 ```
 
 
 
 ```{r}
-all_z %>% 
+z_plot <- all_z %>% 
   ggplot(aes(x = mutual_information_z, y = edit_distance_z)) +
 geom_point() + 
-  geom_smooth(colour = 'red', method='lm') +
+  geom_smooth(colour = '#d95f50', method='lm') +
   geom_hline(yintercept = 1.96,linetype = 'dashed') +
   geom_hline(yintercept = -1.96,linetype = 'dashed') +
   geom_vline(xintercept = 1.96,linetype = 'dashed') +
@@ -139,9 +143,12 @@ geom_point() +
        x = 'z-score mutual information',
        y = 'z-score average edit distance')
 
+ggMarginal(z_plot,type = 'histogram', fill = '#d95f50', colour = '#d95f50',alpha = 0.2,size = 10)
+
+
 # data=labels, mapping=aes(x=0.75, y=4, label=paste0('n = ', n))
 
-ggsave('../plots/edit_distance_vs_mi_z.png')
+ggsave('../plots/edit_distance_vs_mi_z_w_density.png')
 
 ```
 

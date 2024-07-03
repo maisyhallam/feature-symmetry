@@ -33,6 +33,8 @@ sims <- read_csv('../data/raw/simulated_mi_FINAL.csv')
 # sims <- filter(sims, mutual_information > 0)
 kb <- read_csv('../data/raw/kinbank_mi_FINAL.csv')
 
+count(kb)
+
 sims <- sims %>% filter(true_value > 0)
 kb <- kb %>% filter(mutual_information > 0)
 
