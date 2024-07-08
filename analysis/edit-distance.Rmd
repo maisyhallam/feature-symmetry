@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(ggtext)
 library(ggExtra)
+library(lme4)
 ```
 
 ## Import the data
@@ -124,7 +125,7 @@ ggsave('../plots/edit_distance_vs_mi_w_density.png')
 
 
 ```{r}
-z_plot <- all_z %>% 
+z_plot <- all_z %>% filter(mutual_information_z != 0) %>%
   ggplot(aes(x = mutual_information_z, y = edit_distance_z)) +
 geom_point() + 
   geom_smooth(colour = '#d95f50', method='lm') +
@@ -154,4 +155,16 @@ ggsave('../plots/edit_distance_vs_mi_z_w_density.png')
 
 Speak with Fiona about whether it is necessary to use phylogenetically independent contrasts to check
 for the relationship between edit distance and mutual information. We are implicitly making a claim about whether they co-evolve, after all (e.g. low edit distance implies high MI and low MI implies low edit distance).
+
+```{r}
+library(lmerTest)
+
+ed_mdl <- lmer(mutual_information_z ~ edit_distance_z + (1|language_family), data = all_z)
+
+summary(ed_mdl)
+```
+
+```{r}
+ed %>% filter(language == 'Ket')
+```
 
