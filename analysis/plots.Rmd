@@ -17,8 +17,14 @@ library(ggtext)
 Set theme.
 
 ```{r}
-theme_set(theme_minimal(base_size = 25))
-theme_update(axis.line.x = element_line(color = "black"),
+theme_set(theme_bw(base_size = 20))
+theme_update(panel.background = element_rect(fill='transparent'), #transparent panel bg
+    plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
+    # panel.grid.major = element_blank(), #remove major gridlines
+    panel.grid.minor = element_blank(), #remove minor gridlines
+    legend.background = element_rect(fill='transparent'), #transparent legend bg
+    legend.box.background = element_rect(fill='transparent'), #transparent legend panel
+    axis.line.x = element_line(color = "black"),
     axis.line.y = element_line(color = 'black'))
 ```
 
@@ -224,7 +230,8 @@ chosen_sample <- subset(minmax, language %in% sample_group) %>% filter(code !=
 'japa1256')
 
 full_sample <- rbind(mm_sample,chosen_sample) %>% mutate(
-  language = str_replace_all(language, '_', ' ')
+  language = str_replace_all(language, '_', ' '),
+  language = str_replace(language, " \\s*\\([^\\)]+\\)", "")
 )
 
 ```
@@ -233,9 +240,9 @@ full_sample <- rbind(mm_sample,chosen_sample) %>% mutate(
 full_sample %>%
   ggplot(aes(x = reorder(language, -true_value, FUN = 'mean'), y = true_value)) +
   # geom_errorbar(aes(ymax = true_upper_limit, ymin = lower_limit),colour = 'red') +
-    geom_errorbar(aes(ymax = true_upper_limit, ymin = lower_limit),colour = 'darkgrey',linewidth =1) +
+    # geom_errorbar(aes(ymax = true_upper_limit, ymin = lower_limit),colour = 'darkgrey',linewidth =1) +
   geom_errorbar(aes(ymax = sim_upper_limit, ymin = lower_limit),linewidth =1) +
-  geom_point(size = 3,colour = '#d95f50') +
+  geom_point(size = 5,colour = '#d95f50') +
   labs(y = 'Mutual information (bits)',
        x = 'Language') +
   coord_flip()
