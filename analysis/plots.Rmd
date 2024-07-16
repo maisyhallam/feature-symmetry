@@ -17,7 +17,8 @@ library(ggtext)
 Set theme.
 
 ```{r}
-theme_set(theme_bw(base_size = 20))
+# for poster
+theme_set(theme_bw(base_size = 30))
 theme_update(panel.background = element_rect(fill='transparent'), #transparent panel bg
     plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
     # panel.grid.major = element_blank(), #remove major gridlines
@@ -87,7 +88,7 @@ rbind(select(sims, -c(true_value)),kb) %>%
   theme(
     legend.position = c(0.7, 0.8))
 
-ggsave('../plots/sims_kb_distributions_DENSITY.png')
+ggsave('../plots/sims_kb_distributions_POSTER.png')
 
 ```
 

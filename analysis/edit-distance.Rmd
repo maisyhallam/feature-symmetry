@@ -133,6 +133,8 @@ geom_point() +
   geom_hline(yintercept = -1.96,linetype = 'dashed') +
   geom_vline(xintercept = 1.96,linetype = 'dashed') +
   geom_vline(xintercept = -1.96,linetype = 'dashed') +
+  geom_rug(alpha = 0.2) +
+
   # geom_label(
   #   label="correlation = 0.16", 
   #   x=2.5,
@@ -153,6 +155,38 @@ ggsave('../plots/edit_distance_vs_mi_z_w_density.png')
 
 ```
 
+```{r}
+true_value_plot <- all %>% filter(mutual_information > 0) %>%
+  ggplot(aes(x = mutual_information, y = average_edit_distance)) +
+geom_point() + 
+  geom_smooth(colour = '#d95f50', method='lm') +
+  geom_rug(alpha = 0.2) +
+
+  # geom_hline(yintercept = 1.96,linetype = 'dashed') +
+  # geom_hline(yintercept = -1.96,linetype = 'dashed') +
+  # geom_vline(xintercept = 1.96,linetype = 'dashed') +
+  # geom_vline(xintercept = -1.96,linetype = 'dashed') +
+  # geom_label(
+  #   label="correlation = 0.16", 
+  #   x=2.5,
+  #   y=5.5,
+  #   label.padding = unit(0.55, "lines"), # Rectangle size around label
+  #   label.size = 0.35
+  # ) +
+    labs(title = 'correlation between average edit distance and mutual information',
+       x = 'mutual information',
+       y = 'average edit distance')
+
+ggMarginal(true_value_plot,type = 'histogram', fill = '#d95f50', colour = '#d95f50',alpha = 0.2,size = 10)
+
+
+# data=labels, mapping=aes(x=0.75, y=4, label=paste0('n = ', n))
+
+ggsave('../plots/avg_edit_distance_vs_mi.png')
+```
+
+
+
 Speak with Fiona about whether it is necessary to use phylogenetically independent contrasts to check
 for the relationship between edit distance and mutual information. We are implicitly making a claim about whether they co-evolve, after all (e.g. low edit distance implies high MI and low MI implies low edit distance).
 
@@ -164,7 +198,4 @@ ed_mdl <- lmer(mutual_information_z ~ edit_distance_z + (1|language_family), dat
 summary(ed_mdl)
 ```
 
-```{r}
-ed %>% filter(language == 'Ket')
-```
 

@@ -73,7 +73,7 @@ z_scores <- sims %>%
     simulated_mean = mean(mutual_information),
     simulated_sd = sd(mutual_information)) %>%
   mutate(
-    zscore = ifelse(true_value == simulated_mean, 0, (true_value - simulated_mean) / simulated_sd))
+    zscore = (true_value - simulated_mean) / simulated_sd)
 
 write_csv(z_scores, '../data/processed/z_scores_UPDATED.csv')
 ```
@@ -91,8 +91,8 @@ sim_z_scores <- sims %>%
     simulated_mean = mean(mutual_information),
     simulated_sd = sd(mutual_information)) %>%
   mutate(
-    simulated_zscore = ifelse(simulated_value == simulated_mean,0, (simulated_value - simulated_mean) / simulated_sd),
-    true_zscore = ifelse(true_value == simulated_mean, 0, (true_value - simulated_mean) / simulated_sd))
+    simulated_zscore = (simulated_value - simulated_mean) / simulated_sd,
+    true_zscore = (true_value - simulated_mean) / simulated_sd)
 
 filter(sim_z_scores, language == 'English')
 
